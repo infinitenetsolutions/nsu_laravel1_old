@@ -109,15 +109,15 @@
     <li class="nav-item hidden-xs"><a class="nav-link" href="admission-procedure-domestic.html">
             Gallery</a>
         <ul class="dropdown-menu">
-            <li><a href="">University Gallery</a></li>
-            <li><a href="">Media Gallery</a></li>
+            <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
+            <li><a href="media-gallery">Media Gallery</a></li>
 
         </ul>
     </li>
 
     </li>
 
-    <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
 
     <li class="nav-item"><a class="nav-link apply_btn" href="apply-now.html">Apply Online</a>
     </li>
