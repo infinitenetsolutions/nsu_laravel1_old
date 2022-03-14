@@ -40,12 +40,10 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                         Apply</a></li>
 
                                 <li><a href="{{ route('career') }}">Career Test</a></li>
-                                <!-- <li><a href="admissions-scholarship.html">Netaji Scholarship</a></li> -->
-
+                                00
                                 <li><a target="_blank" href="https://neevfinance.hagnosoft.com/webform">Education
                                         Loan</a></li>
 
-                                {{-- <li><a href="faq">FAQs</a></li> --}}
 
                             </ul>
                             <a target="_blank" class="apply_btn border text-university text-white"
@@ -322,10 +320,10 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
 
                 </li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('contact')}}">Contact Us <span
+                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us <span
                             class="span_icon"></span></a>
-                            <div class="mega_menu ">
-                            </div>
+                    <div class="mega_menu ">
+                    </div>
                 </li>
                 <li class="nav-item"><a class="nav-link apply_btn" href="apply-now5034.html?1=1">Apply Now
                         2022</a>
