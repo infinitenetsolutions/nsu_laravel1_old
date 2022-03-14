@@ -15,11 +15,11 @@
                     <div class="testimonial4_slide  row">
                         <div class="col-sm-2">
                             <img class="img-thumbnail img-circle" alt=""
-                            src="{{ $url . 'testimonial/' . $testimonials[0]->testimonial_image }}"
-                            style="width:100px">
+                                src="{{ $url . 'testimonial/' . $testimonials[0]->testimonial_image }}"
+                                style="width:100px">
                         </div>
                         <div class="col-sm-10">
-                         <span class="text-justify">   <?php echo $testimonials[0]->message; ?></span>
+                            <span class="text-justify"> <?php echo $testimonials[0]->message; ?></span>
                             <h4 class="">
                                 {{ $testimonials[0]->testimonial_name }}
                                 -
@@ -29,8 +29,8 @@
                                 {{ $testimonials[0]->testimonial_company }}
                             </h6>
                         </div>
-                     
-                  
+
+
                     </div>
                 </div>
                 @foreach ($testimonials as $testimonial)
@@ -283,7 +283,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        width: 70%;
+        width: 80%;
         margin: auto;
         padding: 20px;
         position: relative;
@@ -334,8 +334,23 @@
     }
 
     @media(max-width:675px) {
+        .title{
+            padding-top: 50px;
+        }
         .testimonial-item {
-            height: 70vh !important;
+            height: 90vh !important;
+        }
+
+        .testimonial4_slide {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            text-align: center;
         }
     }
 
