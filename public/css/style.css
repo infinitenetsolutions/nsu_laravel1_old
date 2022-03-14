@@ -671,7 +671,6 @@ header.mydiv {
     background-color: #dcaa21;
     font-size: 16px;
     font-weight: 700;
-    padding: .625rem 1.7rem;
     position: relative;
 }
 
@@ -7848,7 +7847,7 @@ input#gsc-i-id1 {
 }
 
 .border1 img {
-    height: 126px;
+    height: 142px;
 
 }
 
@@ -8099,9 +8098,10 @@ color: #808000;
 .line-bottom-centered{
     border-top:#808000 solid 3px;
 }
-.line-bottom-theme-colored-2
+.line-bottom-theme-colored-2,.line-bottom
 {
   border-bottom: 2px solid #808000 ;
+  width: 60%;
   margin-bottom: 5px;
   border-spacing: 20px;
 }
@@ -8118,18 +8118,29 @@ color: #808000;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
-.theme-icon .fab{
+.theme-icon .fab,  .icon-circled li a {
     color: white;
     background-color: #e3ae21;
     border-radius: 7px;
     padding: 6px;
 }
-.theme-icon li{
+.theme-icon li {
     margin-top: -16px;
     margin-left: -15px;
 
 }
+.icon-circled li a {
+    margin-left: 10px;
+}
 #cboxLoadedContent img{
     width: 100% !important;
     height: 100% !important;
+}
+.icon-box i{
+    font-size: 40px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+.flip{
+    color: #8a7777;
 }

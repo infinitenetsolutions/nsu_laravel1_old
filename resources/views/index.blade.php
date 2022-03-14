@@ -29,7 +29,7 @@
                             </li>
                             <li>
                                 <h3 class="wow fadeInDown">15000+</h3>
-                                <span class="wow fadeInUp">  Student </span>
+                                <span class="wow fadeInUp"> Student </span>
                             </li>
                             <li>
                                 <h3 class="wow fadeInDown">100+</h3>
@@ -115,73 +115,73 @@
         <!--end Student life Section -->
         <!-- Research Spotlight Section -->
         <!-- <section class="home-sec4 mydiv">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="home-sec4-colm1">
-                                        <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
-                                        <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
-                                            Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
-                                        <ul>
-                                            <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
-                                            <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
-                                            <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="home-sec4-colm2">
-                                        <ul>
-                                            <li class="wow fadeInDown">
-                                                <h3>15000</h3>
-                                                <p>Research Publications</p>
-                                            </li>
-                                            <li class="wow fadeInDown">
-                                                <h3>500</h3>
-                                                <p>Books in diverse area</p>
-                                            </li>
-                                            <li class="wow fadeInDown">
-                                                <h3>300</h3>
-                                                <p>Govt. Funded Research Projects </p>
-                                            </li>
-                                            <li class="wow fadeInDown">
-                                                <h3>100+</h3>
-                                                <p>Patents Filed by Brilliant Students </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                    <div class="home-sec4-colm3">
-                                        <div class="owl-carousel owl-carousel4 owl-theme">
-                                            <div class="item">
-                                                <ul>
-                                                    <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
-                                                        <h4>Resonance Raman and Electronic...</h4>
-                                                    </li>
-                                                    <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
-                                                        <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="item">
-                                                <ul>
-                                                    <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
-                                                        <h4>Resonance Raman and Electronic...</h4>
-                                                    </li>
-                                                    <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
-                                                        <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="home-sec4-colm1">
+                                            <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
+                                            <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
+                                                Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
+                                            <ul>
+                                                <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
+                                                <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
+                                                <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <abbr class="all-research-btn"><a href="research.html">View All Research <img
-                                                src="images/arrow-icon.png"></a></abbr>
+                                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="home-sec4-colm2">
+                                            <ul>
+                                                <li class="wow fadeInDown">
+                                                    <h3>15000</h3>
+                                                    <p>Research Publications</p>
+                                                </li>
+                                                <li class="wow fadeInDown">
+                                                    <h3>500</h3>
+                                                    <p>Books in diverse area</p>
+                                                </li>
+                                                <li class="wow fadeInDown">
+                                                    <h3>300</h3>
+                                                    <p>Govt. Funded Research Projects </p>
+                                                </li>
+                                                <li class="wow fadeInDown">
+                                                    <h3>100+</h3>
+                                                    <p>Patents Filed by Brilliant Students </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="home-sec4-colm3">
+                                            <div class="owl-carousel owl-carousel4 owl-theme">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
+                                                            <h4>Resonance Raman and Electronic...</h4>
+                                                        </li>
+                                                        <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
+                                                            <h4>Hydrogen peroxide vapor sensor...</h4>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <ul>
+                                                        <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
+                                                            <h4>Resonance Raman and Electronic...</h4>
+                                                        </li>
+                                                        <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
+                                                            <h4>Hydrogen peroxide vapor sensor...</h4>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <abbr class="all-research-btn"><a href="research.html">View All Research <img
+                                                    src="images/arrow-icon.png"></a></abbr>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section> -->
+                        </section> -->
 
         <section class="p-3 mydiv">
             <div class="container">
@@ -605,196 +605,7 @@
         </section>
         <!--end Media Work -->
         <!-- Testimonials Section -->
-        <section class="testimonials_section wow fadeInUp mydiv">
-            <div class="container-fluid">
 
-                <ul class="nav nav-tabs responsive-tabs">
-                    <li class="active"><a href=".html">Students</a></li>
-                    <li><a href="-2.html">Parents</a></li>
-                    <li><a href="-3.html">Alumni</a></li>
-                </ul>
-                <div class="tab-content">
-                    <h4 class="collapsible_heading open">Students <span class="lnr lnr-chevron-down"></span></h4>
-                    <div class="tab-pane active students">
-                        <div class="owl-carousel owl-carousel6 owl-theme">
-
-                            <div class="item">
-                                <a href="testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/111aarohi-agarwal.jpg' width="358"
-                                                    height="334" alt="Ms. Aarohi Agarwal" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                "Life in Amity has been a breathtaking experience. As a hosteller, I
-                                                would
-                                                say it is actually a ...</h3>
-                                            <h4>
-                                                Ms. Aarohi Agarwal</h4>
-                                            <p>BFA with specialization in Painting<br />
-                                                Batch: 2010-14</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/444nandika-mehrotra.jpg'
-                                                    width="358" height="334" alt="Ms. Nandika Mehrotra" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                Amity has been a completely enriching experience. I have acquired lot of
-                                                confidence through ...</h3>
-                                            <h4>
-                                                Ms. Nandika Mehrotra</h4>
-                                            <p>BSc.- Fashion Design<br />
-                                                Batch: 2011-14</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <h4 class="collapsible_heading">Parents <span class="lnr lnr-chevron-down"></span></h4>
-                    <div class="tab-pane parents">
-                        <div class="owl-carousel owl-carousel7 owl-theme">
-
-                            <div class="item">
-                                <a href="parents-testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/1414pradeep-kumar-prt.jpg'
-                                                    width="358" height="334" alt="" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                Both of our children chose to attend Amity University, NOIDA over other
-                                                universities. As parents initially we ... </h3>
-                                            <h4>
-                                                Mr. Pradeep Kumar</h4>
-                                            <p>Parent of Natasha Kumar<br />
-                                                B.Tech. Biotechnology (2008-2012)</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="parents-testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/151515gangopadhyay.jpg'
-                                                    width="358" height="334" alt="" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                Amity University with its impressive infrastructure, qualified ... </h3>
-                                            <h4>
-                                                Group Captain Partho Gangopadhyay VSM</h4>
-                                            <p>Parent of Soutik Gangoli <br />
-                                                B.Tech(Biotechnology)-2013-2017</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <h4 class="collapsible_heading">Alumni <span class="lnr lnr-chevron-down"></span></h4>
-                    <div class="tab-pane alumni">
-                        <div class="owl-carousel owl-carousel8 owl-theme">
-
-                            <div class="item">
-                                <a href="alumni-testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/1717natasha-testi.jpg' width="358"
-                                                    height="334" alt="" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                The 'Amity Experience' has been unique and enriching...</h3>
-                                            <h4>
-                                                Natasha Kumar</h4>
-                                            <p>
-                                            <p>B.Tech. Biotechnology (2008-2012)<br />
-                                                Current Profession/ Employer- Pursuing Ph.D in Biomedical
-                                                Engineering at
-                                                Nanyang Technological University, Singapore</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="alumni-testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/191919Timg_alumni-testimonial-b.jpg'
-                                                    width="358" height="334" alt="" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                Two years at Amity Business School were undoubtedly one of the best
-                                                years of
-                                                my life...</h3>
-                                            <h4>
-                                                Ashim Das Mathur</h4>
-                                            <p>
-                                            <p>Head of Marketing,<br />
-                                                Dolby Laboratories, India</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="alumni-testimonials.html">
-                                    <div class="testimonials-content row">
-                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                            <span>
-                                                <img src='backoffice/Uploads/testimonials/160DSC_0105.png' width="358"
-                                                    height="334" alt="" /></span>
-                                        </div>
-                                        <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                                            <h3>
-                                                My alma mater Amity University has played a very important role in
-                                                helping
-                                                me in gaining attitude to Succeed and becoming an IAS officer.
-                                            </h3>
-                                            <h4>
-                                                Mr. Prashant Nagar</h4>
-                                            <p>
-                                            <p>B.Tech. (Mechanical &amp; Automation Engineering) (2010-2014)</p>
-                                            <p>Selected in UPSC - 2018</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-        <!--end Testimonials Section -->
         <!-- Footer -->
         @include('include.testimonial')
         @include('include.search')
@@ -804,3 +615,5 @@
     @endslot
 
 </x-layout>
+<!-- testimonial css -->
+

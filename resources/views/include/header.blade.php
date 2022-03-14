@@ -18,97 +18,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 } else {
     $home_url = 'https://www.nsuniv.ac.in/nsuadmin/public/upload/';
 } ?>
-<!-- modal -->
-<div class="row no-gutters stalwarts_box2">
-    <div class="col-md-12 col-md-12 col-lg-12 col-xl-12">
-        @include('include.offline_online_admission')
-    </div>
-    <div class="col-md-12 col-md-12 col-lg-12 col-xl-12">
 
-        <div class="reco_box">
-
-            <div class="modal fade" id="IET" role="dialog" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div id="ctl00_ContentPlaceHolder1_UpdatePanel2">
-
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                    aria-label="Close"><span aria-hidden="true">×</span></button>
-                                <h3>Online Form - Report a problem </h3>
-                            </div>
-
-                            <div class="modal-body text">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                        <div class="form_box">
-                                            <div class="form-group">
-                                                <input name="ctl00$ContentPlaceHolder1$Mob" type="text" maxlength="12"
-                                                    id="ctl00_ContentPlaceHolder1_Mob" class="form-control"
-                                                    placeholder="Mobile">
-                                                <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator1"
-                                                    style="color:Red;display:none;">Required</span>
-                                                <span id="ctl00_ContentPlaceHolder1_RegularExpressionValidator1"
-                                                    style="color:Red;display:none;">Only numeric</span>
-                                            </div>
-                                            <div class="form-group">
-                                                <input name="ctl00$ContentPlaceHolder1$Email" type="text"
-                                                    id="ctl00_ContentPlaceHolder1_Email" class="form-control"
-                                                    placeholder="Email">
-                                                <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator3"
-                                                    style="color:Red;display:none;">Required</span>
-                                                <span id="ctl00_ContentPlaceHolder1_revEmailID"
-                                                    style="color:Red;display:none;">Enter valid email.</span>
-                                            </div>
-                                            <div class="form-group">
-
-
-                                                <input name="ctl00$ContentPlaceHolder1$captcha" type="text"
-                                                    maxlength="20" id="ctl00_ContentPlaceHolder1_captcha"
-                                                    class="form-control" placeholder="Captcha">
-                                                <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator4"
-                                                    style="color:Red;display:none;">Required</span>
-
-                                            </div>
-                                            <div class="form-group"> <img src="Handler.ashx" id="imgCaptchanew"> <a
-                                                    href="javascript:void(0)" onclick="javascript:RefreshCaptchanew();">
-                                                    <img src="/images/refresh.png" alt=""></a> </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                        <div class="form_box">
-                                            <div class="form-group">
-                                                <textarea name="ctl00$ContentPlaceHolder1$Prob_details" rows="3"
-                                                    cols="20" id="ctl00_ContentPlaceHolder1_Prob_details"
-                                                    class="form-control" placeholder="Problem"
-                                                    onkeyup="CheckLimit(this,250,'lblCountLimit');"></textarea>
-                                                <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator2"
-                                                    style="color:Red;display:none;">Required</span>
-
-                                            </div>
-                                            <p>characters remaining!<br>
-                                                You have <span id="ctl00_ContentPlaceHolder1_lblCountLimit">250</span>
-                                                characters remaining!</p>
-
-                                            <div class="form-group"> </div>
-                                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnsubmit"
-                                                value="submit"
-                                                onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnsubmit&quot;, &quot;&quot;, true, &quot;down&quot;, &quot;&quot;, false, false))"
-                                                id="ctl00_ContentPlaceHolder1_btnsubmit">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //modal -->
 <!-- Top Level Navigation -->
 <div class="top_menubar">
     <ul class="container">
@@ -412,7 +322,11 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
 
                 </li>
-
+                <li class="nav-item"><a class="nav-link" href="{{ route('contact')}}">Contact Us <span
+                            class="span_icon"></span></a>
+                            <div class="mega_menu ">
+                            </div>
+                </li>
                 <li class="nav-item"><a class="nav-link apply_btn" href="apply-now5034.html?1=1">Apply Now
                         2022</a>
                 </li>
