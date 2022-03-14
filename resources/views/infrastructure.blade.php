@@ -1,0 +1,83 @@
+<x-layout1>
+    @slot('body')
+        <section class="inner-page">
+            <div class="inner-hadding">
+                <div class="container">
+
+
+                    <div class="top-menu-sec">
+                        <ul>
+                            <h4>Infrastructure</h4>
+
+                            @foreach ($quicks as $quick)
+                                <li class="{{ Request::path() == $quick->title ? 'active' : '' }}"><a
+                                        href="{{ route('infrastructure', $quick->title) }}">{{ $quick->title }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="p-2 ">
+                        <h2>{{ $data->title }}</h2>
+                        <a class="row p-2" href="{{ route('index') }}">
+                            <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                            <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                        </a>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <section class="inner_section pt-3 infra_play sangathan">
+                <div class="container">
+                    <p><?php echo substr($data->description, 0, 290); ?>.</p>
+                    <div class="row mt-2 mb-4 pb-2">
+                        <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen=""></iframe></div>
+                    </div>
+
+                </div>
+                <br>
+                <style>
+                    .block::before {
+                        background-color: rgba(33, 35, 49, 0.7);
+                        height: 450px;
+
+                    }
+
+                </style>
+                <div class="block" style="background: url({{ $url . 'infrastructure/' . $data->header_image }}),#6DB3F2;
+                               background-attachment: fixed;
+                               padding:10px
+                                        ">
+                    <div class=" container row mt-0 mb-4 mt-5">
+                        <div class="col-12 col-md-6 pr-2 text-white">
+                            <p class="text-justify"><?php echo substr($data->description, 292, 500); ?>.</p>
+
+                        </div>
+                        <div class="col-12 col-md-6  ">
+                            <img src="{{ $url . 'infrastructure/' . $data->image_name }}" class="infra_img_bot">
+                        </div>
+                        <hr>
+
+                    </div>
+                </div>
+                <div class=" container row mt-3 mb-5">
+                    <div class=" col-md-6 pr-2">
+                        <span class="d-block bg_brown2"><img src="{{ $url . 'infrastructure/' . $data->image_name1 }}"
+                                class="infra_img_bot"></span>
+                    </div>
+
+                    <div class=" col-md-6 pr-2">
+                        <p class="text-justify"><?php echo substr($data->description, 500, 723); ?>.</p>
+                    </div>
+      
+                    <div class=" col-md-12 mt-2">
+                        <p class="text-justify"><?php echo substr($data->description, 724, 38000); ?>.</p>
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    @endslot
+</x-layout1>
