@@ -28,8 +28,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6  ">
-                            <h3 class="mt-0 mb-30">Interested in discussing?</h3>
-                            <span class="line-bottom "> &nbsp;
+                            <h3 class="mt-0 mb-2">Interested in discussing?</h3>
+                            <span class="line-bottom mt-2 "> &nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             <br>
                             <br>
@@ -85,7 +85,7 @@
 
                         </div>
                         <div class="col-md-6 ">
-                            <h3 class=" mt-0">Get in touch with us</h3>
+                            <h3 class=" mt-0 mb-2">Get in touch with us</h3>
                             <span class="line-bottom "> &nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 

@@ -7042,7 +7042,7 @@ aside.right_bar {
 
 .top_megamenu .mega_menu_nav_admission {
     border-bottom: none;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-right: 0
 }
 
@@ -8098,11 +8098,18 @@ color: #808000;
 .line-bottom-centered{
     border-top:#808000 solid 3px;
 }
-.line-bottom-theme-colored-2,.line-bottom
+.line-bottom-theme-colored-2{
+    border-bottom: 2px solid #808000 ;
+    width: 60%;
+    margin-bottom: 5px;
+    border-spacing: 20px;
+}
+.line-bottom
 {
-  border-bottom: 2px solid #808000 ;
-  width: 60%;
+  border-top: 2px solid #808000 ;
+  width: 100%;
   margin-bottom: 5px;
+  margin-top: 10px;
   border-spacing: 20px;
 }
 .bg-light {
@@ -8143,4 +8150,8 @@ color: #808000;
 }
 .flip{
     color: #8a7777;
+}
+a{
+    font-family: "Open Sans";
+
 }

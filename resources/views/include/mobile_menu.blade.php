@@ -2,10 +2,18 @@
     <li class="nav-item hidden-xs"><a class="nav-link" href="admission-procedure-domestic.html">
             Admissions</a>
         <ul class="dropdown-menu">
-            <li><a href="">How to Apply</a></li>
-            <li><a href="">Career Test</a></li>
-            <li><a href="education-loan.html">Education Loan</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
+
+            <li><a href="{{ route('course_list') }}">Online Admission</a></li>
+
+            <?php $admissions = DB::table('pages')->where('page_type','admission')->get();
+            ?>
+            @foreach($admissions as $admission)
+            <li><a href="{{ route('admission', $admission->title )  }}"> {{ $admission->sub_title }}</a></li>
+            @endforeach
+            <li><a href="{{ route('course_list') }}">Admission Enquiry</a></li>
+
+            <li><a href="{{ route('career') }}">Career Test</a></li>
+            <li><a href="https://neevfinance.hagnosoft.com/webform">Education Loan</a></li>
         </ul>
     </li>
 

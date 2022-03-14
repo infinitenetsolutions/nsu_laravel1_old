@@ -37,109 +37,14 @@
     <link href="{{ asset('css/responsive2.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/ajax_stylesheet.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/dynamic_home.css') }}" type="text/css" rel="stylesheet" />
-    <link href="../cdn.linearicons.com/free/1.0.0/icon-font.min.css') }}" type="text/css" rel="stylesheet" />
+    <link href="http://cdn.linearicons.com/free/1.0.0/icon-font.min.css" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/Print.css') }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/footer.css')}}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#txtsearch').keyup(function() {
-                GetGraduateCourse();
-            });
-
-            $('html').click(function() {
-                $("#courselist").attr("style", "display:none");
-            });
-        });
-
-        function graduate(e) {
-            //console.log(e.text());
-            $("#txtsearch").val(e.text())
-            $("#courselist").attr("style", "display:none");
-        }
-
-        function SearchTerm() {
-            return jQuery.trim($("[id*=txtsearch]").val());
-        };
-
-        var row;
-
-        function OnSuccess(response) {
-            var row = 0;
-            var xmlDoc = $.parseXML(response.d);
-            var xml = $(xmlDoc);
-            var customers = xml.find("Customers");
-            // alert(customers.length);
-            if (customers.length > 0) {
-                $("#courselist").removeAttr("style");
-                $('#courselist li').remove();
-                $.each(customers, function() {
-                    row = row + 1;
-                    var list = $("#courselist");
-                    //list.append('<li onClick="graduate($(this))" id="' + row + '" >' + $(this).find("CourseFullname").text() + '</li>');
-
-                    list.append('<li onClick="graduate($(this))" id="' + row + '" >' + $(this).find("CourseFullname").text() + '</li>');
-                });
-            } else {
-                $('#courselist li').remove();
-                $("#courselist").removeAttr("style");
-                var list = $("#courselist");
-                list.append('<li id="' + row + '" >There are no course found. </li>');
-            }
-        };
-    </script>
+   
 
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#txtsearchpg').keyup(function() {
-                GetPostGraduateCourse();
-            });
-            //$('#openhouse').modal('show');
-
-
-            $('html').click(function() {
-                $("#postcourselist").attr("style", "display:none");
-            });
-        });
-
-        function postgraduate(e) {
-            //console.log(e.text());
-            $("#txtsearchpg").val(e.text())
-            $("#postcourselist").attr("style", "display:none");
-        }
-
-        function SearchTermPost() {
-            return jQuery.trim($("[id*=txtsearchpg]").val());
-        };
-
-
-        var row;
-
-        function OnSuccessPost(response) {
-            var row = 0;
-            var xmlDoc = $.parseXML(response.d);
-            var xml = $(xmlDoc);
-            var customers = xml.find("Customers");
-            if (customers.length > 0) {
-                $("#postcourselist").removeAttr("style");
-                $('#postcourselist li').remove();
-                $.each(customers, function() {
-                    row = row + 1;
-                    var list = $("#postcourselist");
-                    list.append('<li onClick="postgraduate($(this))" id="' + row + '" >' + $(this).find("CourseFullname").text() + '</li>');
-                });
-            } else {
-                $('#postcourselist li').remove();
-                $("#postcourselist").removeAttr("style");
-                var list = $("#postcourselist");
-                list.append('<li id="' + row + '" >There are no course found. </li>');
-            }
-        };
-    </script>
-
-    <!-- Google Tag Manager -->
 
 
 </head>

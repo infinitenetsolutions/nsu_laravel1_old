@@ -6,7 +6,7 @@
             <h1 class="text-white text-center mt-5">Admission
 
                 <a style="font-size: 20px" class="nav-link apply_btn text-white btn btn-warning mt-4"
-                    href="apply-now5034.html?1=1">Apply Now
+                    href="{{ route('course_list') }}">Apply Now
                     {{ date('Y') }}</a>
 
             </h1>

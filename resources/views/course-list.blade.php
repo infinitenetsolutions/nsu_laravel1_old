@@ -1,4 +1,5 @@
 <x-layout1>
+
     @slot('body')
         <section class="inner-page">
             <div class="inner-hadding">
@@ -42,89 +43,43 @@
 
 
                                         <ul>
-                                            @foreach ($courses as $course)
-                                                <li><a href="javascript:void(0);" class="link" data-toggle="modal"
-                                                        data-target="#detail{{ $course->id }}">{{ $course->course }}</a>
-                                                </li>
-
-                                                <div class="modal fade" id="detail{{ $course->id }}" tabindex="-1"
-                                                    role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-body">
-                                                                <a href="javascript:void(0);" class="close"
-                                                                    data-dismiss="modal" aria-label="Close">
-                                                                    <span class="lnr lnr-cross-circle"></span>
-                                                                </a>
-                                                                <div class="slide_content">
-                                                                    <div class="row">
-
-                                                                        <div class="col-lg-12">
-                                                                            <h3 class="mt-0 mb-4">
-                                                                                {{ $course->course }}
-                                                                                {{ $course->fullform }}
-
-                                                                                <p class="text-gray"> Program -
-                                                                                    {{ $program->program }} </p>
-                                                                            </h3>
-
-                                                                        </div>
-                                                                        <?php $courses_details = DB::table('course_details')
-                                                                            ->where('course_id', $course->id)
-                                                                            ->get(); ?>
-                                                                        @foreach ($courses_details as $course_d)
-                                                                            <div class="col-lg-6 text-justify text-gray">
-                                                                                <p class="text-muted1">
-
-                                                                                    <?php echo $course_d->about; ?>
 
 
-                                                                                </p>
-                                                                                <br>
+
+                                            <table class="table table-one table-bordered table-responsive-lg">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th>Course name</th>
+                                                        <th>Duration</th>
+                                                        <th>Semester</th>
+                                                        <th>Fees</th>
+                                                        <th>Type</th>
+                                                        <th>Details</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach ($courses as $course)
+                                                        <tr>
+                                                            <td><a href="javascript:void(0);" class="link"
+                                                                    data-toggle="modal"
+                                                                    data-target="#detail{{ $course->id }}">{{ $course->course }}</a>
+                                                            </td>
+                                                            <td>{{ $course->duration }} years</td>
+                                                            <td>{{ ((int) $course->duration) * 2 }} semesters</td>
+                                                            <td> <i class="fas fa-rupee-sign    "></i> 
+                                                                {{ $course->fee }}/ semester</td>
+                                                            <td>{{ $course->type }}</td>
+                                                            <td> <a
+                                                                    href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">View more</a>
+                                                            </td>
+
+                                                        </tr>
+                                                    @endforeach
 
 
-                                                                            </div>
-                                                                            <div class="col-lg-6 text-justify ">
-                                                                                <p>
-                                                                                    <?php echo $course_d->offered; ?>
-
-
-                                                                                </p>
-                                                                                <p>
-                                                                                    <?php echo $course_d->fee; ?>
-
-
-                                                                                </p>
-                                                                                <div class="course_btns">
-                                                                                    <span
-                                                                                        id="ctl00_ContentPlaceHolder1_repcoursebind_ctl23_repinnernew_ctl00_repinner1_ctl00_lblprogramclose"
-                                                                                        style="color:Red;"></span>
-                                                                                    <br />
-                                                                                    <a id="ctl00_ContentPlaceHolder1_repcoursebind_ctl23_repinnernew_ctl00_repinner1_ctl00_lnkbtnview"
-                                                                                        class="btn btn-warning"
-                                                                                        href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$repcoursebind$ctl23$repinnernew$ctl00$repinner1$ctl00$lnkbtnview&#39;,&#39;&#39;)">View
-                                                                                        Course Structure</a>
-
-                                                                                    <a id="ctl00_ContentPlaceHolder1_repcoursebind_ctl23_repinnernew_ctl00_repinner1_ctl00_lnknotapp"
-                                                                                        disabled="disabled"
-                                                                                        class="btn btn-primary  disabled"
-                                                                                        style="text-transform: initial!important; font-weight: normal; font: 800 15px 'Open Sans',Helvetica, Arial, sans-serif; margin-left: 0;">Admission
-                                                                                        Not Open</a>
-                                                                                    <br />
-                                                                                    <span
-                                                                                        id="ctl00_ContentPlaceHolder1_repcoursebind_ctl23_repinnernew_ctl00_repinner1_ctl00_lblCovid19"></span>
-
-                                                                                </div>
-                                                                            </div>
-                                                                        @endforeach
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endforeach
+                                                </tbody>
+                                            </table>
 
                                         </ul>
                                     </li>
