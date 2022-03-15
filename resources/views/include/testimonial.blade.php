@@ -330,7 +330,7 @@
     }
 
     .testimonial-item {
-        height: 65vh !important;
+        height: 60vh !important;
     }
 
     @media(max-width:675px) {
@@ -338,7 +338,7 @@
             padding-top: 50px;
         }
         .testimonial-item {
-            height: 90vh !important;
+            height: 100vh !important;
         }
 
         .testimonial4_slide {

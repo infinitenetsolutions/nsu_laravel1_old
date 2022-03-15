@@ -39,7 +39,7 @@
                         @elseif($data[0]->type == 'hod')
                             <h2>Head Of Department</h2>
                         @else
-                           <h2> {{ $data[0]->type }}</h2>
+                            <h2> {{ $data[0]->type }}</h2>
                         @endif
                         <a class="row p-2" href="{{ route('index') }}">
 
@@ -69,10 +69,11 @@
                                         <?php $social_media = DB::table('social')
                                             ->where('teacher_id', $faculty->id)
                                             ->get(); ?>
-                                        <ul class="styled-icons team-social icon-sm">
+                                        <ul class="styled-icons theme-icon team-social icon-sm ml-5">
                                             @foreach ($social_media as $social)
-                                                <li><a target="_blank" href="{{ $social->link }}"><i
-                                                            class="fa fa-{{ $social->social }}"></i></a></li>
+                                                <li class="pt-4"><a target="_blank"
+                                                        href="{{ $social->link }}"><i
+                                                            class="fab fa-{{ $social->social }}"></i></a></li>
                                             @endforeach
 
                                         </ul>

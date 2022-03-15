@@ -115,73 +115,73 @@
         <!--end Student life Section -->
         <!-- Research Spotlight Section -->
         <!-- <section class="home-sec4 mydiv">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                <div class="home-sec4-colm1">
-                                                    <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
-                                                    <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
-                                                        Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
-                                                    <ul>
-                                                        <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
-                                                        <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
-                                                        <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                <div class="home-sec4-colm2">
-                                                    <ul>
-                                                        <li class="wow fadeInDown">
-                                                            <h3>15000</h3>
-                                                            <p>Research Publications</p>
-                                                        </li>
-                                                        <li class="wow fadeInDown">
-                                                            <h3>500</h3>
-                                                            <p>Books in diverse area</p>
-                                                        </li>
-                                                        <li class="wow fadeInDown">
-                                                            <h3>300</h3>
-                                                            <p>Govt. Funded Research Projects </p>
-                                                        </li>
-                                                        <li class="wow fadeInDown">
-                                                            <h3>100+</h3>
-                                                            <p>Patents Filed by Brilliant Students </p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                <div class="home-sec4-colm3">
-                                                    <div class="owl-carousel owl-carousel4 owl-theme">
-                                                        <div class="item">
-                                                            <ul>
-                                                                <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
-                                                                    <h4>Resonance Raman and Electronic...</h4>
-                                                                </li>
-                                                                <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
-                                                                    <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                                </li>
-                                                            </ul>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                                            <div class="home-sec4-colm1">
+                                                                <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
+                                                                <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
+                                                                    Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
+                                                                <ul>
+                                                                    <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
+                                                                    <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
+                                                                    <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="item">
-                                                            <ul>
-                                                                <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
-                                                                    <h4>Resonance Raman and Electronic...</h4>
-                                                                </li>
-                                                                <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
-                                                                    <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                                </li>
-                                                            </ul>
+                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                                            <div class="home-sec4-colm2">
+                                                                <ul>
+                                                                    <li class="wow fadeInDown">
+                                                                        <h3>15000</h3>
+                                                                        <p>Research Publications</p>
+                                                                    </li>
+                                                                    <li class="wow fadeInDown">
+                                                                        <h3>500</h3>
+                                                                        <p>Books in diverse area</p>
+                                                                    </li>
+                                                                    <li class="wow fadeInDown">
+                                                                        <h3>300</h3>
+                                                                        <p>Govt. Funded Research Projects </p>
+                                                                    </li>
+                                                                    <li class="wow fadeInDown">
+                                                                        <h3>100+</h3>
+                                                                        <p>Patents Filed by Brilliant Students </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                                            <div class="home-sec4-colm3">
+                                                                <div class="owl-carousel owl-carousel4 owl-theme">
+                                                                    <div class="item">
+                                                                        <ul>
+                                                                            <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
+                                                                                <h4>Resonance Raman and Electronic...</h4>
+                                                                            </li>
+                                                                            <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
+                                                                                <h4>Hydrogen peroxide vapor sensor...</h4>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <ul>
+                                                                            <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
+                                                                                <h4>Resonance Raman and Electronic...</h4>
+                                                                            </li>
+                                                                            <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
+                                                                                <h4>Hydrogen peroxide vapor sensor...</h4>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <abbr class="all-research-btn"><a href="research.html">View All Research <img
+                                                                        src="images/arrow-icon.png"></a></abbr>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <abbr class="all-research-btn"><a href="research.html">View All Research <img
-                                                            src="images/arrow-icon.png"></a></abbr>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section> -->
+                                            </section> -->
 
         <section class="p-3 mydiv">
             <div class="container">
@@ -293,41 +293,56 @@
         </section>
 
         <!-- head of department -->
-        <section class="scholarship-scheme-sec5">
+        <section class="scholarship-scheme-sec5 ">
             <div class="container">
+                <h2 class="text-uppercase text-dark carousel-inner title wow fadeInDown ">Head of <span
+                        class="text-warning">University </span>
+                </h2>
+                <span class="line-bottom carousel-inner ml-5 pl-5 text-warning "> &nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <ul class="row">
-                    <li class="col-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="scheme-sec5-content">
-                            <span><img src="images/scholarship-d-oberoi-img1.png"></span>
-                            <h4>Disha Oberoi</h4>
-                            <h5>93.80% in Class XII</h5>
-                            <p>100% Amity Scholarship in B.Tech. (Biotech.)</p>
+                    @foreach ($hou as $university_head)
+                        <div class="col-md-3 ">
+                            <div class="team-members maxwidth400 mb-30">
+                                <div class="team-thumb">
+                                    <img height="140px" src="{{ $url . 'teacher/' . $university_head->image_name }}"
+                                        alt="" class="img-fluid teachers">
+                                </div>
+                                <div class="team-bottom-part bg-silver-deep  p-2 bg-white">
+                                    <h4
+                                        class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
+                                        {{ substr($university_head->name, 0, 20) }} <span
+                                            class="text-gray font-13 p-2 ">-
+                                            <br>
+                                            {{ $university_head->designation }}</span>
+                                    </h4>
+                                    <p class="font-13 text-justify">
+                                        <?php echo substr($university_head->description, 0, 120); ?>.. <a
+                                            href="{{ route('faculty-details', $university_head->id) }}"
+                                            class="text-danger font-13">
+                                            View details</a>
+                                    </p>
+                                    <?php $social_media = DB::table('social')
+                                        ->where('teacher_id', $university_head->id)
+                                        ->get(); ?>
+                                    <div class="text-center">
+                                        <ul class="styled-icons1  icon-theme-colored2 d-flex ">
+                                            @foreach ($social_media as $social)
+                                                <li class="ml-2 mb-2  rounded-circle border "><a
+                                                        class="text-white font-13 p-0 text-center rounded-circle"
+                                                        target="_blank" class="text-center"
+                                                        href="{{ $social->link }}"><i
+                                                            class="fa fa-{{ $social->social }}"></i></a></li>
+                                            @endforeach
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li class="col-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="scheme-sec5-content">
-                            <span><img src="images/scholarship-nam-bhushan-img1.png"></span>
-                            <h4>Namrata Bhushan</h4>
-                            <h5>93.50% in Class XII</h5>
-                            <p>100% Amity Scholarship in B.Tech. (CSE)</p>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="scheme-sec5-content">
-                            <span><img src="images/scholarship-sh-goel-img1.png"></span>
-                            <h4>Shashwat Goel</h4>
-                            <h5>93.40% in Class XII</h5>
-                            <p>100% Amity Scholarship in B.Tech. (ECE)</p>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-3 col-lg-3 col-xl-3">
-                        <div class="scheme-sec5-content">
-                            <span><img src="images/scholarship-ch-syai-img1.png"></span>
-                            <h4>Charvi Syal</h4>
-                            <h5>93.60% in Class XII</h5>
-                            <p>100% Amity Scholarship in B.Sc. (H) Medical Biotech</p>
-                        </div>
-                    </li>
+                    @endforeach
+
                 </ul>
             </div>
         </section>
@@ -346,146 +361,48 @@
                     <a href="event-listc0ce.html?Events=Events">View More
                         <img src="images/arrow-icon.png"></a></abbr>
                 <div class="tab-content myTabContent">
-                    <h4 class="collapsible_heading open">Events <span class="lnr lnr-chevron-down"></span></h4>
+                    <h4 class="collapsible_heading open">Events <i class="lnr fas fa-calendar-alt "></i></h4>
                     <div class="tab-pane active" id="events">
                         <ul class="row">
+                            @foreach ($events as $event)
+                                <li class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="{{ route('event', $event->id) }}">
+                                        <div class="happening-colm-color layer-overlay testimonial "  style="background-image: url('{{ $url . 'event/' . $event->images}}');     background-attachment: inherit;                                            ">
+                                            <div class="happ-content" >
+                                                <a class="d-flex carousel-inner " href="{{ route('event', $event->id) }}">
+                                                    <span class="carousel-inner" >Events</span>
 
+                                                    <span class="ml-2 font-weight-bold carousel-inner"><i
+                                                        class="fas fa-calendar text-theme-colored2"></i>
+                                                     {{ explode('-', $event->timing)[2] }}
+                                                     {{ date_format(date_create($event->timing), 'M') }} </span>
+                                                </a>
+                   
+                                              
+                                                <h5 class=" carousel-inner font-16 font-weight-600 mb-5"><a class="text-white"
+                                                        href="{{ route('event', $event->id) }}">
+                                                        {{ $event->name }}</a></h5>
+                                                <a class="d-flex carousel-inner " href="{{ route('event', $event->id) }}">
+                                                    <div class="event-content d-flex ">
 
-                            <input type="hidden" name="homeevent1$rptEvents$ctl00$hfImage"
-                                id="homeevent1_rptEvents_ctl00_hfImage"
-                                value="11721_266366667_2189123801241716_5079797983458635981_n.html" />
-                            <input type="hidden" name="homeevent1$rptEvents$ctl00$hfEventId"
-                                id="homeevent1_rptEvents_ctl00_hfEventId" value="11721" />
-                            <li id="homeevent1_rptEvents_ctl00_divwithoutimg" class="col-12 col-md-4 col-lg-4 col-xl-4">
-
-
-                                <a href="event-detail-normal2d6a.html?ot=1&amp;Event=11721&amp;Events=Events">
-                                    <div class="happening-colm-color" style="background-color:#;">
-                                        <div class="happ-content">
-                                            <span>Events</span>
-                                            <h3>Role of NSS Volunteers in Nation Building</h3>
+                                                        <span class="mr-2"><i
+                                                                class="fa fa-clock-o text-theme-colored2"></i>
+                                                            {{ $event->start }}
+                                                            pm - {{ $event->end }} pm</span>
+                                                        <span> <i class="fa fa-map-marker text-theme-colored2"></i>
+                                                            {{ $event->title }}</span>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </li>
-
-
-
-
-                            <input type="hidden" name="homeevent1$rptEvents$ctl01$hfImage"
-                                id="homeevent1_rptEvents_ctl01_hfImage"
-                                value="11662_260444849_2171101663043930_4054563017674972022_n.html" />
-                            <input type="hidden" name="homeevent1$rptEvents$ctl01$hfEventId"
-                                id="homeevent1_rptEvents_ctl01_hfEventId" value="11662" />
-                            <li id="homeevent1_rptEvents_ctl01_divwithoutimg" class="col-12 col-md-4 col-lg-4 col-xl-4">
-
-
-                                <a href="event-detail-normal65b9.html?ot=1&amp;Event=11662&amp;Events=Events">
-                                    <div class="happening-colm-color" style="background-color:#;">
-                                        <div class="happ-content">
-                                            <span>Events</span>
-                                            <h3>IIC Calender Activity "Pitching Event for Ideas Scouted & linkage with
-                                                Innovation Ambassadors for ...</p>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-
-
-
-                            <input type="hidden" name="homeevent1$rptEvents$ctl02$hfImage"
-                                id="homeevent1_rptEvents_ctl02_hfImage"
-                                value="11661_258824051_2170199136467516_2262287588459188356_n.html" />
-                            <input type="hidden" name="homeevent1$rptEvents$ctl02$hfEventId"
-                                id="homeevent1_rptEvents_ctl02_hfEventId" value="11661" />
-                            <li id="homeevent1_rptEvents_ctl02_divwithoutimg" class="col-12 col-md-4 col-lg-4 col-xl-4">
-
-
-                                <a href="event-detail-normaldf37.html?ot=1&amp;Event=11661&amp;Events=Events">
-                                    <div class="happening-colm-color" style="background-color:#;">
-                                        <div class="happ-content">
-                                            <span>Events</span>
-                                            <h3>Innovations and Research with Machine Learning</h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-
-
-
-                            <input type="hidden" name="homeevent1$rptEvents$ctl03$hfImage"
-                                id="homeevent1_rptEvents_ctl03_hfImage"
-                                value="11665_261447098_2176883079132455_5114143528537815031_n.html" />
-                            <input type="hidden" name="homeevent1$rptEvents$ctl03$hfEventId"
-                                id="homeevent1_rptEvents_ctl03_hfEventId" value="11665" />
-                            <li id="homeevent1_rptEvents_ctl03_divwithoutimg" class="col-12 col-md-4 col-lg-4 col-xl-4">
-
-
-                                <a href="event-detail-normalc31d.html?ot=1&amp;Event=11665&amp;Events=Events">
-                                    <div class="happening-colm-color" style="background-color:#;">
-                                        <div class="happ-content">
-                                            <span>Events</span>
-                                            <h3>Round Table Discussion on Hand Hygiene organised at
-                                                #AmityUniversityRaipur
-                                                in collaboration with ...</p>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-
-
-
-                            <input type="hidden" name="homeevent1$rptEvents$ctl04$hfImage"
-                                id="homeevent1_rptEvents_ctl04_hfImage"
-                                value="11660_258170700_2164588150361948_7154654576420297306_n.html" />
-                            <input type="hidden" name="homeevent1$rptEvents$ctl04$hfEventId"
-                                id="homeevent1_rptEvents_ctl04_hfEventId" value="11660" />
-                            <li id="homeevent1_rptEvents_ctl04_divwithoutimg" class="col-12 col-md-4 col-lg-4 col-xl-4">
-
-
-                                <a href="event-detail-normala7f9.html?ot=1&amp;Event=11660&amp;Events=Events">
-                                    <div class="happening-colm-color" style="background-color:#;">
-                                        <div class="happ-content">
-                                            <span>Events</span>
-                                            <h3>Visit to Sparsh ek Koshish welfare foundation </h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-
-
-
-                            <input type="hidden" name="homeevent1$rptEvents$ctl05$hfImage"
-                                id="homeevent1_rptEvents_ctl05_hfImage"
-                                value="11654_248411158_2149272175226879_4975506977447386671_n.html" />
-                            <input type="hidden" name="homeevent1$rptEvents$ctl05$hfEventId"
-                                id="homeevent1_rptEvents_ctl05_hfEventId" value="11654" />
-                            <li id="homeevent1_rptEvents_ctl05_divwithoutimg" class="col-12 col-md-4 col-lg-4 col-xl-4">
-
-
-                                <a href="event-detail-normal433b.html?ot=1&amp;Event=11654&amp;Events=Events">
-                                    <div class="happening-colm-color" style="background-color:#;">
-                                        <div class="happ-content">
-                                            <span>Events</span>
-                                            <h3>General Health Check-Up</h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-
-
-
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
-                    <h4 class="collapsible_heading">Media Coverage <span class="lnr lnr-chevron-down"></span></h4>
-                    <div class="tab-pane" id="media-coverage">
+                    <h4 class="collapsible_heading">Media Coverage <i class="fas fa-newspaper lnr lnr-chevron-down"></i>
+                    </h4>
+                    <div class="tab-pane tab-pane-events " id="media-coverage">
                         <ul class="row">
 
                             <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
