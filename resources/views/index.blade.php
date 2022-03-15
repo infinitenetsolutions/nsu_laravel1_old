@@ -115,73 +115,73 @@
         <!--end Student life Section -->
         <!-- Research Spotlight Section -->
         <!-- <section class="home-sec4 mydiv">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                            <div class="home-sec4-colm1">
-                                                                <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
-                                                                <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
-                                                                    Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
-                                                                <ul>
-                                                                    <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
-                                                                    <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
-                                                                    <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                            <div class="home-sec4-colm2">
-                                                                <ul>
-                                                                    <li class="wow fadeInDown">
-                                                                        <h3>15000</h3>
-                                                                        <p>Research Publications</p>
-                                                                    </li>
-                                                                    <li class="wow fadeInDown">
-                                                                        <h3>500</h3>
-                                                                        <p>Books in diverse area</p>
-                                                                    </li>
-                                                                    <li class="wow fadeInDown">
-                                                                        <h3>300</h3>
-                                                                        <p>Govt. Funded Research Projects </p>
-                                                                    </li>
-                                                                    <li class="wow fadeInDown">
-                                                                        <h3>100+</h3>
-                                                                        <p>Patents Filed by Brilliant Students </p>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                            <div class="home-sec4-colm3">
-                                                                <div class="owl-carousel owl-carousel4 owl-theme">
-                                                                    <div class="item">
-                                                                        <ul>
-                                                                            <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
-                                                                                <h4>Resonance Raman and Electronic...</h4>
-                                                                            </li>
-                                                                            <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
-                                                                                <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                                            </li>
-                                                                        </ul>
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                                                        <div class="home-sec4-colm1">
+                                                                            <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
+                                                                            <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
+                                                                                Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
+                                                                            <ul>
+                                                                                <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
+                                                                                <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
+                                                                                <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
+                                                                            </ul>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="item">
-                                                                        <ul>
-                                                                            <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
-                                                                                <h4>Resonance Raman and Electronic...</h4>
-                                                                            </li>
-                                                                            <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
-                                                                                <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                                            </li>
-                                                                        </ul>
+                                                                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                                                        <div class="home-sec4-colm2">
+                                                                            <ul>
+                                                                                <li class="wow fadeInDown">
+                                                                                    <h3>15000</h3>
+                                                                                    <p>Research Publications</p>
+                                                                                </li>
+                                                                                <li class="wow fadeInDown">
+                                                                                    <h3>500</h3>
+                                                                                    <p>Books in diverse area</p>
+                                                                                </li>
+                                                                                <li class="wow fadeInDown">
+                                                                                    <h3>300</h3>
+                                                                                    <p>Govt. Funded Research Projects </p>
+                                                                                </li>
+                                                                                <li class="wow fadeInDown">
+                                                                                    <h3>100+</h3>
+                                                                                    <p>Patents Filed by Brilliant Students </p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                                                                        <div class="home-sec4-colm3">
+                                                                            <div class="owl-carousel owl-carousel4 owl-theme">
+                                                                                <div class="item">
+                                                                                    <ul>
+                                                                                        <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
+                                                                                            <h4>Resonance Raman and Electronic...</h4>
+                                                                                        </li>
+                                                                                        <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
+                                                                                            <h4>Hydrogen peroxide vapor sensor...</h4>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="item">
+                                                                                    <ul>
+                                                                                        <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
+                                                                                            <h4>Resonance Raman and Electronic...</h4>
+                                                                                        </li>
+                                                                                        <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
+                                                                                            <h4>Hydrogen peroxide vapor sensor...</h4>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <abbr class="all-research-btn"><a href="research.html">View All Research <img
+                                                                                    src="images/arrow-icon.png"></a></abbr>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <abbr class="all-research-btn"><a href="research.html">View All Research <img
-                                                                        src="images/arrow-icon.png"></a></abbr>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section> -->
+                                                        </section> -->
 
         <section class="p-3 mydiv">
             <div class="container">
@@ -367,22 +367,25 @@
                             @foreach ($events as $event)
                                 <li class="col-12 col-md-4 col-lg-4 col-xl-4">
                                     <a href="{{ route('event', $event->id) }}">
-                                        <div class="happening-colm-color layer-overlay testimonial "  style="background-image: url('{{ $url . 'event/' . $event->images}}');     background-attachment: inherit;                                            ">
-                                            <div class="happ-content" >
-                                                <a class="d-flex carousel-inner " href="{{ route('event', $event->id) }}">
-                                                    <span class="carousel-inner" >Events</span>
+                                        <div class="happening-colm-color layer-overlay testimonial "
+                                            style="background-image: url('{{ $url . 'event/' . $event->images }}');     background-attachment: inherit;                                            ">
+                                            <div class="happ-content">
+                                                <a class="d-flex carousel-inner "
+                                                    href="{{ route('event', $event->id) }}">
+                                                    <span class="carousel-inner">Events</span>
 
                                                     <span class="ml-2 font-weight-bold carousel-inner"><i
-                                                        class="fas fa-calendar text-theme-colored2"></i>
-                                                     {{ explode('-', $event->timing)[2] }}
-                                                     {{ date_format(date_create($event->timing), 'M') }} </span>
+                                                            class="fas fa-calendar text-theme-colored2"></i>
+                                                        {{ explode('-', $event->timing)[2] }}
+                                                        {{ date_format(date_create($event->timing), 'M') }} </span>
                                                 </a>
-                   
-                                              
-                                                <h5 class=" carousel-inner font-16 font-weight-600 mb-5"><a class="text-white"
-                                                        href="{{ route('event', $event->id) }}">
+
+
+                                                <h5 class=" carousel-inner font-16 font-weight-600 mb-5"><a
+                                                        class="text-white" href="{{ route('event', $event->id) }}">
                                                         {{ $event->name }}</a></h5>
-                                                <a class="d-flex carousel-inner " href="{{ route('event', $event->id) }}">
+                                                <a class="d-flex carousel-inner "
+                                                    href="{{ route('event', $event->id) }}">
                                                     <div class="event-content d-flex ">
 
                                                         <span class="mr-2"><i
@@ -405,107 +408,30 @@
                     <div class="tab-pane tab-pane-events " id="media-coverage">
                         <ul class="row">
 
-                            <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
-                                    <div id="homeevent1_repmedia_ctl00_divtop" class="happening-colm-color"
-                                        style="background-color: #df9427;">
-                                        <div class="happ-content">
-                                            <ol>
-                                                <li>
-                                                    11 Feb 2022 </li>
-                                                <li>
-                                                    Financial Express</li>
-                                            </ol>
-                                            <h3>
-                                                Are you ready to ride out a financial crisis?- Article by Faculty of ABS
-                                            </h3>
+                            @foreach ($news as $latest)
+                                <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a
+                                        href="media-coverage42b9.html?Media=Media">
+                                        <div id="homeevent1_repmedia_ctl00_divtop" class="happening-colm-color"
+                                            style="background-color: #df{{$latest->id}}429;">
+                                            <div class="happ-content">
+                                                <ol>
+                                                    <li>
+                                                        {{ substr(explode('-', $latest->updated_at)[2], 0, 2) }}  {{ date_format(date_create($latest->updated_at), 'M - Y') }} </li>
+                                                    <li>
+                                                        {{ $latest->title }}</li>
+                                                </ol>
+                                                <h3 >
+                                                    <p class="text-white"><?php echo substr($latest->massage, 0, 160); ?></p>..<a class="btn btn-sm text-dark btn-flat font-12 mt-10 ml-5"
+                                                    href="{{ route('news', ['id' => $latest->id]) }}"> View
+                                                    Details</a>
+                                                </h3>
+                                           
+                                            </div>
                                         </div>
-                                    </div>
-                                </a></li>
+                                    </a>
+                                </li>
+                            @endforeach
 
-                            <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
-                                    <div id="homeevent1_repmedia_ctl01_divtop" class="happening-colm-color"
-                                        style="background-color: #9f1f30;">
-                                        <div class="happ-content">
-                                            <ol>
-                                                <li>
-                                                    04 Feb 2022 </li>
-                                                <li>
-                                                    Amar Ujala</li>
-                                            </ol>
-                                            <h3>
-                                                Amity Celebrates World Wetland Day</h3>
-                                        </div>
-                                    </div>
-                                </a></li>
-
-                            <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
-                                    <div id="homeevent1_repmedia_ctl02_divtop" class="happening-colm-color"
-                                        style="background-color: #006690;">
-                                        <div class="happ-content">
-                                            <ol>
-                                                <li>
-                                                    04 Feb 2022 </li>
-                                                <li>
-                                                    Dainik Jagran</li>
-                                            </ol>
-                                            <h3>
-                                                Amity Celebrates World Wetland Day</h3>
-                                        </div>
-                                    </div>
-                                </a></li>
-
-                            <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
-                                    <div id="homeevent1_repmedia_ctl03_divtop" class="happening-colm-color"
-                                        style="background-color: #006690;">
-                                        <div class="happ-content">
-                                            <ol>
-                                                <li>
-                                                    04 Feb 2022 </li>
-                                                <li>
-                                                    Telegraph</li>
-                                            </ol>
-                                            <h3>
-                                                Amity University Online joins hands with TCS iON for industry ready
-                                                courses
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </a></li>
-
-                            <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
-                                    <div id="homeevent1_repmedia_ctl04_divtop" class="happening-colm-color">
-                                        <div class="happ-content">
-                                            <ol>
-                                                <li>
-                                                    02 Feb 2022 </li>
-                                                <li>
-                                                    Telegraph</li>
-                                            </ol>
-                                            <h3>
-                                                Amity University Online joins hands with TCS iON for industry ready
-                                                courses
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </a></li>
-
-                            <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
-                                    <div id="homeevent1_repmedia_ctl05_divtop" class="happening-colm-color"
-                                        style="background-color: #df9427;">
-                                        <div class="happ-content">
-                                            <ol>
-                                                <li>
-                                                    02 Feb 2022 </li>
-                                                <li>
-                                                    Shiksha News</li>
-                                            </ol>
-                                            <h3>
-                                                Amity University Online joins hands with TCS iON for industry ready
-                                                courses
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </a></li>
 
                         </ul>
                     </div>
