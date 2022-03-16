@@ -27,7 +27,8 @@
     <link href="{{ asset('css/responsive2.css') }}" rel="stylesheet">
     <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
     <link href="{{ asset('css/dynamic_home.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
     <!-- Google Tag Manager -->
 
@@ -35,7 +36,7 @@
 
     <!-- End Google Tag Manager -->
 
-<body id="page-top" >
+<body id="page-top">
 
 
 
@@ -49,60 +50,62 @@
         <div class="inner-hadding">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="{{route('index')}}">Home</a>
-                  <a href="#">Gallery</a>
-                  <a href="#">Media  Gallery</a>
+                    <a href="{{ route('index') }}">Home</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Media Gallery</a>
                 </div>
-            <div class="container">
-                <div class="top-menu-sec">
-                    <h4>Gallery</h4>
-                    <ul>
-
+            </div>
+                <div class="container">
+                    <div class="top-menu-sec">
+                        <h4>Gallery</h4>
                         <ul>
-                            <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
-                            <li><a href="{{ route('media-gallery') }}">Media Gallery</a>
-                            </li>
+
+                            <ul>
+                                <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
+                                <li><a href="{{ route('media-gallery') }}">Media Gallery</a>
+                                </li>
+                            </ul>
+
+
                         </ul>
-
-
-                    </ul>
-                </div>
-
-                <h2 class="text-university " > <i class="fas fa-newspaper    "></i>
-                    Media Gallery </h2>
-
-            </div>
-        </div>
-        <section class="inner_section media_coverage">
-            <div class="container event_detail">
-                <div class="col-12">
-                </div>
-                <section class="card-columns1 waterfall photo_gallery" style="height: 487.391px;">
-                    <div class="row">
-                        @foreach ($gallery_title as $image)
-                            <div class="col-sm-4 ">
-                                <a class="group1 cboxElement"
-                                    href="{{ $url . 'mediagallery/' . $image->image_name }}">
-                                    <div class="card-head">
-                                        <img class="card-img-top img-fluid"
-                                            src="{{ $url . 'mediagallery/' . $image->image_name }}" alt="Cafeteria">
-                                    </div>
-                                    <div class="card-block">
-                                        {{-- <h5 class="card-title"> <a href="{{ $image->link }}">more</a></h5> --}}
-                                    </div>
-                                </a>
-                            </div>
-                        @endforeach
                     </div>
-                    <div class="text-center">
-                        {{ $gallery_title->links() }}
-                    </div>
-                </section>
 
+                    <h2 class="text-university "> <i class="fas fa-newspaper    "></i>
+                        Media Gallery </h2>
 
-
+                </div>
             </div>
-        </section>
+            <section class="inner_section media_coverage">
+                <div class="container event_detail">
+                    <div class="col-12">
+                    </div>
+                    <section class="card-columns1 waterfall photo_gallery" style="height: 487.391px;">
+                        <div class="row">
+                            @foreach ($gallery_title as $image)
+                                <div class="col-sm-4 ">
+                                    <a class="group1 cboxElement"
+                                        href="{{ $url . 'mediagallery/' . $image->image_name }}">
+                                        <div class="card-head">
+                                            <img class="card-img-top img-fluid"
+                                                src="{{ $url . 'mediagallery/' . $image->image_name }}"
+                                                alt="Cafeteria">
+                                        </div>
+                                        <div class="card-block">
+                                            {{-- <h5 class="card-title"> <a href="{{ $image->link }}">more</a></h5> --}}
+                                        </div>
+                                    </a>
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="text-center">
+                            {{ $gallery_title->links() }}
+                        </div>
+                    </section>
+
+
+
+                </div>
+            </section>
 
 
 

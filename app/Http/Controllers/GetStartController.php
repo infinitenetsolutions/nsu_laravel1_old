@@ -9,8 +9,9 @@ use Throwable;
 class GetStartController extends Controller
 {
 
-    function 
-
+function index(){
+    return view('upgrade');
+}
     function store(Request $request)
     {
         try {
