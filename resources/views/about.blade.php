@@ -3,7 +3,6 @@
 
         </style>
         <section class="inner-page">
-            <div class="inner-hadding">
                 <div class="inner-hadding">
                     <div class=" ml-5 mr-5">
                         <div class="top-menu-sec">
@@ -26,7 +25,6 @@
                     </div>
                 </div>
 
-            </div>
 
             <div class="row ml-3 mr-3 ">
                 <div class="col-sm-9 ">
