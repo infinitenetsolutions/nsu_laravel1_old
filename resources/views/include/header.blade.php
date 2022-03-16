@@ -328,8 +328,8 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                     <div class="mega_menu ">
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link apply_btn" href="apply-now5034.html?1=1">Apply Now
-                        2022</a>
+                <li class="nav-item"><a class="nav-link apply_btn" href="https://nsucms.in/prospectus/public/">Apply Now
+                        {{date('Y')}}</a>
                 </li>
             </ul>
         </div>
