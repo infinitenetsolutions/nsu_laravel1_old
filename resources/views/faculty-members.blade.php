@@ -6,6 +6,24 @@
 
             <div class="inner-hadding">
                 <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{route('index')}}">Home</a>
+                      <a href="#">About </a>
+                      <a href="#">Faculty </a>
+
+                      @if ($data[0]->type == 'hou')
+                      <a href="{{ route('faculty', $data[0]->type) }}">
+                              Heade of University</a>
+                  @elseif($data[0]->type == 'hod')
+                      <a href="{{ route('faculty', $data[0]->type) }}">
+                              Heade of Department</a>
+                  @else
+                      <a href="{{ route('faculty', $data[0]->type) }}">Meet
+                              our {{ $data[0]->type }}</a>
+                  @endif
+                    </div>
+                </div>
+                <div class="container">
 
 
 

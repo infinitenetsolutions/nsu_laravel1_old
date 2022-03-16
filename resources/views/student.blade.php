@@ -1,8 +1,16 @@
 <x-layout1>
     @slot('body')
         <section class="inner-page">
+
             <div class="inner-hadding">
-                    <div class=" ml-5 mr-5">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{route('index')}}">Home</a>
+                      <a href="#">Student</a>
+                      <a href="#">{{$data->sub_title}}</a>
+                    </div>
+                </div>
+                    <div class="container">
                         <div class="top-menu-sec">
                             <ul>
                                 <h4>student</h4>

@@ -5,6 +5,13 @@
             <section class="inner-page">
                 <div class="inner-hadding">
                     <div class="container">
+                        <div class="breadcrumb">
+                            <a href="{{route('index')}}">Home</a>
+                          <a href="#">Gallery</a>
+                          <a href="#">Unversity Gallery</a>
+                        </div>
+                    </div>
+                    <div class="container">
 
                         <div class="top-menu-sec">
                             <h4>Gallery</h4>
@@ -15,9 +22,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <h2> <i class="fa fa-university" aria-hidden="true"></i>
-                            University Gallery </h2>
-
+                    
+                            <div class="p-3 ">
+                                <h2> <i class="fa fa-university" aria-hidden="true"></i>
+                                    University Gallery </h2>
+                                <a class="row p-2" href="{{ route('index') }}">
+    
+                                    <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                                    <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                                </a>
+                            </div>
                     </div>
                 </div>
                 <section class="inner_section event_list">

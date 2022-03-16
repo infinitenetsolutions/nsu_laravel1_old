@@ -2,25 +2,24 @@
     @slot('body')
         <section class="inner-page">
             <div class="inner-hadding">
-                <div class="inner-hadding">
-                    <div class=" ml-5 mr-5">
-                        <div class="top-menu-sec">
-                            <ul>
-                                <h4>About</h4>
-                                <li><a href="{{ route('index') }}">Home</a>
-                                </li>
-                                <li><a href="{{ route('contact') }}">Contact us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="p-2 ">
-                            <h2>Contact us</h2>
-                            <a class="row p-2" href="{{ route('index') }}">
+                
+                <div class="container">
+                    <div class="top-menu-sec">
+                        <ul>
+                            <h4>About</h4>
+                            <li><a href="{{ route('index') }}">Home</a>
+                            </li>
+                            <li><a href="{{ route('contact') }}">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-2 ">
+                        <h2>Contact us</h2>
+                        <a class="row p-2" href="{{ route('index') }}">
 
-                                <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
-                                <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
-                            </a>
-                        </div>
+                            <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                            <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -130,7 +129,7 @@
             <br>
             <hr>
             <div class="top_megamenu admission_box bg-warning1">
-                <div class="container admission_menu" style="display: block" >
+                <div class="container admission_menu" style="display: block">
 
                     <a class="close_btn2" href="javascript:void(0);"></a>
                     <div class="row">

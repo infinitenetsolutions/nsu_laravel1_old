@@ -29,6 +29,27 @@
                 <li><a href="{{ route('about', $about->title) }}">
                         {{ $about->sub_title }}</a></li>
             @endforeach
+
+            <?php $facultyes = DB::table('faculty_tbl')
+            ->distinct()
+            ->get(['type']);
+        ?>
+        @foreach ($facultyes as $faculty)
+            <li><a href="{{ route('faculty', $faculty->type) }}">Meet
+                    our {{ $faculty->type }}</a></li>
+        @endforeach
+        <?php $studentpdfs = DB::table('pdf')
+        ->where('type', 'aboutpdf')
+        ->limit(4)
+        ->get();
+    ?>
+       <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
+       @foreach ($studentpdfs as $studentpdf)
+           <li><a target="_blank"
+                   href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
+                   {{ $studentpdf->title }}</a>
+           </li>
+       @endforeach
         </ul>
     </li>
 

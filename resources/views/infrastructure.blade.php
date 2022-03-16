@@ -3,6 +3,13 @@
         <section class="inner-page">
             <div class="inner-hadding">
                 <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{route('index')}}">Home</a>
+                      <a href="#">Infrastructure</a>
+                      <a href="#">{{$data->sub_title}}</a>
+                    </div>
+                </div>
+                <div class="container">
 
 
                     <div class="top-menu-sec">

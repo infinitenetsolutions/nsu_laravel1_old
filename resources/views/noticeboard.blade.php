@@ -6,6 +6,12 @@
             <section class="inner-page">
                 <div class="inner-hadding mb-lg-4">
                     <div class="container">
+                        <div class="breadcrumb">
+                            <a href="{{route('index')}}">Home</a>
+                          <a href="#">Noticeboard</a>
+                          <a href="#">Noticeboard</a>
+                        </div>
+                    <div class="container">
 
                         <div class="top-menu-sec">
                             <h4>Noticeboard</h4>

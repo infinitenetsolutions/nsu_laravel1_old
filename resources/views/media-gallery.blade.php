@@ -48,9 +48,12 @@
 
         <div class="inner-hadding">
             <div class="container">
-
-
-
+                <div class="breadcrumb">
+                    <a href="{{route('index')}}">Home</a>
+                  <a href="#">Gallery</a>
+                  <a href="#">Media  Gallery</a>
+                </div>
+            <div class="container">
                 <div class="top-menu-sec">
                     <h4>Gallery</h4>
                     <ul>

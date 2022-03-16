@@ -49,9 +49,14 @@
 
         <div class="inner-hadding">
             <div class="container">
-
-
-
+                <div class="breadcrumb">
+                    <a href="{{route('index')}}">Home</a>
+                  <a href="{{ route('image-gallery') }}">Gallery</a>
+                  <a href="{{ route('image-gallery') }}"> University Gallery</a>
+                  <a href="#"> {{$gallery_title[0]->title}}</a>
+                </div>
+            </div>
+            <div class="container">
                 <div class="top-menu-sec">
                     <h4>Gallery</h4>
                     <ul>
@@ -66,7 +71,15 @@
                     </ul>
                 </div>
 
-                <h1>Photo Gallery</h1>
+                <div class="p-3 ">
+                    <h2> <i class="fa fa-university" aria-hidden="true"></i>
+                        Photo Gallery </h2>
+                    <a class="row p-2" href="{{ route('index') }}">
+
+                        <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                        <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                    </a>
+                </div>
 
             </div>
         </div>

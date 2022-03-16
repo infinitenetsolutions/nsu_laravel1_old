@@ -1,11 +1,16 @@
 <x-layout1>
     @slot('body')
 
-        </style>
         <section class="inner-page">
             <div class="inner-hadding">
-                <div class="inner-hadding">
-                    <div class=" ml-5 mr-5">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{route('index')}}">Home</a>
+                      <a href="">Placement</a>
+                      <a href="">{{$data->sub_title}}</a>
+                    </div>
+                </div>
+                    <div class="container">
                         <div class="top-menu-sec">
                             <ul>
                                 <h4>About</h4>
@@ -16,7 +21,7 @@
                             </ul>
                         </div>
                         <div class="p-2 ">
-                            <h2>{{ $data->title }}</h2>
+                            <h2>{{ $data->sub_title }}</h2>
                             <a class="row p-2" href="{{ route('index') }}">
 
                                 <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
@@ -26,7 +31,6 @@
                     </div>
                 </div>
 
-            </div>
 
             <div class="row ml-3 mr-3 ">
                 <div class="col-sm-9 ">

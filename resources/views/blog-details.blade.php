@@ -5,6 +5,12 @@
             <section class="inner-page">
                 <div class="inner-hadding">
                     <div class="container">
+                        <div class="breadcrumb">
+                            <a href="{{route('index')}}">Home</a>
+                          <a href="#">News</a>
+                          <a href="">Latest News</a>
+                        </div>
+                    </div>
 
                         <div class="top-menu-sec">
                             <h4>Home</h4>

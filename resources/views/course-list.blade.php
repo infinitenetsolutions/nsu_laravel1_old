@@ -5,7 +5,7 @@
             <div class="inner-hadding">
                 <div class="container">
                     <div class="breadcrumb">
-                        <a href="index-2.html">Home</a>
+                        <a href="{{route('index')}}">Home</a>
                         Programmes
                     </div>
                     <h1>Programmes</h1>

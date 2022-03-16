@@ -5,8 +5,13 @@
             <div class="inner-hadding">
                 <div class="container">
                     <div class="breadcrumb">
-                        <a href="index.aspx">Home</a> Careers
+                        <a href="{{route('index')}}">Home</a>
+                      <a href="">Career</a>
+                      <a href="">Test Caree</a>
                     </div>
+                </div>
+                <div class="container">
+                 
                     <div class="top-menu-sec">
                         <h4>Career</h4>
                         <ul>
@@ -20,7 +25,11 @@
                         </ul>
                     </div>
                     <h2 class="mt-2">Careers</h2>
+                    <a class="row p-2" href="{{ route('index') }}">
 
+                        <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                        <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                    </a>
                 </div>
             </div>
             <section class="careers-sec1">
