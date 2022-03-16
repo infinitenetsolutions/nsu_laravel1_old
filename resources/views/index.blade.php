@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                        <p class="wow fadeInUp">
+                        <p class="wow fadeInUp text-justify">
                             Netaji Subhas University is the first premier and one of the best University in Jharkhand,
                             with a venerable legacy, highest academic standards, diverse educational programmes,
                             distinguished faculty, illustrious alumni, varied co-curricular activities and modern
@@ -451,7 +451,7 @@
         <!-- Footer -->
         @include('include.testimonial')
 
-        <div class="mt-1 mb-1 p-0 m-0">
+        <div class="mt-1 mb-1 p-0 m-0  wow fadeInDown">
             <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
                     src="https://www.youtube.com/embed/phWNqyfCgzI" allowfullscreen=""></iframe></div>
         </div>

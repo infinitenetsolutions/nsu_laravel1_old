@@ -105,7 +105,7 @@
 
             @foreach ($studentpdfs as $studentpdf)
             <li>    <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
-                    ">
+                    
                     {{ $studentpdf->title }}
                 </a></li>
             @endforeach

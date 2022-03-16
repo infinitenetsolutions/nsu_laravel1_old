@@ -15,7 +15,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                        <div class="p-2 ">
+                        <div class="p-3 ">
                             <h2>{{ $data->title }}</h2>
                             <a class="row p-2" href="{{ route('index') }}">
 

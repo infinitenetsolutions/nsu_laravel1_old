@@ -1,11 +1,11 @@
 <section class="layer-overlay testimonial text-center pt-5">
     <div class="container">
 
-        <h2 class="text-uppercase text-white carousel-inner title ">What <span class="text-warning">People </span>Say
+        <h2 class="text-uppercase text-white carousel-inner title wow fadeInUp  ">What <span class="text-warning">People </span>Say
         </h2>
         <span class="line-bottom1 carousel-inner "> &nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <p class="text-uppercase mb-0 carousel-inner text-warning">Student and Parents Opinion</p>
+        <p class="text-uppercase  wow fadeInDown mb-0 carousel-inner text-warning">Student and Parents Opinion</p>
         <div id="testimonial4"
             class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
             data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
