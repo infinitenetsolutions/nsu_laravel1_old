@@ -29,7 +29,7 @@ class PlacementController extends Controller
     function requiters()
     {
 
-        $data = DB::table('recruiters_tbl')->get();
+        $data = DB::table('recruiters_tbl')->paginate(9);
         $categories = DB::table('recruiters_tbl')->distinct()->get(['title']);
         return view('requiters', ['data' => $data, 'categories' => $categories, 'url' => $this->url()]);
     }

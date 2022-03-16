@@ -22,7 +22,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 <!-- Top Level Navigation -->
 <div class="top_menubar">
     <ul class="container">
-                @include('include.offline_online_admission')
+        @include('include.offline_online_admission')
 
         <li class="admission_links"><a href="javascript:void(0);">Admissions <span
                     class="lnr lnr-chevron-down"></span></a>
@@ -40,10 +40,10 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                             <ul class="mega_menu_nav_admission">
                                 <li><a data-toggle="modal" data-target="#IET11" href="javascript:void(0);">How To
                                         Apply</a></li>
-                                        <li><a target="_blank" href="">Addmission Enquiry
-                                            </a></li>
+                                <li><a target="_blank" href="">Addmission Enquiry
+                                    </a></li>
                                 <li><a href="{{ route('career') }}">Career Test</a></li>
-                                
+
                                 <li><a target="_blank" href="https://neevfinance.hagnosoft.com/webform">Education
                                         Loan</a></li>
 
@@ -328,8 +328,9 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                     <div class="mega_menu ">
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link apply_btn" href="https://nsucms.in/prospectus/public/">Apply Now
-                        {{date('Y')}}</a>
+                <li class="nav-item"><a class="nav-link apply_btn"
+                        href="https://nsucms.in/prospectus/public/">Apply Now
+                        {{ date('Y') }}</a>
                 </li>
             </ul>
         </div>

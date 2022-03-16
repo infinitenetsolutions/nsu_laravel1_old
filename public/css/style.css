@@ -8191,3 +8191,32 @@ border-left: #c39e38 3px solid;
 .bg-white1{
     background-color: #dedede!important;
 }
+.media:first-child {
+    margin-top: 0;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+.p-30 {
+    padding: 20px !important;
+}
+.icon-box {
+    margin-bottom: 30px;
+}
+.bg-deep {
+    background-color: #f1f1f1 !important;
+}
+.layer-overlay.overlay-theme-colored-9::before {
+    background-color: rgba(33, 35, 49, 0.9);
+}
+
+.layer-overlay::before {
+    background: rgba(27, 26, 26, 0.8) none repeat scroll 0 0;
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}

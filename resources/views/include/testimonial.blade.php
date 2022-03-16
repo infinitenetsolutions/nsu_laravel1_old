@@ -354,20 +354,7 @@
         }
     }
 
-    .layer-overlay.overlay-theme-colored-9::before {
-        background-color: rgba(33, 35, 49, 0.9);
-    }
-
-    .layer-overlay::before {
-        background: rgba(27, 26, 26, 0.8) none repeat scroll 0 0;
-        content: " ";
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 0;
-    }
+ 
 
     .title::after {
         background-color: #ffffff !important;

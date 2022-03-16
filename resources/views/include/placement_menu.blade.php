@@ -22,10 +22,8 @@
 
             <div class="col-md-3 section ">
                 <div class="border1">
-                    <p style="font-size:50px"> <i class="fas fa-user"></i> </p>
 
-                    <a href="{{ route('appointment') }}">
-
+                        <a href="{{ route('appointment') }}"> <img  src="{{ asset('images/nsu/icon/appointment letter copy.jpg') }}" class="img-fluid">
                         <div class="menu_boxx1">
                             Appointment Letter
                         </div>
@@ -37,10 +35,7 @@
 
             <div class="col-md-3 section ">
                 <div class="border1">
-                    <p style="font-size:50px"> <i class="fas fa-user"></i> </p>
-
-                    <a href="{{ route('requiters') }}">
-
+                    <a href="{{ route('requiters') }}"> <img  src="{{ asset('images/nsu/icon/requiters.jpg') }}" class="img-fluid">
                         <div class="menu_boxx1">
                             Our Requiters
                         </div>
@@ -49,9 +44,7 @@
             </div>
             <div class="col-md-3 section ">
                 <div class="border1">
-                    <p style="font-size:50px"> <i class="fas fa-user"></i> </p>
-
-                    <a href="{{ route('placement-contact') }}">
+                    <a href="{{ route('placement-contact') }}"> <img  src="{{ asset('images/nsu/icon/placement contact.jpg') }}" class="img-fluid">
                         <div class="menu_boxx1">
                             Placement Contact
                         </div>

@@ -3,34 +3,34 @@
 
         </style>
         <section class="inner-page">
-                <div class="inner-hadding">
-                    <div class="container">
-                        <div class="breadcrumb">
-                            <a href="{{route('index')}}">Home</a>
-                          <a href="">About</a>
-                          <a href="">{{$data->sub_title}}</a>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="top-menu-sec">
-                            <ul>
-                                <h4>About</h4>
-                                @foreach ($quicks as $quick)
-                                    <li><a href="{{ route('about', $quick->title) }}">{{ $quick->sub_title }}</a>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        <div class="p-3 ">
-                            <h2>{{ $data->sub_title }}</h2>
-                            <a class="row p-2" href="{{ route('index') }}">
-
-                                <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
-                                <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
-                            </a>
-                        </div>
+            <div class="inner-hadding">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{ route('index') }}">Home</a>
+                        <a href="">About</a>
+                        <a href="">{{ $data->sub_title }}</a>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="top-menu-sec">
+                        <ul>
+                            <h4>About</h4>
+                            @foreach ($quicks as $quick)
+                                <li><a href="{{ route('about', $quick->title) }}">{{ $quick->sub_title }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="p-3 ">
+                        <h2>{{ $data->sub_title }}</h2>
+                        <a class="row p-2" href="{{ route('index') }}">
+
+                            <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                            <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="row ml-3 mr-3 ">
@@ -50,12 +50,13 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <div class="modal-content">
-                   
+
                                 <div class="modal-body">
-                                   
-                                    <iframe src="{{ str_replace('watch?v=','embed/', $data->permalink ) }}" width="100%" height="400px" frameborder="0"></iframe>
+
+                                    <iframe src="{{ str_replace('watch?v=', 'embed/', $data->permalink) }}" width="100%"
+                                        height="400px" frameborder="0"></iframe>
                                 </div>
-                           
+
                             </div>
                         </div>
                     </div>
@@ -68,7 +69,8 @@
                                 <div class="effect-wrapper">
 
                                     <div class="video-button"></div>
-                                    <a class="hover-link" data-toggle="modal" data-target="#exampleModalCenter" title="Youtube Video"></a>
+                                    <a class="hover-link" data-toggle="modal" data-target="#exampleModalCenter"
+                                        title="Youtube Video"></a>
                                 </div>
                                 <img src="{{ $url . 'about/' . $data->image_name }}" class="img-fluid">
 

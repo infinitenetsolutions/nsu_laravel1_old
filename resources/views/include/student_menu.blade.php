@@ -28,10 +28,7 @@
             @foreach ($studentpdfs as $studentpdf)
             <div class="col-md-3 section ">
                 <div class="border1">
-                    <p style="font-size:50px"> <i class=""></i>
-                    </p>
-
-                    <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
+                    <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}"> <img  src="{{ $home_url . 'student/' . $infrastructure->image_name }}" class="img-fluid">
                         <div class="menu_boxx1 text-capitalize
                         ">
                             {{ $studentpdf->title }}

@@ -9,9 +9,9 @@
 
             <div class="col-md-3 section ">
                 <div class="border1">
-                    <p style="font-size:50px"> <i class=" fas fa-image "></i> </p>
+                    <a href="{{ route('image-gallery') }}"> <img  src="{{ asset('images/nsu/icon/university.jpg') }}" class="img-fluid">
 
-                    <a href="{{ route('image-gallery') }}">
+
 
                         <div class="menu_boxx1">
                             UNIVERSITY GALLERY
@@ -23,10 +23,7 @@
 
             <div class="col-md-3 section ">
                 <div class="border1">
-                    <p style="font-size:50px"> <i class="fas fa-photo-video"></i> </p>
-
-                    <a href="{{ route('media-gallery') }}">
-
+                    <a href="{{ route('media-gallery') }}"> <img  src="{{ asset('images/nsu/icon/media gallery.jpg') }}" class="img-fluid">
                         <div class="menu_boxx1">
                             Media GALLERY
                         </div>
