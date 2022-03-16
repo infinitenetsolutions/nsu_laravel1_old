@@ -44,9 +44,9 @@
                         <span><img src="images/bhudev-c-das-img.jpg"></span>
                        <h2>Internationally Acclaimed<br> Scientists &amp; Scholars</h2> 
                        <h5>Professor (Dr.) Bhudev C. Das</h5>
-                        <p>Chairman &amp; H.G. Khorana Chair Professor, Amity Institute of Molecular Medicine &amp; Stem Cell Research (AIMMSCR)</p>
+                        <p>Chairman &amp; H.G. Khorana Chair Professor, Netaji Subhas  Institute of Molecular Medicine &amp; Stem Cell Research (AIMMSCR)</p>
 <p>DEAN, Health &amp; Allied Sciences
-Amity University Uttar Pradesh</p>
+Netaji Subhas  University Uttar Pradesh</p>
 <p>Former Founder Director of ICPO (ICMR), Noida &amp; Former Director, ACBR, Delhi University, Delhi. J.C. Bose National Fellow &amp; Fellow of Indian National Science Academy</p>
                    </li> --}}
                       

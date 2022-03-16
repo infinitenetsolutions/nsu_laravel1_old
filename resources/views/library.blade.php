@@ -59,8 +59,8 @@
                       {{-- <div class="row mt-5 mb-5">
                         <div class="col-6">
                             <h3>E-learning Studio</h3>
-                            <p class="pt-4">e-Learning Studios are the focal point for conducting Amity University's various online courses through distance learning. Live Virtual Classes are held wherein faculty members conduct tutorials using various teaching aids including PPTs, graphics, etc.</p>
-                            <h5>Amity also offers tele-education in all 53 Pan-African nations through a Govt. of India Project.</h5>
+                            <p class="pt-4">e-Learning Studios are the focal point for conducting nsu University's various online courses through distance learning. Live Virtual Classes are held wherein faculty members conduct tutorials using various teaching aids including PPTs, graphics, etc.</p>
+                            <h5>nsu also offers tele-education in all 53 Pan-African nations through a Govt. of India Project.</h5>
                         </div>
                         <div class="col-6">
                             <img src="images/infra-study-img4.jpg">

@@ -28,7 +28,7 @@
 
                             </span>
                             <p><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;<b
-                                        style="font-family: Cambria, Georgia, serif; font-size: 16px;">Amity School of
+                                        style="font-family: Cambria, Georgia, serif; font-size: 16px;">Netaji Subhas  School of
                                         Architecture and Planning&nbsp;</b><span
                                         style="margin: 0px; padding: 0px; border: 1pt none windowtext; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; vertical-align: baseline;"><span
                                             style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; vertical-align: baseline; color: inherit;">invites

@@ -2,8 +2,8 @@
 
 <head>
     <title>Nataji subhas University - Photo Gallery</title>
-    <meta name="description" content="Amity University">
-    <meta name="keywords" content="Amity University">
+    <meta name="description" content="Netaji Subhas  University">
+    <meta name="keywords" content="Netaji Subhas  University">
     <title>
 
     </title>

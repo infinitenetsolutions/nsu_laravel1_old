@@ -210,7 +210,6 @@
 
     span.footer_collapse {
         width: 100%;
-        display: none;
         max-width: 100%;
     }
 
@@ -2301,7 +2300,7 @@
     }
 
     footer ul li a {
-        text-align: center;
+        text-align: left;
         display: block;
     }
 

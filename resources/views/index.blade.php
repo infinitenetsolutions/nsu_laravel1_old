@@ -42,7 +42,6 @@
             </div>
         </section>
         @include('include.infrastructure_image')
-        <!--end Why Amity Section -->
         <!-- Student life Section -->
         <section class="home-sec3 mydiv">
             <div class="container mb-5">
@@ -377,7 +376,7 @@
                                                     <span class="ml-2 font-weight-bold carousel-inner"><i
                                                             class="fas fa-calendar text-theme-colored2"></i>
                                                         {{ explode('-', $event->timing)[2] }}
-                                                        {{ date_format(date_create($event->timing), 'M') }} </span>
+                                                        {{ date_format(date_create($event->timing), 'M - Y') }} </span>
                                                 </a>
 
 
