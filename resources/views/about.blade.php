@@ -15,7 +15,7 @@
                             </ul>
                         </div>
                         <div class="p-3 ">
-                            <h2>{{ $data->Sub_title }}</h2>
+                            <h2>{{ $data->sub_title }}</h2>
                             <a class="row p-2" href="{{ route('index') }}">
 
                                 <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
