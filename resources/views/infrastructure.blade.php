@@ -37,10 +37,13 @@
             <section class="inner_section pt-3 infra_play sangathan">
                 <div class="container">
                     <p><?php echo substr($data->description, 0, 290); ?>.</p>
+                    @if (strlen($data->permalink)>30)
                     <div class="row mt-2 mb-4 pb-2">
                         <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen=""></iframe></div>
+                                src="{{ str_replace($data->permalink,'watch?v=','embed/') }}" allowfullscreen=""></iframe></div>
                     </div>
+                    @endif
+                   
 
                 </div>
                 <br>

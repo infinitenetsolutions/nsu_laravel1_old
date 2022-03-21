@@ -60,16 +60,16 @@
                                                     <div class="icons-holder-inner">
                                                         <div
                                                             class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                            <a class="popup-youtube" target="blank"
+                                                            <a class="popup-youtube font-16" target="blank"
                                                                 href="{{ $url . 'appointment/' . $appointment->image_name1 }}"><i
-                                                                    class="fa fa-image"></i></a>
+                                                                    class="fas fa-image"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <h4 class="text-uppercase text-theme-colored font-weight-600 m-5">
+                                        <h4 class="text-uppercase text-theme-colored font-weight-600 m-2">
                                             {{ $appointment->title }}</h4>
                                         <h6 class="text-gray font-13 font-weight-400 line-bottom-centered mt-0">
                                             {{ $appointment->sub_title }}

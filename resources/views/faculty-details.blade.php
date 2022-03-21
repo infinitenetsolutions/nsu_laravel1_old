@@ -68,7 +68,7 @@
             </div>
             <!-- Section: Experts Details -->
             <section>
-                <div class="container">
+                <div class="container mt-3">
                     <div class="section-content card p-3">
                         <div class="row mb-5">
                             <div class="col-md-4">
@@ -80,8 +80,16 @@
                             <div class="col-md-8 text-justify">
                                 <h4 class="name font-24 mt-0 mb-0">{{ $data->name }}</h4>
                                 <p class="mt-2 text-dark">{{ $data->designation }}</p>
-                                <p><?php echo $data->description; ?></p>
+                                <p class="text-justify" ><?php echo substr($data->description,0,400) ; ?></p>
 
+
+
+                            </div>
+                            <div class="col-sm-12 text-justify">
+                                <p ><?php echo substr($data->description,400,400000) ; ?></p>
+
+                            </div>
+                            <div class="col-ms-8">
 
                                 <?php $social_media = DB::table('social')
                                     ->where('teacher_id', $data->id)
@@ -93,8 +101,8 @@
                                     @endforeach
 
                                 </ul>
-
                             </div>
+
                         </div>
                         <div class="row mt-30 mb-3">
                             <div class="col-md-4">

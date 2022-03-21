@@ -18,9 +18,7 @@
                             <div class="col-md-6">
                                 <h4 class="text-capitalize" >Steps for {{ $admission->sub_title }} </h4>
                                 <ul class="bullet_list pt-2 pl-5 pr-5">
-                                    <li class="pb-3">More than one payment is rendered for the same
-                                        application
-                                        number.</li>
+                                    <li class="pb-3 text-justify border-right"><?php echo  $admission->description ?></li>
                                 </ul>
                             </div>
                         @endforeach

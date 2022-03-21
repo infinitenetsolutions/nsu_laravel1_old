@@ -30,6 +30,7 @@ class AboutController extends Controller
     function govbody()
     {
         $govbody = DB::table('govbody')->get();
-        return view('govbody', ['data' => $govbody]);
+        $quick_link = DB::table('pages')->where('page_type', 'about')->get();
+        return view('govbody', ['data' => $govbody,'quicks' => $quick_link]);
     }
 }

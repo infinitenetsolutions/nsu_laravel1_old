@@ -14,7 +14,7 @@ class LatestNewsController extends Controller
 
         $latest_news = DB::table('latestnews_tbls')->orderBy('id', 'desc')->limit(20)->get();
 
-        return view('blog-details', [ 'url' => $this->url(), 'news'=>$latest_news, 'get_news'=>$get_news[0] ]);
+        return view('news-details', [ 'url' => $this->url(), 'events'=>$latest_news, 'get_news'=>$get_news[0] ]);
     }
     function index1()
     {
@@ -23,6 +23,6 @@ class LatestNewsController extends Controller
 
         $latest_news = DB::table('latestnews_tbls')->orderBy('id', 'desc')->limit(20)->get();
 
-        return view('blog-details', [ 'url' => $this->url(), 'news'=>$latest_news, 'get_news'=>$get_news[0] ]);
+        return view('news', [ 'url' => $this->url(), 'news'=>$latest_news, 'get_news'=>$get_news[0] ]);
     }
 }

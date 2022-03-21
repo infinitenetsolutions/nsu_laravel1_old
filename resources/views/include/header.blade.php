@@ -1,7 +1,7 @@
 <style>
     .menu_nav ul li a:before {
-        font-family: "Font Awesome 5 Free";
-        content: "\f518";
+        font-family: "FontAwesome";
+        content: "\f7e7";
         display: inline-block;
         padding-right: 3px;
         vertical-align: middle;
@@ -23,6 +23,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 <div class="top_menubar">
     <ul class="container">
         @include('include.offline_online_admission')
+        @include('include.getstart')
 
         <li class="admission_links"><a href="javascript:void(0);">Admissions <span
                     class="lnr lnr-chevron-down"></span></a>
@@ -40,7 +41,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                             <ul class="mega_menu_nav_admission">
                                 <li><a data-toggle="modal" data-target="#IET11" href="javascript:void(0);">How To
                                         Apply</a></li>
-                                <li><a target="_blank" href="">Addmission Enquiry
+                                <li><a data-toggle="modal" data-target=".bs-example-modal-lg" href="javascript:void(0);" target="_blank" href="">Admission Enquiry
                                     </a></li>
                                 <li><a href="{{ route('career') }}">Career Test</a></li>
 
@@ -232,6 +233,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
                 <li class="nav-item"><a class="nav-link" href="{{ route('course_list') }}">Courses
                         <span class="span_icon"></span></a>
+
                     <div class="mega_menu programsList pt-3 hidden-xs">
 
                         <div class="row no-gutters pl-5 paddAdjust">
@@ -240,14 +242,29 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                     <div class="col-md-9">
 
                                         <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane active" id="Graduate">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li class="nav-item pr-3"><a class="nav-link font-18 active"
+                                                        href="#Graduate" role="tab" data-toggle="tab">Graduate
+                                                        Programs</a>
+                                                </li>
+                                                <li class="nav-item pr-3"><a class="nav-link font-18"
+                                                        href="#Post_Graduate" role="tab" data-toggle="tab">
+                                                        Post Graduate Programs</a> </li>
+                                                <li class="nav-item pr-3"><a class="nav-link font-18"
+                                                        href="#certificate" role="tab" data-toggle="tab">
+                                                        Certificate Programs</a> </li>
+
+                                            </ul>
+                                            <div role="tabpanel" class="tab-pane active selected" id="Graduate">
                                                 <p class="pt-4">
-                                                    <strong>Regular Courses</strong>
+                                                    <strong> <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                        Under graduate Courses</strong>
                                                 </p>
                                                 <div class="menu_nav nsu-courses p-2">
                                                     <ul>
                                                         <?php $courses = DB::table('course_tbl')
                                                             ->where('is_deleted', '1')
+                                                            ->where('type', 'ug')
                                                             ->orderBy('course', 'ASC')
                                                             ->get(); ?>
 
@@ -262,6 +279,52 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                 </div>
                                             </div>
 
+                                            <div role="tabpanel" class="tab-pane fade" id="Post_Graduate">
+                                                <p class="pt-4">
+                                                    <strong> <i class="fas fa-user-graduate"></i> Post graduate
+                                                        Courses</strong>
+                                                </p>
+                                                <div class="menu_nav nsu-courses p-2">
+                                                    <ul>
+                                                        <?php $courses = DB::table('course_tbl')
+                                                            ->where('is_deleted', '1')
+                                                            ->where('type', 'pg')
+                                                            ->orderBy('course', 'ASC')
+                                                            ->get(); ?>
+
+                                                        @foreach ($courses as $course)
+                                                            <li><a
+                                                                    href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane fade" id="certificate">
+                                                <p class="pt-4">
+                                                    <strong> <i class="fa fa-certificate" aria-hidden="true"></i> Post
+                                                        graduate
+                                                        Courses</strong>
+                                                </p>
+                                                <div class="menu_nav nsu-courses p-2">
+                                                    <ul>
+                                                        <?php $courses = DB::table('course_tbl')
+                                                            ->where('is_deleted', '1')
+                                                            ->where('type', '!=', 'pg')
+                                                            ->where('type', '!=', 'ug')
+                                                        
+                                                            ->orderBy('course', 'ASC')
+                                                            ->get(); ?>
+
+                                                        @foreach ($courses as $course)
+                                                            <li><a
+                                                                    href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 pr-3">

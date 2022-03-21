@@ -1,18 +1,14 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
     <title>NETAJI SUBHAS UNIVERSITY - Photo Gallery</title>
-    <meta name="description" content="Amity University">
-    <meta name="keywords" content="Amity University">
-    <title>
-
-    </title>
+  
+   
 
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') }}">
     <link
         href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800"
         rel="stylesheet">
@@ -27,8 +23,8 @@
     <link href="{{ asset('css/inner.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive2.css') }}" rel="stylesheet">
-    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
     <link href="{{ asset('css/dynamic_home.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
     <!-- Google Tag Manager -->
 
@@ -72,7 +68,7 @@
                 </div>
 
                 <div class="p-3 ">
-                    <h2> <i class="fa fa-university" aria-hidden="true"></i>
+                    <h2 class="text-university" > <i class="fa fa-university" aria-hidden="true"></i>
                         Photo Gallery </h2>
                     <a class="row p-2" href="{{ route('index') }}">
 
@@ -150,30 +146,7 @@
 
     </script>
 
-
-
-
-
     <script src="{{ asset('js/pinterest_grid.js') }}"></script>
-
-
-
-
-
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
