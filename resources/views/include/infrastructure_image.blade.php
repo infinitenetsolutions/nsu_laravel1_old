@@ -7,18 +7,28 @@
                 <div class="carousel-inner" role="listbox">
 
                     <div id="figurebanner1_repfigurebanner_ctl00_divfigure" class="carousel-item active">
-                        <img class="img-fluid" src="backoffice/uploads/HomeBanner/1fblg_noida-cam-img.jpg"
-                            alt="1fblg_noida-cam-img.jpg">
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/AMFNBg6GGqk"
+                            ></iframe>
                         <div class="banner_text"></div>
                     </div>
-                    <?php $sliders = DB::table('slider_tbl')->get(); ?>
-                    @foreach ($sliders as $slider)
+                    <div id="figurebanner1_repfigurebanner_ctl01_divfigure" class="carousel-item">
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/eLikqvUXDqM"
+                        ></iframe>
+                        <div class="banner_text"></div>
+                    </div>
+                    <div id="figurebanner1_repfigurebanner_ctl01_divfigure" class="carousel-item">
+                        <iframe width="100%" height="100%" src="https://youtube.com/embed/VuF5ZUywODU"
+                        ></iframe>
+                        <div class="banner_text"></div>
+                    </div>
+                    <?php //$sliders = DB::table('slider_tbl')->get(); ?>
+                    {{-- @foreach ($sliders as $slider)
                         <div id="figurebanner1_repfigurebanner_ctl01_divfigure" class="carousel-item">
-                            <img class="img-fluid" src=" {{ $url . 'slider/' . $slider->image_name }} "
-                                alt="2fblg_lucknow.jpg">
+                            <iframe width="100%" height="100%" src="https://youtube.com/embed/szzlzRFnxg8"
+                            ></iframe>
                             <div class="banner_text"></div>
                         </div>
-                    @endforeach
+                    @endforeach --}}
 
 
 
