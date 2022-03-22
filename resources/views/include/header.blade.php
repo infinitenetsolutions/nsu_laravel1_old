@@ -39,9 +39,10 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                         src="{{ asset('images/logo-Netaji.png') }}" alt="Netaji University" /></a>
                             </span>
                             <ul class="mega_menu_nav_admission">
-                                <li><a  href="{{ route('course_list')}}">How To
+                                <li><a href="{{ route('course_list') }}">How To
                                         Apply</a></li>
-                                <li><a data-toggle="modal" data-target=".bs-example-modal-lg" href="javascript:void(0);" target="_blank" href="">Admission Enquiry
+                                <li><a data-toggle="modal" data-target=".bs-example-modal-lg" href="javascript:void(0);"
+                                        target="_blank" href="">Admission Enquiry
                                     </a></li>
                                 <li><a href="{{ route('career') }}">Career Test</a></li>
 
@@ -112,10 +113,12 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
         <li class="career_btn"><a href="{{ route('upgrade') }}">Upgrad Campus</a></li>
 
 
+        <?php $lastnotice = DB::table('noticeboard')
+            ->orderBy('id', 'desc')
+            ->first(); ?>
+        <li><a href="{{ route('news1', $lastnotice->id) }}">News</a></li>
 
-        <li><a href="{{ route('news1') }}">News</a></li>
-
-        <li><a href="" target="_blank">Important Notice</a></li>
+        <li><a href="{{ route('noticeboard', '') }}" target="_blank">Important Notice</a></li>
         <li><a href="https://nsucms.in/nsucms/student/student_login" target="_blank">Student Login</a></li>
         <li></li>
         <!-- <li><a class="right_bar_search" href="javascript:void(0);"><i class="fa fa-search"></i></a> -->
@@ -169,7 +172,8 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                 <ul>
 
                                                     @foreach ($abouts as $about)
-                                                        <li><a class="text-uppercase" href="{{ route('about', $about->title) }}">
+                                                        <li><a class="text-uppercase"
+                                                                href="{{ route('about', $about->title) }}">
                                                                 {{ $about->sub_title }}</a></li>
                                                     @endforeach
 
@@ -202,7 +206,8 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                         ->get();
                                                     ?>
                                                     @foreach ($abouts as $about)
-                                                        <li><a class="text-uppercase" href="{{ route('about', $about->title) }}">
+                                                        <li><a class="text-uppercase"
+                                                                href="{{ route('about', $about->title) }}">
                                                                 {{ $about->sub_title }}</a></li>
                                                     @endforeach
 

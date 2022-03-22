@@ -12,7 +12,7 @@ class GalleryController extends Controller
     {
         $images = DB::table('gallery_tbl')->where(DB::raw('LENGTH(link)'),'>','30')->orderBy('id','desc')->paginate(12);
 
-        $gallery_title =  DB::table('gallery_tbl')->select('title')->distinct()->get();
+        $gallery_title =  DB::table('gallery_tbl')->select('title')->where('title','!=','Media')->distinct()->get();
 
         return view('image-gallery', ['url' => $this->url(), 'images1' => $images, 'gallery_title' => $gallery_title]);
     }
