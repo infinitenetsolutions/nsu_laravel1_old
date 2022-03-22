@@ -173,8 +173,8 @@
 
 
                                     For the time being Selection Process is ...<span
-                                        id="ctl00_ContentPlaceHolder1_divsecpop"><a data-toggle="modal" data-target="#sel"
-                                            href="javascript:void(0);"><i class="lnr lnr-plus-circle"
+                                        ><a data-toggle="modal" data-target="#sel"
+                                            href="javascript:void(0);"><i class="text-white font-18 fal fa-plus-circle"
                                                 aria-hidden="true"></i></a></span>
                                 </p>
                             </div>

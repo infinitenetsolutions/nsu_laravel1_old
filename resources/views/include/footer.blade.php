@@ -77,14 +77,17 @@
                     <div class="col-12 col-md-2 col-lg-2 col-xl-2 ftr-colm1">
                         <h3>
                             About Nsu </h3>
+                            <?php $abouts = DB::table('pages')
+                     
+                            ->where('page_type', 'about')
+                            ->limit(9)
+                            ->get();
+                        ?>
                         <ul class="icon-before">
-                            <li><a href="" target="_blank">Who We Are</a></li>
-                            <li><a href="" target="_blank">Mission & Vision</a></li>
-                            <li><a href="" target="_blank">Chancellor's Message</a></li>
-                            <li><a href="" target="_blank">Vice Chancellor's Message</a></li>
-                            <li><a href="" target="_blank">Registrar's Message</a></li>
-                            <li><a href="" target="_blank">Dean tudent Walfare</a></li>
-                            <li><a href="" target="_blank">Proctor</a></li>
+                            @foreach ($abouts as $about)
+                            <li><a href="{{ route('about', $about->title) }}">
+                                    {{ $about->sub_title }}</a></li>
+                        @endforeach
 
                         </ul>
                     </div>
