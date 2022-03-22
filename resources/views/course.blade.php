@@ -1,16 +1,43 @@
 <x-layout1>
 
     @slot('body')
-        <section class="inner-page">
-            <div class="inner-hadding">
-                <div class="container">
-                    <div class="breadcrumb">
-                        <a href="{{route('index')}}">Home</a>
-                        Programmes
-                    </div>
-                    <h1>Programmes</h1>
+    <section class="inner-page">
+        <div class="inner-hadding  float-right">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="{{ route('index') }}">Home</a>
+                    <a href="{{ route('course_list') }}"> Programs </a>
+                    <a href="#">All programs</a>
                 </div>
             </div>
+            <div class="container">
+                <div class="top-menu-sec">
+
+                    <div class="row">
+
+                        <div class=" ">
+                            <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
+                            <ul>
+                                <li><a href="{{ route('index') }}"> Home </a></li>
+                                <li><a href="{{ route('course_list') }}"> Programs </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="{{ route('index') }}">Home</a>
+                Programmes
+            </div>
+            <h1><i class="fal fa-diploma"></i> Programmes</h1>
+        </div>
 
 
             <section class="inner_section programmes_list new_big_line">
@@ -32,8 +59,8 @@
                                             ->get(); ?>
                                         <ul>
                                             <table class="table table-one table-bordered table-responsive-lg">
-                                                <thead class="thead-light">
-                                                    <tr>
+                                                <thead class="thead-light text-uppercase">
+                                                    <tr class="font-18">
                                                         <th>Course name</th>
                                                         <th>Duration</th>
                                                         <th>Semester</th>
@@ -44,23 +71,29 @@
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($courses as $course)
-                                                        <tr>
+                                                        <tr class="font-18" >
                                                             <td><a href="javascript:void(0);" class="link font-18"
                                                                     data-toggle="modal"
                                                                     data-target="#detail{{ $course->id }}">{{ $course->course }}</a>
                                                             </td>
                                                             <td>{{ $course->duration }} years</td>
                                                             <td>{{ ((int) $course->duration) * 2 }} semesters</td>
-                                                            <td> <i class="fas fa-rupee-sign    "></i> 
+                                                            <td> <i class="fas fa-rupee-sign    "></i>
                                                                 {{ $course->fee }}/ semester</td>
-                                                            <td>{{ $course->type }}</td>
-                                                            <td> <a class="font-16 text-warning"
-                                                                    href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">View more</a>
+                                                            @if ($course->type=='ug')
+                                                                <td>Under Graduate</td>
+                                                            @else
+                                                                <td>Post Graduate</td>
+                                                            @endif
+                                                            <td> <a class="font-16 text-primary"
+                                                                    href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">View
+                                                                    more</a>
                                                             </td>
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
                                             </table>
+
 
                                         </ul>
                                     </li>

@@ -38,7 +38,6 @@
                 </div>
                 <h1><i class="fal fa-diploma"></i> Programmes</h1>
             </div>
-            </div>
 
 
             <section class="inner_section programmes_list new_big_line">
@@ -73,7 +72,7 @@
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($courses as $course)
-                                                        <tr class="font-18" >
+                                                        <tr class="font-18">
                                                             <td><a href="javascript:void(0);" class="link font-18"
                                                                     data-toggle="modal"
                                                                     data-target="#detail{{ $course->id }}">{{ $course->course }}</a>
@@ -82,7 +81,7 @@
                                                             <td>{{ ((int) $course->duration) * 2 }} semesters</td>
                                                             <td> <i class="fas fa-rupee-sign    "></i>
                                                                 {{ $course->fee }}/ semester</td>
-                                                            @if ($course->type=='ug')
+                                                            @if ($course->type == 'ug')
                                                                 <td>Under Graduate</td>
                                                             @else
                                                                 <td>Post Graduate</td>
