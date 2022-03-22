@@ -78,7 +78,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'infrastructure')
-            ->limit(9)
+           
             ->get();
         ?>
         <ul class="dropdown-menu">

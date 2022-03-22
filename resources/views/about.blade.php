@@ -129,7 +129,7 @@
                     <div class="container">
                         <?php $affiliations = DB::table('affiliated_tbl')->get(); ?>
                         <div class="academia-sec4">
-                            <h2 class=" p-2 carousel-inner  text-white ">Our Affliation<h2>
+                            <h2 class=" p-2 carousel-inner mt-5 text-white ">Our Affliation<h2>
                                     <ul class="row">
                                         @foreach ($affiliations as $affiliation)
                                             <li class="col-12 col-md-4 col-lg-4 col-xl-4">

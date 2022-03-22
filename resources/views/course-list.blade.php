@@ -1,5 +1,4 @@
 <x-layout1>
-
     @slot('body')
         <section class="inner-page">
             <div class="inner-hadding  float-right">
@@ -12,23 +11,17 @@
                 </div>
                 <div class="container">
                     <div class="top-menu-sec">
-
                         <div class="row">
-
                             <div class=" ">
                                 <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
                                 <ul>
                                     <li><a href="{{ route('index') }}"> Home </a></li>
                                     <li><a href="{{ route('course_list') }}"> Programs </a></li>
-
+                                  
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
             <div class="container">
@@ -38,8 +31,6 @@
                 </div>
                 <h1><i class="fal fa-diploma"></i> Programmes</h1>
             </div>
-
-
             <section class="inner_section programmes_list new_big_line">
                 <div class="container mt-3" style="position: relative;">
                     <div id="Progressbar" class="preloader" style="display:none;">
@@ -94,13 +85,11 @@
                                                     @endforeach
                                                 </tbody>
                                             </table>
-
                                         </ul>
                                     </li>
                                 </div>
                             </ul>
                         @endforeach
-
                     </div>
                 </div>
             </section>

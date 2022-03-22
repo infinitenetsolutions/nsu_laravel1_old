@@ -2376,7 +2376,7 @@ footer h3 {
 footer ul li a {
     font-size: 14px;
     color: #999999;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     display: table;
 }
 
@@ -8237,8 +8237,4 @@ border-left: #c39e38 3px solid;
 }
 .divider{
     margin-top: 25px;
-}
-.inner_section{
-    color: #e7b416;
-    text-align: center;
 }

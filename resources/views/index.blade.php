@@ -262,7 +262,7 @@
                                                         class="text-white font-13 p-0 text-center rounded-circle"
                                                         target="_blank" class="text-center"
                                                         href="{{ $social->link }}"><i
-                                                            class="fa fa-{{ $social->social }}"></i></a></li>
+                                                            class="fab fa-{{ $social->social }}"></i></a></li>
                                             @endforeach
 
                                         </ul>
