@@ -45,7 +45,7 @@
                                                 <tbody>
                                                     @foreach ($courses as $course)
                                                         <tr>
-                                                            <td><a href="javascript:void(0);" class="link"
+                                                            <td><a href="javascript:void(0);" class="link font-18"
                                                                     data-toggle="modal"
                                                                     data-target="#detail{{ $course->id }}">{{ $course->course }}</a>
                                                             </td>

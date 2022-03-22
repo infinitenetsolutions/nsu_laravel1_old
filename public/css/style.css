@@ -3089,6 +3089,7 @@ footer p a {
 }
 
 .top-menu-sec h4 {
+    text-transform: uppercase;
     color: #edba16;
     font-size: 16px;
     font-weight: 900;
@@ -3109,13 +3110,15 @@ footer p a {
 }
 
 .top-menu-sec ul li a {
-    font-size: 16px;
     color: #8a7777;
     display: block;
-    padding: 10px;
     border-bottom: 3px solid rgba(255, 255, 255, 0);
     padding-bottom: 7px;
-    font-weight: 600;
+
+    font-size: 14px;
+padding: 9px 7px;
+font-weight: 700;
+    text-transform: uppercase;
 }
 
 .top-menu-sec ul li a:hover {
@@ -6510,8 +6513,8 @@ p.lead,
 .programe_tabbing .nav-tabs li {
     float: left;
     width: 21%;
-    padding: 0 15px;
-    border-bottom: solid 5px #194880;
+    padding: 0 0px;
+    border-bottom: solid 3px #194880;
     padding-left: 50px;
 }
 
@@ -6547,11 +6550,11 @@ p.lead,
 }
 
 .programe_tabbing .tab-content p {
-    text-align: center;
-    width: 70%;
+    text-align: left;
+    width: 100%;
     margin: 0 auto;
     display: table;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .programe_tabbing .nav-tabs li.active:before {
@@ -6767,11 +6770,11 @@ i.lnr.lnr-plus-circle:hover {
     content: '';
     background: #dba921;
     width: 4px;
-    height: 60px;
+    height: 39px;
     display: block;
     margin-right: 20px;
     position: absolute;
-    top: 15px;
+    top: 8px;
     left: 0;
 }
 
@@ -7251,7 +7254,7 @@ aside.right_bar {
 }
 
 .course_text_box div[class*="col-"] {
-    height: 201px;
+    height: 150px;
     position: relative;
     z-index: 2
 }

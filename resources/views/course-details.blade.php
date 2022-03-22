@@ -26,7 +26,6 @@
             }
 
             .programe_tabbing .nav-tabs li {
-                box-shadow: 3px 3px 4px 0px #e3ae21;
                 border-left: 2px solid #e3ae21;
                 border-right: 2px solid #e3ae21;
                 border-top: 2px solid #e3ae21;
@@ -35,6 +34,8 @@
 
             .programe_tabbing .nav-tabs li span {
                 font-size: 13px;
+                padding-left: 3px;
+
                 font-weight: 600;
                 color: #555555 !important;
             }
@@ -47,9 +48,6 @@
                 padding-left: 0px;
             }
 
-            .programe_tabbing .nav-tabs li {
-                width: 12%;
-            }
 
             .programe_tabbing .nav-tabs li.active span {
                 padding-bottom: 10px;
@@ -64,7 +62,7 @@
             }
 
             .programe_tabbing .nav-tabs li {
-                width: 15%;
+                width: 16%;
             }
 
             .programe_tabbing .responsive-tabs-container {
@@ -161,14 +159,12 @@
 
                             <div class="col-lg-4 bg-xs-dark_gray">
                                 <p><strong>Course Fee</strong>
-                                    PCB / PCM / Agriculture ...<span id="ctl00_ContentPlaceHolder1_divonepop"><a
-                                            data-toggle="modal" data-target="#IET22" href="javascript:void(0);"><i
-                                                class="lnr lnr-plus-circle" aria-hidden="true"></i></a></span></p>
+                                   {{($name[0]->fee)/2}} / Semester </p>
                             </div>
 
                             <div class="col-lg-4 bg-xs-brown_white">
-                                <p><strong>Course Offered</strong>
-                                    4 Years</p>
+                                <p><strong>Course Duration</strong>
+                                    {{ $name[0]->duration}} Years</p>
                             </div>
 
                             <div class="col-lg-4 bg-xs-dark_gray">
@@ -188,7 +184,7 @@
 
 
 
-                <section class="container">
+                <section class="container mt-1">
                     <section class="row">
 
                         <section class=" col-sm-8 programe_tabbing">
@@ -237,7 +233,7 @@
                                         <ul class="tab-pane fade in active" id="tab1">
                                             <ul class="list theme-colored2 paper">
 
-                                                <?php echo $data->fee; ?>
+                                                <p class="text-left text-justify text-university"> <?php echo $data->fee; ?></p>
                                             </ul>
                                         </ul>
 
@@ -256,8 +252,8 @@
                                             </h4>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <object data="{{ $url . 'CourseDetails/' . $data->syllabus }}"
-                                                        width="700" height="500"></object>
+                                                    <iframe src="{{ $url . 'CourseDetails/' . $data->syllabus }}"
+                                                        width="700" height="500"></iframe>
 
                                                 </div>
 
@@ -271,8 +267,8 @@
                                             </h4>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <object data="{{ $url . 'CourseDetails/' . $data->syllabus1 }}"
-                                                        width="700" height="500"></object>
+                                                    <iframe src="{{ $url . 'CourseDetails/' . $data->syllabus1 }}"
+                                                        width="700" height="500"></iframe>
 
                                                 </div>
 
@@ -294,8 +290,8 @@
 
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <object data="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"
-                                                        width="700" height="500"></object>
+                                                    <iframe src="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"
+                                                        width="700" height="500"></iframe>
 
                                                 </div>
 
@@ -311,8 +307,8 @@
                                             <div class="row">
 
                                                 <div class="col-md-12">
-                                                    <object data="{{ $url . 'CourseDetails/' . $data->guidelines }}"
-                                                        width="700" height="500"></object>
+                                                    <iframe src="{{ $url . 'CourseDetails/' . $data->guidelines }}"
+                                                        width="700" height="500"></iframe>
 
                                                 </div>
 
@@ -401,7 +397,7 @@
 
                 </div>
 
-
+            </section>
 
 
                 <div class="reco_box">

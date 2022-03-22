@@ -17,14 +17,15 @@
                         <p class="wow fadeInUp text-justify">
                             Netaji Subhas University is the first premier and one of the best University in Jharkhand,
                             with a venerable legacy, highest academic standards, diverse educational programmes,
-                            distinguished faculty, illustrious alumni, varied co-curricular activities and modernn <a class="text-primary" href="{{ route('about','who-we-are')}}">view more</a>
+                            distinguished faculty, illustrious alumni, varied co-curricular activities and modernn <a
+                                class="text-primary" href="{{ route('about', 'who-we-are') }}">view more</a>
                         </p>
 
                     </div>
                     <div class="col-12 col-md-8 col-lg-8 col-xl-8">
                         <ul>
                             <li>
-                                <h3 class="wow fadeInDown">{{$total_course}}+</h3>
+                                <h3 class="wow fadeInDown">{{ $total_course }}+</h3>
                                 <span class="wow fadeInUp">Courses</span>
                             </li>
                             <li>
@@ -32,7 +33,7 @@
                                 <span class="wow fadeInUp"> Student </span>
                             </li>
                             <li>
-                                <h3 class="wow fadeInDown">{{$total_teacher}}+</h3>
+                                <h3 class="wow fadeInDown">{{ $total_teacher }}+</h3>
                                 <span class="wow fadeInUp">Quilified Teachers</span>
                             </li>
                         </ul>
@@ -111,77 +112,7 @@
 
 
         </section>
-        <!--end Student life Section -->
-        <!-- Research Spotlight Section -->
-        <!-- <section class="home-sec4 mydiv">
-                                                                <div class="container">
-                                                                    <div class="row">
-                                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                                            <div class="home-sec4-colm1">
-                                                                                <h2 class="wow fadeInDown">RESEARCH <span>SPOTLIGHT</span></h2>
-                                                                                <h3 class="wow fadeInUp"><b>1260</b> management case-studies covering domains like Strategy,
-                                                                                    Marketing, Economics & Finance and others, bought across <b>99</b> countries.</h3>
-                                                                                <ul>
-                                                                                    <li class="wow fadeInUp"><a href="research.html">International Research</a></li>
-                                                                                    <li class="wow fadeInUp"><a href="research.html">Indian Research</a></li>
-                                                                                    <li class="wow fadeInUp"><a href="research.html">Patent</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                                            <div class="home-sec4-colm2">
-                                                                                <ul>
-                                                                                    <li class="wow fadeInDown">
-                                                                                        <h3>15000</h3>
-                                                                                        <p>Research Publications</p>
-                                                                                    </li>
-                                                                                    <li class="wow fadeInDown">
-                                                                                        <h3>500</h3>
-                                                                                        <p>Books in diverse area</p>
-                                                                                    </li>
-                                                                                    <li class="wow fadeInDown">
-                                                                                        <h3>300</h3>
-                                                                                        <p>Govt. Funded Research Projects </p>
-                                                                                    </li>
-                                                                                    <li class="wow fadeInDown">
-                                                                                        <h3>100+</h3>
-                                                                                        <p>Patents Filed by Brilliant Students </p>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                                                                            <div class="home-sec4-colm3">
-                                                                                <div class="owl-carousel owl-carousel4 owl-theme">
-                                                                                    <div class="item">
-                                                                                        <ul>
-                                                                                            <li class="wow fadeInDown"><span><img src="{{ asset('images/research.jpg') }}"></span>
-                                                                                                <h4>Resonance Raman and Electronic...</h4>
-                                                                                            </li>
-                                                                                            <li class="wow fadeInUp"><span><img src="images/research2.jpg"></span>
-                                                                                                <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                                                            </li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                    <div class="item">
-                                                                                        <ul>
-                                                                                            <li class="wow fadeInDown"><span><img src="images/research3.jpg"></span>
-                                                                                                <h4>Resonance Raman and Electronic...</h4>
-                                                                                            </li>
-                                                                                            <li class="wow fadeInUp"><span><img src="images/research4.jpg"></span>
-                                                                                                <h4>Hydrogen peroxide vapor sensor...</h4>
-                                                                                            </li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <abbr class="all-research-btn"><a href="research.html">View All Research <img
-                                                                                        src="images/arrow-icon.png"></a></abbr>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </section> -->
-
+   
         <section class="p-3 mydiv">
             <div class="container">
                 <div class="row ">
@@ -356,12 +287,12 @@
                     <li class="active"><a href="#events">Events</a></li>
                     <li><a href="#media-coverage">Media Coverage</a></li>
                 </ul>
-              
+
                 <div class="tab-content myTabContent">
-                  
+
                     <h4 class="collapsible_heading open">Events <i class="lnr fas fa-calendar-alt "></i></h4>
                     <div class="tab-pane active" id="events">
-                      
+
                         <ul class="row">
                             @foreach ($events as $event)
                                 <li class="col-12 col-md-4 col-lg-4 col-xl-4">
@@ -423,9 +354,9 @@
                                                 </ol>
                                                 <h3>
                                                     <p class="text-white text-justify hover "><?php echo substr($latest->massage, 0, 160); ?>..<a
-                                                        class="btn btn-sm text-dark "
-                                                        href="{{ route('news', ['id' => $latest->id]) }}"> View
-                                                        Details</a></p>
+                                                            class="btn btn-sm text-dark "
+                                                            href="{{ route('news', ['id' => $latest->id]) }}"> View
+                                                            Details</a></p>
                                                 </h3>
 
                                             </div>

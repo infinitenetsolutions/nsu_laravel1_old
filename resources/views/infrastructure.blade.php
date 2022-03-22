@@ -37,6 +37,7 @@
             <section class="inner_section pt-3 infra_play sangathan">
                 <div class="container">
                     <p><?php echo substr($data->description, 0, 290); ?>.</p>
+                </div>
                     @if (strlen($data->permalink) > 30)
                         <div class="row mt-2 mb-4 pb-2">
                             <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
@@ -50,22 +51,23 @@
                 <br>
                 <style>
                     .block::before {
-                        background-color: rgba(33, 35, 49, 0.7);
+                        /* background-color: rgba(33, 35, 49, 0.7); */
                         height: 450px;
 
                     }
 
                 </style>
-                <div class="block" style="background: url({{ $url . 'infrastructure/' . $data->header_image }}),#6DB3F2;
-                                           background-attachment: fixed;
-                                           padding:10px
-                                                    ">
-                    <div class=" container row mt-0 mb-4 mt-5">
-                        <div class="col-12 col-md-6 pr-2 text-white">
-                            <p class="text-justify"><?php echo substr($data->description, 292, 500); ?>.</p>
+                <div class="" style="background: url({{ $url . 'infrastructure/' . $data->header_image }}),#6DB3F2;
+                                               background-attachment: fixed;
+                                               padding:10px
+                                                        ">
+                    <div class=" 
+                     row mt-0 mb-4 mt-5">
+                        <div class="col-12 col-md-8 pr-2 text-white">
+                            <p class="text-justify "><?php echo substr($data->description, 292, 500); ?>.</p>
 
                         </div>
-                        <div class="col-12 col-md-6  ">
+                        <div class="col-12 col-md-4  ">
                             <img src="{{ $url . 'infrastructure/' . $data->image_name }}" class="infra_img_bot">
                         </div>
                         <hr>
@@ -91,7 +93,7 @@
 
         </section>
 
-      
+
 
         @if ($data->title == 'transport' || $data->title == 'transports')
             <section class="inner_section pt-3 research_page">
@@ -133,24 +135,25 @@
                                                             </tr>
                                                             <?php $transportbus = DB::table('transports')
                                                                 ->where('bus_id', $transport->id)
-                                                                ->get(); 
-                                                                $i=1;
-                                                                ?>
+                                                                ->get();
+                                                            $i = 1;
+                                                            ?>
                                                             @foreach ($transportbus as $stop)
                                                                 <tr>
                                                                     <td data-th="S#">
-                                                                       #{{ $i++}}
+                                                                        #{{ $i++ }}
                                                                     </td>
                                                                     <td data-th="Stoppages">
-                                                                        <a href="#" target="_blank">  {{ $stop->stop}} </a>
+                                                                        <a href="#" target="_blank"> {{ $stop->stop }}
+                                                                        </a>
                                                                     </td>
                                                                     <td data-th="Time">
-                                                                        <a href="#" target="_blank">{{$stop->time}}</a>
+                                                                        <a href="#" target="_blank">{{ $stop->time }}</a>
                                                                     </td>
 
 
                                                                 </tr>
-                                                                @endforeach
+                                                            @endforeach
                                                         </tbody>
                                                     </table>
 

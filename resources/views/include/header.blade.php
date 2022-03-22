@@ -169,7 +169,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                 <ul>
 
                                                     @foreach ($abouts as $about)
-                                                        <li><a href="{{ route('about', $about->title) }}">
+                                                        <li><a class="text-uppercase" href="{{ route('about', $about->title) }}">
                                                                 {{ $about->sub_title }}</a></li>
                                                     @endforeach
 
@@ -202,13 +202,13 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                         ->get();
                                                     ?>
                                                     @foreach ($abouts as $about)
-                                                        <li><a href="{{ route('about', $about->title) }}">
+                                                        <li><a class="text-uppercase" href="{{ route('about', $about->title) }}">
                                                                 {{ $about->sub_title }}</a></li>
                                                     @endforeach
 
                                                     <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
                                                     @foreach ($studentpdfs as $studentpdf)
-                                                        <li><a target="_blank"
+                                                        <li><a class="text-uppercase" target="_blank"
                                                                 href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
                                                                 {{ $studentpdf->title }}</a>
                                                         </li>
