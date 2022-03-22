@@ -2,13 +2,41 @@
 
     @slot('body')
         <section class="inner-page">
-            <div class="inner-hadding">
+            <div class="inner-hadding  float-right">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{ route('index') }}">Home</a>
+                        <a href="{{ route('course_list') }}"> Programs </a>
+                        <a href="#">All programs</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top-menu-sec">
+
+                        <div class="row">
+
+                            <div class=" ">
+                                <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
+                                <ul>
+                                    <li><a href="{{ route('index') }}"> Home </a></li>
+                                    <li><a href="{{ route('course_list') }}"> Programs </a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+
+
+                </div>
+            </div>
                 <div class="container">
                     <div class="breadcrumb">
                         <a href="{{route('index')}}">Home</a>
                         Programmes
                     </div>
-                    <h1>Programmes</h1>
+                    <h1><i class="fal fa-diploma"></i>   Programmes</h1>
                 </div>
             </div>
 

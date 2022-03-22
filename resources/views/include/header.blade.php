@@ -39,7 +39,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                         src="{{ asset('images/logo-Netaji.png') }}" alt="Netaji University" /></a>
                             </span>
                             <ul class="mega_menu_nav_admission">
-                                <li><a data-toggle="modal" data-target="#IET11" href="javascript:void(0);">How To
+                                <li><a  href="{{ route('course_list')}}">How To
                                         Apply</a></li>
                                 <li><a data-toggle="modal" data-target=".bs-example-modal-lg" href="javascript:void(0);" target="_blank" href="">Admission Enquiry
                                     </a></li>

@@ -1,12 +1,20 @@
 <x-layout1>
+
     @slot('body')
+    <style>
+        .close_btn2 {
+         
+          display: none !important;
+       
+      }
+      </style>
         <section class="inner-page">
             <div class="inner-hadding">
 
                 <div class="container">
                     <div class="top-menu-sec">
                         <ul>
-                            <h4>About</h4>
+                            <h4>Contact</h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
                             <li><a href="{{ route('contact') }}">Contact us</a>
@@ -104,21 +112,23 @@
                                         class="fas fa-map"></i></a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Our Office Location</h5>
-                                    <p>#405, Lan Streen, Los Vegas, USA</p>
+                                    <p>#1. Pokhari,Near Bhilai Pahadi, Jamshedpur,Jharkhand</p>
+                                    <span>#2. Shatabdi Tower, 4th Floor, Sakchi, Jamshedpur, Jharkhand</span>
+
                                 </div>
                             </div>
                             <div class="icon-box media mb-1"> <a class="media-left pull-left flip mr-15" href="#"> <i
                                         class="fa fa-phone"></i></a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Contact Number</h5>
-                                    <p><a href="tel:+325-12345-65478">+325-12345-65478</a></p>
+                                    <p><a href="tel:9386-817-857">0657-223-3022, 9386-817-857</a></p>
                                 </div>
                             </div>
                             <div class="icon-box media mb-1"> <a class="media-left pull-left flip mr-15" href="#"> <i
                                         class="fas fa-envelope"></i></a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Email Address</h5>
-                                    <p><a href="mailto:supporte@yourdomin.com">supporte@yourdomin.com</a></p>
+                                    <p><a href="mailto:info@nsuniv.ac.in">info@nsuniv.ac.in</a></p>
                                 </div>
                             </div>
 
