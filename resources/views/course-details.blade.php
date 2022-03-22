@@ -158,17 +158,17 @@
                         <div class="row course_text_box">
 
                             <div class="col-lg-4 bg-xs-dark_gray">
-                                <p><strong>Course Fee</strong>
-                                   {{($name[0]->fee)/2}} / Semester </p>
+                                <p> <strong><i class="fal fa-rupee-sign    "></i> Course Fee</strong>
+                                   {{($name[0]->fee)/2}} <i class="fas fa-rupee-sign    "></i> / Semester </p>
                             </div>
 
                             <div class="col-lg-4 bg-xs-brown_white">
-                                <p><strong>Course Duration</strong>
+                                <p><strong><i class="fal fa-hourglass-end"></i> Course Duration </strong>
                                     {{ $name[0]->duration}} Years</p>
                             </div>
 
                             <div class="col-lg-4 bg-xs-dark_gray">
-                                <p><strong id="ctl00_ContentPlaceHolder1_pselection">Apply Online</strong>
+                                <p><strong id="ctl00_ContentPlaceHolder1_pselection"><i class="fal fa-desktop-alt"></i> Apply Online</strong>
 
 
                                     For the time being Selection Process is ...<span
@@ -356,46 +356,6 @@
 
                 </section>
 
-                <div class="reco_box">
-
-                    <div class="modal fade" id="IET22" role="dialog" style="display: none;" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-
-                                <div class="modal-header2">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">×</span></button>
-                                    <h4 class="pl-5 pt-4">Eligibility</h4>
-                                </div>
-
-                                <div class="modal-body text eleg">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
-                                            <p></p>
-                                            <p>Course Fee</p>
-                                            <p>Aggregate percentage will be calculated on the basis of marks scored in
-                                                English and three academic subjects (excluding second language, Physical
-                                                Education, Fine Arts, Performing Arts or any other Vocational
-                                                /Non-Written
-                                                subjects).<strong> Student should have passed all the subjects of class
-                                                    XII
-                                                    from a recognized board.</strong></p>
-                                            <p>&nbsp;</p>
-
-                                            <p></p>
-
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
             </section>
 
@@ -415,10 +375,7 @@
                                 <div class="modal-body text eleg">
                                     <div class="row">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
-                                            <p>For the time being Selection Process is based on video responses to the
-                                                questions posted through the VIDEO LINK available on Admission
-                                                Microsite.
-                                            </p>
+                                          <span class="text-university">  <?php echo $data->apply; ?></span>
 
                                         </div>
 

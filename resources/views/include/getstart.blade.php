@@ -1,13 +1,14 @@
 <!-- //popup -->
 <!-- <button type="button" class="btn btn-primary text-white" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+<div class="modal fade bs-example-modal-lg" style="background-color: rgb(0 0 0 / 70%)" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg ">
-        <div class="modal-content bg-warning">
+        <div class="modal-content bg-warning1">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true"
                         style="color:#fff;border:3px solid #fff;padding: 1px 6px;border-radius: 50%;line-height: 25px;">&times;</span></button>
-                <h4 class="modal-title text-center text-white" id="myModalLabel2">Get Started</h4>
+                <h4 class="modal-title text-center text-white" id="myModalLabel2"> Don’t Miss Out Our
+                    All Course Brochure! </h4>
             </div>
             <div class="container-fluid ">
                 <div class="row">
@@ -17,6 +18,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="bg-lightest p-25">
+                            <img src="{{ asset('images/logo-Netaji.png') }}" alt="">
                             <h4 class="text-white m-0 text-capitalize" id="data"></h4>
                             <div class="line-bottom mb-30"></div>
                             <form name="appointment_form" class="mt-5" method="post"

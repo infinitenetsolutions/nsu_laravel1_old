@@ -1,12 +1,12 @@
 <style>
     .menu_nav ul li a:before {
-        font-family: "FontAwesome";
+        /* font-family: "FontAwesome";
         content: "\f7e7";
         display: inline-block;
         padding-right: 3px;
         vertical-align: middle;
         font-weight: 900;
-        color: #fff;
+        color: #fff; */
     }
 
 </style>
@@ -257,7 +257,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                             </ul>
                                             <div role="tabpanel" class="tab-pane active selected" id="Graduate">
                                                 <p class="pt-4">
-                                                    <strong> <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                    <strong> <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                                         Under graduate Courses</strong>
                                                 </p>
                                                 <div class="menu_nav nsu-courses p-2">
@@ -269,7 +269,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                             ->get(); ?>
 
                                                         @foreach ($courses as $course)
-                                                            <li><a
+                                                            <li><i class="fas fa-graduation-cap"></i> <a
                                                                     href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
                                                             </li>
                                                         @endforeach
@@ -293,7 +293,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                             ->get(); ?>
 
                                                         @foreach ($courses as $course)
-                                                            <li><a
+                                                            <li><i class="fas fa-user-graduate"></i> <a
                                                                     href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
                                                             </li>
                                                         @endforeach
@@ -318,7 +318,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                             ->get(); ?>
 
                                                         @foreach ($courses as $course)
-                                                            <li><a
+                                                            <li><i class="fas fa-certificate"></i> <a
                                                                     href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
                                                             </li>
                                                         @endforeach

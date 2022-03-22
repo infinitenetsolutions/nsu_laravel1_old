@@ -71,7 +71,6 @@
 
 
 
-    <script src="https://kit.fontawesome.com/bb12abfe96.js" crossorigin="anonymous"></script>
     <!--LeadSquared Tracking Code End-->
 </body>
 
