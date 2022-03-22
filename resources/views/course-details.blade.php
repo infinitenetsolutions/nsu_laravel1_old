@@ -159,16 +159,17 @@
 
                             <div class="col-lg-4 bg-xs-dark_gray">
                                 <p> <strong><i class="fal fa-rupee-sign    "></i> Course Fee</strong>
-                                   {{($name[0]->fee)/2}} <i class="fas fa-rupee-sign    "></i> / Semester </p>
+                                    {{ $name[0]->fee / 2 }} <i class="fas fa-rupee-sign    "></i> / Semester </p>
                             </div>
 
                             <div class="col-lg-4 bg-xs-brown_white">
                                 <p><strong><i class="fal fa-hourglass-end"></i> Course Duration </strong>
-                                    {{ $name[0]->duration}} Years</p>
+                                    {{ $name[0]->duration }} Years</p>
                             </div>
 
                             <div class="col-lg-4 bg-xs-dark_gray">
-                                <p><strong id="ctl00_ContentPlaceHolder1_pselection"><i class="fal fa-desktop-alt"></i> Apply Online</strong>
+                                <p><strong id="ctl00_ContentPlaceHolder1_pselection"><i class="fal fa-desktop-alt"></i>
+                                        Apply Online</strong>
 
 
                                     For the time being Selection Process is ...<span
@@ -280,6 +281,10 @@
                                                 <?php echo $data->apply; ?>
 
                                             </ul>
+                                            <div class="ml-4 mt-5">
+                                                <a href="https://nsucms.in/prospectus/public/" class="btn btn-warning  ">APPLY NOW</a>
+                
+                                            </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab5">
                                             <h4 class="line-bottom-theme-colored-2 mb-0">Fee Schedule - <a
@@ -329,7 +334,11 @@
 
                                     </div>
                                 </div>
+                             
 
+                            </div>
+                            <div class="ml-4 mt-5">
+                                <a href="https://nsucms.in/prospectus/public/" class="btn btn-warning  ">APPLY NOW</a>
 
                             </div>
                         </section>
@@ -360,36 +369,39 @@
             </section>
 
 
-                <div class="reco_box">
+            <div class="reco_box">
 
-                    <div class="modal fade" id="sel" role="dialog">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
+                <div class="modal fade" id="sel" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
 
-                                <div class="modal-header2">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">×</span></button>
-                                    <h4 class="pl-5 pt-4">Apply Online</h4>
-                                </div>
+                            <div class="modal-header2">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">×</span></button>
+                                <h4 class="pl-5 pt-4">Apply Online</h4>
+                            </div>
 
-                                <div class="modal-body text eleg">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
-                                          <span class="text-university">  <?php echo $data->apply; ?></span>
-
-                                        </div>
-
+                            <div class="modal-body text eleg">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                                        <span class="text-university"> <?php echo $data->apply; ?></span>
 
                                     </div>
+                                   
+                                </div>
+                                <div class="text-center">
+                                    <a href="https://nsucms.in/prospectus/public/" class="btn btn-warning  ">APPLY NOW</a>
 
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
-
                 </div>
 
-            </section>
-        @endslot
+            </div>
+
+        </section>
+    @endslot
 </x-layout1>

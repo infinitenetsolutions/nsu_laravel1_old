@@ -160,7 +160,7 @@
                                     <div class="ac-sec5-download">
                                         <h3 style="margin-top:26px;">For more details please visit UGC Website</h3>
                                         <br /><br />
-                                        <a href="pdf/Noida_Anti_Ragging_2021-22.pdf" target="_blank"><span>UGC</span></a>
+                                        <a href="https://www.ugc.ac.in/Error.aspx?code=500" target="_blank"><span>UGC</span></a>
                                     </div>
                                 </div>
                             </div>

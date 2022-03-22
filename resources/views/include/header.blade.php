@@ -386,8 +386,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
 
                 </li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us <span
-                            class="span_icon"></span></a>
+                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us </a>
                     <div class="mega_menu ">
                     </div>
                 </li>
