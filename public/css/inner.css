@@ -1595,6 +1595,7 @@ h3 .text_link {
     text-align: center;
 }
 .mega_menu .menu_boxx1 {
+    text-transform: uppercase;
     background: #363636;
     color: #e7b416;
     position: unset;

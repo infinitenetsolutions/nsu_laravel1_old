@@ -14,8 +14,8 @@ class IndexController extends Controller
         $slider = DB::table('slider_tbl')->get();
 
         // first of the home page after the slider video
-        $about = DB::table('pages')->where('page_type','about')->get();
-        $infrastructure = DB::table('pages')->where('page_type','infrastructure')->get();
+        $about = DB::table('pages')->where('page_type', 'about')->get();
+        $infrastructure = DB::table('pages')->where('page_type', 'infrastructure')->get();
 
         // university head  after video tour and upcoming events 
         $head_of_university = DB::table('faculty_tbl')->where('type', 'hou')->orderBy('designation', 'ASC')->limit(4)->get();
@@ -24,7 +24,7 @@ class IndexController extends Controller
         $testimonial = DB::table('testimonial_tbl')->get();
 
         // gallery 
-        $gallery = DB::table('gallery_tbl')->select('title')->where('title','!=','media')->distinct()->limit(6) ->get();
+        $gallery = DB::table('gallery_tbl')->select('title')->where('title', '!=', 'media')->distinct()->limit(6)->get();
 
         //  latest news 
         $latest_news = DB::table('latestnews_tbls')->orderBy('id', 'desc')->limit(5)->get();
@@ -36,7 +36,12 @@ class IndexController extends Controller
         // getting all events
         $noticeboard = DB::table('noticeboard')->orderBy('id', 'desc')->limit(4)->get();
 
-        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event,'infrastructure'=>$infrastructure,'noticeboard'=>$noticeboard]);
+        // total number of courses
+        $total_teacher = DB::table('faculty_tbl')->count();
+        // total number of teachers getting
+        $total_courses = DB::table('course_tbl')->count();
+
+        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'infrastructure' => $infrastructure, 'noticeboard' => $noticeboard,'total_course'=>$total_courses,'total_teacher'=>$total_teacher]);
     }
 
     function main_index()

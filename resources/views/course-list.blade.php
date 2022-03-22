@@ -14,18 +14,12 @@
 
 
             <section class="inner_section programmes_list new_big_line">
-
-
-
-
                 <div class="container mt-3" style="position: relative;">
                     <div id="Progressbar" class="preloader" style="display:none;">
                         <div class="mkmage-overlay preloader_image">
                         </div>
-
                     </div>
                     <h3 class="ml-2">Full Time Courses</h3>
-
                     <div class="program_list">
                         @foreach ($all_programs as $program)
                             <ul class="mt-4 mb-0 course_list" id="myList">
@@ -37,15 +31,7 @@
                                         <?php $courses = DB::table('course_tbl')
                                             ->where('program', $program->program)
                                             ->get(); ?>
-
-
-
-
-
                                         <ul>
-
-
-
                                             <table class="table table-one table-bordered table-responsive-lg">
                                                 <thead class="thead-light">
                                                     <tr>
@@ -55,7 +41,6 @@
                                                         <th>Fees</th>
                                                         <th>Type</th>
                                                         <th>Details</th>
-
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -70,14 +55,11 @@
                                                             <td> <i class="fas fa-rupee-sign    "></i> 
                                                                 {{ $course->fee }}/ semester</td>
                                                             <td>{{ $course->type }}</td>
-                                                            <td> <a
+                                                            <td> <a class="font-16 text-warning"
                                                                     href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">View more</a>
                                                             </td>
-
                                                         </tr>
                                                     @endforeach
-
-
                                                 </tbody>
                                             </table>
 

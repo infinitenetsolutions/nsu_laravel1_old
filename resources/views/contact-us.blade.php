@@ -2,7 +2,7 @@
     @slot('body')
         <section class="inner-page">
             <div class="inner-hadding">
-                
+
                 <div class="container">
                     <div class="top-menu-sec">
                         <ul>
@@ -90,9 +90,9 @@
 
                             <br>
                             <br>
-                            <p>Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique,
+                            <p>Aliquam official dolor rerum enim doloremque iusto eos atque tempora dignissimos similique,
                                 quae, maxime sit accusantium delectus.</p>
-                            <ul class="styled-icons icon-circled mb-20 d-flex mb-5">
+                            <ul class="styled-icons icon-circled mb-20 d-flex mb-4">
                                 <li><a href="#" style=" background-color: #3B5998"><i class="fab fa-facebook"></i></a></li>
                                 <li><a href="#" style="background-color: #02B0E8"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#" style="background-color: #c4944b"><i class="fab fa-instagram"></i></a></li>
@@ -100,21 +100,21 @@
                                 </li>
                             </ul>
 
-                            <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-20" href="#"> <i
+                            <div class="icon-box media mb-1  "> <a class="media-left pull-left flip mr-20" href="#"> <i
                                         class="fas fa-map"></i></a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Our Office Location</h5>
                                     <p>#405, Lan Streen, Los Vegas, USA</p>
                                 </div>
                             </div>
-                            <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-15" href="#"> <i
+                            <div class="icon-box media mb-1"> <a class="media-left pull-left flip mr-15" href="#"> <i
                                         class="fa fa-phone"></i></a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Contact Number</h5>
                                     <p><a href="tel:+325-12345-65478">+325-12345-65478</a></p>
                                 </div>
                             </div>
-                            <div class="icon-box media mb-15"> <a class="media-left pull-left flip mr-15" href="#"> <i
+                            <div class="icon-box media mb-1"> <a class="media-left pull-left flip mr-15" href="#"> <i
                                         class="fas fa-envelope"></i></a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Email Address</h5>
