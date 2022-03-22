@@ -348,9 +348,9 @@
                                 <h3 class="text-center text-white">ALL COURSES</h3>
                                 <!-- <div class="aside-section-headings"></div> -->
 
-                                <ul class="bullet_list aside-bullet">
+                                <ul class=" aside-bullet" type="none"  >
                                     @foreach ($all_courses as $course)
-                                        <li><a class="text-white"
+                                        <li ><i class="fal fa-angle-double-right"></i> <a class="text-white"
                                                 href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
                                         </li>
                                     @endforeach
