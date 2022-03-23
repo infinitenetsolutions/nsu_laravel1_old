@@ -18,7 +18,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/full-slider.css') }}" rel="stylesheet" />
@@ -26,7 +25,6 @@
     <link href="{{ asset('css/default.css') }}" type="text/css" rel="stylesheet" media="screen" />
     <link href="{{ asset('css/nivo-slider.css') }}" type="text/css" rel="stylesheet" media="screen" />
     <link href="{{ asset('css/animate.css') }}" type="text/css" rel="stylesheet" />
-    <link href="{{ asset('css/owl.carousel.min.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/colorbox.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/owl.theme.default.min.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/bootstrap-responsive-tabs.css') }}" type="text/css" rel="stylesheet" />
@@ -34,9 +32,6 @@
     <link href="{{ asset('css/inner.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/responsive.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/responsive2.css') }}" type="text/css" rel="stylesheet" />
-    <link href="{{ asset('css/ajax_stylesheet.css') }}" type="text/css" rel="stylesheet" />
-    <link href="{{ asset('css/dynamic_home.css') }}" type="text/css" rel="stylesheet" />
-    <link href="http://cdn.linearicons.com/free/1.0.0/icon-font.min.css" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/Print.css') }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/footer.css')}}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">

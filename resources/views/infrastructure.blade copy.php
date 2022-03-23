@@ -15,13 +15,13 @@
                             <h4>Infrastructure</h4>
 
                             @foreach ($quicks as $quick)
-                                <li class="{{ Request::path() == 'infrastructure/' . $quick->title ? 'active' : '' }}"><a
-                                        href="{{ route('infrastructure', $quick->title) }}">{{ $quick->sub_title }}</a></li>
+                                <li class="{{ Request::path() == 'infrastructure/'.$quick->title ? 'active' : '' }}"><a
+                                        href="{{ route('infrastructure', $quick->title) }}">{{ $quick->title }}</a></li>
                             @endforeach
                         </ul>
                     </div>
                     <div class="p-2 ">
-                        <h2>{{ $data->sub_title }}</h2>
+                        <h2>{{ $data->title }}</h2>
                         <a class="row p-2" href="{{ route('index') }}">
                             <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                             <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
@@ -31,40 +31,45 @@
             </div>
             <section class="inner_section pt-3 infra_play sangathan">
                 <div class="container">
+                 
+                @if (strlen($data->permalink) > 30)
+                    <div class="row mt-2 mb-4 pb-2">
+                        <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
+                                src="{{ str_replace($data->permalink, 'watch?v=', 'embed/') }}"
+                                allowfullscreen=""></iframe></div>
+                    </div>
 
-                    @if (strlen($data->permalink) > 30)
-                        <div class="row mt-2 mb-4 pb-2">
-                            <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
-                                    src="{{ str_replace($data->permalink, 'watch?v=', 'embed/') }}"
-                                    allowfullscreen=""></iframe></div>
-                        </div>
                     @else
-                        <div class="row mt-2 mb-4 pb-2">
-                            <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
-                                    src="https://www.youtube.com/embed/AMFNBg6GGqk" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe></div>
-                        </div>
-                    @endif
+                    <div class="row mt-2 mb-4 pb-2">
+                        <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
+                                src="https://www.youtube.com/embed/AMFNBg6GGqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                @endif
 
                 </div>
 
                 <br>
                 <div class="container">
-                    <p><?php echo substr($data->description, 0, 500); ?>.</p>
+                    <p><?php echo substr($data->description, 0, 290); ?>.</p>
                 </div>
-
-                <div class="container">
-                    <div class="  row mt-0 mb-4 mt-5">
-                        <div class="col-md-6 ">
-                            <img src="{{ $url . 'infrastructure/' . $data->image_name1 }}"
-                                class="img-fluid">
-                          
+                <style>
+                    .block::before {
+                        /* background-color: rgba(33, 35, 49, 0.7); */
+                        height: 450px;
+                    }
+                </style>
+                <div class="" style="background: url({{ $url . 'infrastructure/' . $data->header_image }}),#6DB3F2;
+                                                   background-attachment: fixed;
+                                                   padding:10px
+                                                            ">
+                    <div class=" 
+                     row mt-0 mb-4 mt-5">
+                        <div class="col-12 col-md-8 pr-2 text-white">
+                            <p class="text-justify "><?php echo substr($data->description, 292, 500); ?>.</p>
 
                         </div>
-                        <div class=" col-md-6  ">
-                            <img src="{{ $url . 'infrastructure/' . $data->image_name }}" class="img-fluid">
+                        <div class="col-12 col-md-4  ">
+                            <img src="{{ $url . 'infrastructure/' . $data->image_name }}" class="infra_img_bot">
                         </div>
                         <hr>
 
@@ -72,18 +77,16 @@
                 </div>
                 <div class=" container row mt-3 mb-5">
                     <div class=" col-md-6 pr-2">
-                        <span class="d-block bg_brown2"></span>
+                        <span class="d-block bg_brown2"><img src="{{ $url . 'infrastructure/' . $data->image_name1 }}"
+                                class="infra_img_bot"></span>
+                    </div>
+
+                    <div class=" col-md-6 pr-2">
+                        <p class="text-justify"><?php echo substr($data->description, 500, 723); ?>.</p>
                     </div>
 
                     <div class=" col-md-12 mt-2">
-                        <p class="text-justify"><?php echo substr($data->description, 499); ?>.</p>
-
-                    </div>
-                    <div class=" col-md-12 ">
-                        @if ( $data->header_image!='')
-                        <img src="{{ $url . 'infrastructure/' . $data->header_image }}" alt="" class="img-fluid">
- 
-                        @endif
+                        <p class="text-justify"><?php echo substr($data->description, 724, 38000); ?>.</p>
 
                     </div>
                 </div>
