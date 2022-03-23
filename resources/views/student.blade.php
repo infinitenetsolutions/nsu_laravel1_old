@@ -21,7 +21,7 @@
                             </ul>
                         </div>
                         <div class="p-2 ">
-                            <h2>{{ $data->title }}</h2>
+                            <h2>{{ $data->sub_title }}</h2>
                             <a class="row p-2" href="{{ route('index') }}">
                                 <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                                 <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
@@ -107,8 +107,8 @@
                     <div class="container">
                         <?php $affiliations = DB::table('affiliated_tbl')->get(); ?>
                         <div class="academia-sec4">
-                            <h2 class=" p-2 ">Our Affliation<h2>
-                                    <ul class="row">
+                            <h2 class=" p-2 carousel-inner mt-5 text-white ">Our Affliation<h2>
+                                <ul class="row">
                                         @foreach ($affiliations as $affiliation)
                                             <li class="col-12 col-md-4 col-lg-4 col-xl-4">
                                                 <div class="colm-ac-sec4 p-3 text-center ">
