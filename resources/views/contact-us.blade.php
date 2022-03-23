@@ -1,13 +1,14 @@
 <x-layout1>
 
     @slot('body')
-    <style>
-        .close_btn2 {
-         
-          display: none !important;
-       
-      }
-      </style>
+        <style>
+            .close_btn2 {
+
+                display: none !important;
+
+            }
+
+        </style>
         <section class="inner-page">
             <div class="inner-hadding">
 
@@ -98,8 +99,10 @@
 
                             <br>
                             <br>
-                            <p>Aliquam official dolor rerum enim doloremque iusto eos atque tempora dignissimos similique,
-                                quae, maxime sit accusantium delectus.</p>
+                            <p>Have any questions or concerns? We are here to help! Your inquiry or comment will be sent to
+                                the appropriate recipient based on subject matter
+
+                                .</p>
                             <ul class="styled-icons icon-circled mb-20 d-flex mb-4">
                                 <li><a href="#" style=" background-color: #3B5998"><i class="fab fa-facebook"></i></a></li>
                                 <li><a href="#" style="background-color: #02B0E8"><i class="fab fa-twitter"></i></a></li>
