@@ -4,7 +4,7 @@
 
 
 
-            <?php $sliders = DB::table('slider_tbl')->get(); ?>
+            <?php $sliders = DB::table('slider_tbl')->where('is_deleted','1')->get(); ?>
             @foreach ($sliders as $slider)
                 <a id="homebanner1_RepBannerImg_ctl03_anch">
                     <div id="homebanner1_RepBannerImg_ctl03_divtop" class="item"

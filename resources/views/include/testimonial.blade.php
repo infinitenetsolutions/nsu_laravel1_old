@@ -60,7 +60,7 @@
                 @endforeach
 
             </div>
-            <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+            <a style="top: 25% !important" class="carousel-control-prev" href="#testimonial4" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
             <a class="carousel-control-next" href="#testimonial4" data-slide="next">

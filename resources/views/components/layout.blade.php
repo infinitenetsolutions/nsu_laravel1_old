@@ -69,18 +69,7 @@
     <script src="js/jquery.slimscroll.min.js"></script>
     <script src="js/home-index.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            function stopsliding(){
-                alert("working")
-                $('.carousel').carousel({
-                interval: false,
-            });
-            }
-        
-        });
-    </script>
-
+   
 
     <!--LeadSquared Tracking Code End-->
 </body>

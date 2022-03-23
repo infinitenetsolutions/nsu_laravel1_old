@@ -144,12 +144,12 @@
                                                         href="{{ route('noticeboard', $event->id) }}">
                                                         {{ $event->name }}</a></h5>
                                                 <span class="mr-10 text-white"><i
-                                                        class="fa fa-clock-o text-theme-colored2"></i>
+                                                        class="far fa-clock text-theme-colored2"></i>
                                                     {{ $event->created_at }}
                                                     &nbsp; &nbsp;
 
                                                     <span class="text-white"> <i
-                                                            class="fa fa-map-marker text-theme-colored2"></i>
+                                                            class="far fa-map-marker-alt text-theme-colored2"></i>
                                                         {{ $event->title }}</span>
                                             </div>
                                         </a>
@@ -240,7 +240,7 @@
                                 </div>
                                 <div class="team-bottom-part bg-silver-deep  p-2 bg-white">
                                     <h4
-                                        class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 line-bottom-center m-0">
+                                        class="text-uppercase font-raleway text-theme-colored title-border font-weight-600 text-left pl-2 line-bottom-center m-0">
                                         {{ substr($university_head->name, 0, 20) }} <span
                                             class="text-gray font-13 p-2 ">-
                                             <br>
@@ -304,8 +304,7 @@
                                                     href="{{ route('event', $event->id) }}">
                                                     <span class="carousel-inner">Events</span>
 
-                                                    <span class="ml-2 font-weight-bold carousel-inner"><i
-                                                            class="fas fa-calendar text-theme-colored2"></i>
+                                                    <span class="ml-2 font-weight-bold carousel-inner"><i class="far fa-calendar-alt"></i>
                                                         {{ explode('-', $event->timing)[2] }}
                                                         {{ date_format(date_create($event->timing), 'M - Y') }} </span>
                                                 </a>
@@ -321,8 +320,8 @@
                                                         <span class="mr-2"><i
                                                                 class="fa fa-clock-o text-theme-colored2"></i>
                                                             {{ $event->start }}
-                                                            pm - {{ $event->end }} pm</span>
-                                                        <span> <i class="fa fa-map-marker text-theme-colored2"></i>
+                                                            am - {{ $event->end }} pm</span>
+                                                        <span> <i class="far fa-map-marker-alt"></i>
                                                             {{ $event->title }}</span>
                                                     </div>
                                                 </a>
