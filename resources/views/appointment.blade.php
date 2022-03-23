@@ -1,5 +1,6 @@
 <x-layout1>
     @slot('title', 'Appointment Letter')
+
     @slot('body')
         <style>
             iframe html body img {
@@ -7,6 +8,24 @@
             }
 
         </style>
+        <?php 
+        function url_check1($url)
+        {
+            stream_context_set_default([
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                ],
+            ]);
+        
+            $array = get_headers($url);
+            $string = $array[0];
+            if (strpos($string, '200')) {
+                return true;
+            } else {
+                return false;
+            }
+        } ?>
         <!-- Start main-content -->
         <section class="inner-page">
             <div class="inner-hadding">
@@ -74,9 +93,12 @@
                                         <h6 class="text-gray font-13 font-weight-400 line-bottom-centered mt-0">
                                             {{ $appointment->sub_title }}
                                         </h6>
+                                        @if (url_check1($url . 'appointment/' . $appointment->image_name2))
+
                                         <a target="_blank" href="{{ $url . 'appointment/' . $appointment->image_name2 }}"
                                             class="hidden-md text-danger"><i class="fa fa-download" aria-hidden="true"></i>
                                             Appointment-Letter</a>
+                                            @endif
                                     </div>
                                 </div>
                             </div>

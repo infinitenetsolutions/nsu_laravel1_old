@@ -20,7 +20,7 @@ class PlacementController extends Controller
     // showing the data fo appointment
     function appointment()
     {
-        $data = DB::table('appointment_tbl')->paginate(8);
+        $data = DB::table('appointment_tbl')->paginate(12);
         return view('appointment', ['data' => $data,  'url' => $this->url()]);
     }
 

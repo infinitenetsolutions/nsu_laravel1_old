@@ -5,31 +5,34 @@
             <div class="inner-hadding">
                 <div class="container">
                     <div class="breadcrumb">
-                        <a href="{{route('index')}}">Home</a>
-                      <a href="">Placement</a>
-                      <a href="">{{$data->sub_title}}</a>
+                        <a href="{{ route('index') }}">Home</a>
+                        <a href="">Placement</a>
+                        <a href="">{{ $data->sub_title }}</a>
                     </div>
                 </div>
-                    <div class="container">
-                        <div class="top-menu-sec">
-                            <ul>
-                                <h4>About</h4>
-                                @foreach ($quicks as $quick)
-                                    <li><a href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        <div class="p-2 ">
-                            <h2>{{ $data->sub_title }}</h2>
-                            <a class="row p-2" href="{{ route('index') }}">
+                <div class="container">
+                    <div class="top-menu-sec">
+                        <ul>
+                            <h4>Placement</h4>
+                            @foreach ($quicks as $quick)
+                                <li><a href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
+                                </li>
+                            @endforeach
+                            <li> <a href="{{ route('appointment') }}"> Appointment Letter</a></li>
+                            <li><a href="{{ route('requiters') }}"> Our Requiters </a></li>
+                            <li><a href="{{ route('placement-contact') }}"> Placement Contact </a></li>
+                        </ul>
+                    </div>
+                    <div class="p-2 ">
+                        <h2>{{ $data->sub_title }}</h2>
+                        <a class="row p-2" href="{{ route('index') }}">
 
-                                <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
-                                <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
-                            </a>
-                        </div>
+                            <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                            <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                        </a>
                     </div>
                 </div>
+            </div>
 
 
             <div class="row ml-3 mr-3 ">
@@ -49,25 +52,27 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <div class="modal-content">
-                   
+
                                 <div class="modal-body">
-                                   
-                                    <iframe src="{{ str_replace('watch?v=','embed/', $data->permalink ) }}" width="100%" height="400px" frameborder="0"></iframe>
+
+                                    <iframe src="{{ str_replace('watch?v=', 'embed/', $data->permalink) }}" width="100%"
+                                        height="400px" frameborder="0"></iframe>
                                 </div>
-                           
+
                             </div>
                         </div>
                     </div>
                     {{-- modal end --}}
 
                     <div class=" mb-5 ">
-                        <p class="text-justify"><?php echo substr($data->description, 0, 1000); ?> </p>
+                        <p class="text-justify  "><?php echo substr($data->description, 0, 1000); ?> </p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="effect-wrapper">
 
                                     <div class="video-button"></div>
-                                    <a class="hover-link" data-toggle="modal" data-target="#exampleModalCenter" title="Youtube Video"></a>
+                                    <a class="hover-link" data-toggle="modal" data-target="#exampleModalCenter"
+                                        title="Youtube Video"></a>
                                 </div>
                                 <img src="{{ $url . 'placement/' . $data->image_name }}" class="img-fluid">
 
@@ -77,7 +82,7 @@
 
                             </div>
                         </div>
-                        <p class="text-justify"><?php echo substr($data->description, 1000); ?> </p>
+                        <p class="text-justifym  "><?php echo substr($data->description, 1000); ?> </p>
                     </div>
 
                 </div>
@@ -93,12 +98,22 @@
                                     <li> <b class="text-white ">
                                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                             <a class="text-capitalize text-dark"
-                                                href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
+                                                href="{{ route('placement', $quick->title) }}">{{ $quick->title }}</a>
                                             <hr>
 
                                         </b>
                                     </li>
                                 @endforeach
+                                <li> <b class="text-white"> <i class="fa fa-angle-double-right"
+                                            aria-hidden="true"></i><a class="text-capitalize text-dark" href="{{ route('appointment') }}"> Appointment
+                                            Letter</a></b> </li>
+                                <hr>
+                                <li> <b class="text-white"> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a class="text-capitalize text-dark" href="{{ route('requiters') }}"> Our Requiters </a> </b> </li>
+                                <hr>
+                                <li> <b class="text-white"> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a class="text-capitalize text-dark" href="{{ route('placement-contact') }}"> Placement Contact </a> </b> </li>
+                                <hr>
 
                             </ul>
 
@@ -117,7 +132,7 @@
                         <?php $affiliations = DB::table('affiliated_tbl')->get(); ?>
                         <div class="academia-sec4">
                             <h2 class=" p-2 carousel-inner mt-5 text-white ">Our Affliation<h2>
-                                <ul class="row">
+                                    <ul class="row">
                                         @foreach ($affiliations as $affiliation)
                                             <li class="col-12 col-md-4 col-lg-4 col-xl-4">
                                                 <div class="colm-ac-sec4 p-3 text-center ">
@@ -126,35 +141,36 @@
                                                         alt="">
                                                     <div class="border p-2">
                                                         <h4>{{ $affiliation->title }}</h4>
-            
+
                                                         <p>{{ $affiliation->sub_title }}</p>
                                                     </div>
-            
-            
+
+
                                                 </div>
                                             </li>
                                         @endforeach
-            
+
                                     </ul>
                         </div>
                     </div>
                 </section>
             </div>
-            
-            
+
+
             <section class="academia-sec6">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 padAdjust">
-            
+
                             <div class="row career no-gutters">
                                 <div class="col-md-12">
                                     <div class="ac-sec5-download">
                                         <h3 style="margin-top:26px;">For more details please visit UGC Website</h3>
                                         <br /><br />
-                                        <a href="pdf/Noida_Anti_Ragging_2021-22.pdf" target="_blank"><span>UGC</span></a>
+                                        <a href="https://www.ugc.ac.in/Error.aspx?code=500"
+                                            target="_blank"><span>UGC</span></a>
                                     </div>
-            
+
                                 </div>
                             </div>
                         </div>

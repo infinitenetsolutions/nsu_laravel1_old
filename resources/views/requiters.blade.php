@@ -1,6 +1,8 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Nataji subhas University - Photo Gallery</title>
     <meta name="description" content="Netaji Subhas  University">
     <meta name="keywords" content="Netaji Subhas  University">
@@ -70,7 +72,7 @@
                   </ul>
               </div>
               <div class="p-3 ">
-                  <h2> Recruiters</h2>
+                  <h2 class="text-university"> Recruiters</h2>
                   <a class="row p-2" href="{{ route('index') }}">
                       <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                       <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
@@ -82,7 +84,7 @@
             <div class="container event_detail">
                 <div class="col-12">
                 </div>
-                <section class="card-columns1 waterfall photo_gallery" style="height: 487.391px;">
+                <section class="card-columns1 waterfall photo_gallery" >
                     <div class="row">
                         @foreach ($data as $image)
                             <div class="col-sm-3">
