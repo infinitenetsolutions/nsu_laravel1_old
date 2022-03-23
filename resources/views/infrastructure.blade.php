@@ -76,7 +76,7 @@
                     </div>
 
                     <div class=" col-md-12 mt-2">
-                        <p class="text-justify"><?php echo substr($data->description, 499); ?>.</p>
+                        <p class="text-justify"><?php echo substr($data->description, 500); ?>.</p>
 
                     </div>
                     <div class=" col-md-12 ">
