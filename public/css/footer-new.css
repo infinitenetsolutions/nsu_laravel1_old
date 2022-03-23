@@ -16,14 +16,7 @@
        color: #023214;
    }
    
-   footer .icon-before li a:before {
-       font-family: "Font Awesome 5 Free";
-       content: "\f101";
-       display: inline-block;
-       padding-right: 3px;
-       vertical-align: middle;
-       font-weight: 900;
-   }
+
    
    footer .reach-us {
        color: #999999;

@@ -8,12 +8,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Amity University provides world-class education in diverse streams including engineering, management, medical and others. Visit our campus to know more." />
-    <meta name="keywords" content="Universities in delhi ncr, best university in noida, noida university, private universities in delhi ncr, best universities in delhi ncr, Amity University" />
+   
     <title>
     Best University In Jharkhand With All Courses And Placements
     </title>
-    <meta name="facebook-domain-verification" content="398kjnpl8e7fz5txzlogujyrwlgzri" />
+ 
 
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">

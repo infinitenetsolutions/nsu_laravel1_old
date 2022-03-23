@@ -1,15 +1,4 @@
-<style>
-    .menu_nav ul li a:before {
-        /* font-family: "FontAwesome";
-        content: "\f7e7";
-        display: inline-block;
-        padding-right: 3px;
-        vertical-align: middle;
-        font-weight: 900;
-        color: #fff; */
-    }
 
-</style>
 <?php
 $home_url = '';
 
