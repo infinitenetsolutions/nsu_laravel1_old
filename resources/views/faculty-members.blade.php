@@ -39,7 +39,7 @@
                                 @foreach ($facultyes as $faculty)
                                     @if ($faculty->type == 'hou')
                                         <li><a href="{{ route('faculty', $faculty->type) }}">Meet
-                                                our Heade of University</a></li>
+                                                our Head of University</a></li>
                                     @else
                                         <li><a href="{{ route('faculty', $faculty->type) }}">Meet
                                                 our {{ $faculty->type }}</a></li>
