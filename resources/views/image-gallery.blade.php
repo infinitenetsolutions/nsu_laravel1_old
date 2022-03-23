@@ -36,7 +36,7 @@
                             </div>
                     </div>
                 </div>
-                <section class="inner_section event_list">
+                <section class="inner_section pl-3 ">
                     <div class="container">
                         <ul class="row">
                             @foreach($gallery_title as $title)
@@ -57,12 +57,7 @@
                                 @endif
                             @endforeach
                         </ul>
-                        <div class="text-center">
-
-                            <nav id="ctl00_ContentPlaceHolder1_divpaging" aria-label="Page navigation example">
-
-                            </nav>
-                        </div>
+                     
                     </div>
                 </section>
             </section>
