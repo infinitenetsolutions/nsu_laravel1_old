@@ -93,7 +93,7 @@
             <div class="container event_detail">
                 <div class="col-12">
                 </div>
-                <section class="card-columns1 waterfall photo_gallery" style="height: 487.391px;">
+                <section class="card-columns1 waterfall photo_gallery" >
                     <div class="row">
 
                         @foreach($gallery_title as $image)
@@ -123,6 +123,7 @@
 
 
     </section>
+<br>
 
 
     <!--end About Section -->

@@ -76,9 +76,15 @@
 
                         </ul>
                     </div>
-
-                    <h2 class="text-university "> <i class="fas fa-newspaper    "></i>
-                        Media Gallery </h2>
+                    <div class="p-2 ">
+                        <h2 class="text-university "> <i class="fas fa-newspaper    "></i>
+                            Media Gallery </h2>
+                        <a class="row p-2" href="{{ route('index') }}">
+                            <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                            <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                        </a>
+                    </div>
+                   
 
                 </div>
             </div>
@@ -86,7 +92,7 @@
                 <div class="container event_detail">
                     <div class="col-12">
                     </div>
-                    <section class="card-columns1 waterfall photo_gallery" style="height: 487.391px;">
+                    <section class="card-columns1 waterfall photo_gallery" >
                         <div class="row">
                             @foreach ($gallery_title as $image)
                                 <div class="col-sm-4 ">
@@ -118,6 +124,7 @@
 
     </section>
 
+<br>
 
     <!--end About Section -->
     <!-- Footer -->
