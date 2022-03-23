@@ -106,7 +106,7 @@
                     <div class="row">
 
                         @foreach ($gallery_title as $image)
-                            <div class=" col-sm-3 ">
+                            <div class=" col-sm-3 border p-3 ">
                                 <a class="group1 cboxElement" href="{{ $url . 'gallery/' . $image->image_name }}">
                                     <div class="card-head">
                                         <img class="card-img-top img-fluid"
