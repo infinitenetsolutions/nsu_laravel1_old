@@ -302,9 +302,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
                                             <div role="tabpanel" class="tab-pane fade" id="certificate">
                                                 <p class="pt-4">
-                                                    <strong> <i class="fa fa-certificate" aria-hidden="true"></i> Post
-                                                        graduate
-                                                        Courses</strong>
+                                                    <strong> <i class="fa fa-certificate" aria-hidden="true"></i> certificate Courses</strong>
                                                 </p>
                                                 <div class="menu_nav nsu-courses p-2">
                                                     <ul>

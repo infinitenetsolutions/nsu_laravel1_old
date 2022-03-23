@@ -47,13 +47,10 @@
         <section class="home-sec3 mydiv">
             <div class="container mb-5">
                 <div class="row    ">
-                    <div class="col-12 mt-15  ">
+                    <div class="col-12  ">
                         <h2 class="wow fadeInDown ">Student <span>Life</span></h2>
                         <div class="student-home">
                             <div class="row">
-
-
-
                                 <div class="col-12 col-sm-12 col-md-4 pro">
                                     <span><img
                                             src="{{ $url . 'infrastructure/' . $infrastructure[0]->image_name }}"></span>
