@@ -8109,7 +8109,7 @@ color: #808000;
 .img-fullwidth{
     width: 100%;
     max-height: 352px;
-    min-height: 352px;
+    min-height: 180;
 }
 .line-bottom-centered{
     border-top:#808000 solid 3px;
