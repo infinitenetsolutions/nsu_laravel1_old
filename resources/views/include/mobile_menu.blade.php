@@ -148,6 +148,6 @@
 
     <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
 
-    <li class="nav-item"><a class="nav-link apply_btn" href="apply-now.html">Apply Online</a>
+    <li class="nav-item"><a class="nav-link apply_btn" href="https://nsucms.in/prospectus/public/">Apply Online</a>
     </li>
 </ul>
