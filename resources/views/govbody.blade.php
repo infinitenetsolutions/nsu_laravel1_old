@@ -33,7 +33,7 @@
             </div>
         </div>
         <section>
-            <div class="container pt-70 pb-40">
+            <div class="container pt-4 pb-40">
                 <div class="section-title">
                     <div class="row">
                         <h3 class="text-uppercase mt-0">Government <span class="text-theme-colored2">Body</span></h3>

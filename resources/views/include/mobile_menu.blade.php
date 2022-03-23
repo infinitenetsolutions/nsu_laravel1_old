@@ -5,10 +5,12 @@
 
             <li><a href="{{ route('course_list') }}">Online Admission</a></li>
 
-            <?php $admissions = DB::table('pages')->where('page_type','admission')->get();
+            <?php $admissions = DB::table('pages')
+                ->where('page_type', 'admission')
+                ->get();
             ?>
-            @foreach($admissions as $admission)
-            <li><a href="{{ route('admission', $admission->title )  }}"> {{ $admission->sub_title }}</a></li>
+            @foreach ($admissions as $admission)
+                <li><a href="{{ route('admission', $admission->title) }}"> {{ $admission->sub_title }}</a></li>
             @endforeach
             <li><a href="{{ route('course_list') }}">Admission Enquiry</a></li>
 
@@ -20,7 +22,7 @@
     <li class="nav-item"><a class="nav-link" href="#">About Netaji
             <span class="span_icon"></span></a>
         <?php $abouts = DB::table('pages')
-        ->where('is_deleted','1')
+            ->where('is_deleted', '1')
             ->where('page_type', 'about')
             ->limit(9)
             ->get();
@@ -32,26 +34,28 @@
             @endforeach
 
             <?php $facultyes = DB::table('faculty_tbl')
-            ->where('is_deleted','1')
-            ->distinct()
-            ->get(['type']);
-        ?>
-        @foreach ($facultyes as $faculty)
-            <li><a href="{{ route('faculty', $faculty->type) }}">Meet
-                    our {{ $faculty->type }}</a></li>
-        @endforeach
-        <?php $studentpdfs = DB::table('pdf')
-        ->where('type', 'aboutpdf')
-        ->where('is_deleted','1')
-        ->get();
-    ?>
-       <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
-       @foreach ($studentpdfs as $studentpdf)
-           <li><a target="_blank"
-                   href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
-                   {{ $studentpdf->title }}</a>
-           </li>
-       @endforeach
+                ->where('is_deleted', '1')
+                ->distinct()
+                ->get(['type']);
+            ?>
+            @foreach ($facultyes as $faculty)
+                <li><a href="{{ route('faculty', $faculty->type) }}">Meet
+                        our {{ $faculty->type }}</a></li>
+            @endforeach
+            <?php $studentpdfs = DB::table('pdf')
+                ->where('type', 'aboutpdf')
+                ->where('is_deleted', '1')
+                ->get();
+            ?>
+            <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
+            @foreach ($studentpdfs as $studentpdf)
+            @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+
+                <li><a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
+                        {{ $studentpdf->title }}</a>
+                </li>
+                @endif
+            @endforeach
         </ul>
     </li>
 
@@ -80,7 +84,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'infrastructure')
-            ->where('is_deleted','1')
+            ->where('is_deleted', '1')
             ->get();
         ?>
         <ul class="dropdown-menu">
@@ -96,7 +100,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'placement')
-            ->where('is_deleted','1')
+            ->where('is_deleted', '1')
             ->limit(9)
             ->get();
         ?>
@@ -107,9 +111,9 @@
             @endforeach
 
 
-            <li> <a href="{{ route('appointment') }}">  Appointment Letter</a></li>
-            <li><a href="{{ route('requiters') }}">  Our Requiters </a></li>
-            <li><a href="{{ route('placement-contact') }}">   Placement Contact </a></li>
+            <li> <a href="{{ route('appointment') }}"> Appointment Letter</a></li>
+            <li><a href="{{ route('requiters') }}"> Our Requiters </a></li>
+            <li><a href="{{ route('placement-contact') }}"> Placement Contact </a></li>
         </ul>
     </li>
 
@@ -119,7 +123,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'student')
-            ->where('is_deleted','1')
+            ->where('is_deleted', '1')
             ->get();
         ?>
         <ul class="dropdown-menu">
@@ -129,15 +133,17 @@
             @endforeach
             <?php $studentpdfs = DB::table('pdf')
                 ->where('type', 'studentpdf')
-                ->where('is_deleted','1')
+                ->where('is_deleted', '1')
                 ->get();
             ?>
 
             @foreach ($studentpdfs as $studentpdf)
-            <li>    <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
-                    
-                    {{ $studentpdf->title }}
-                </a></li>
+                @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+                    <li> <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
+
+                            {{ $studentpdf->title }}
+                        </a></li>
+                @endif
             @endforeach
 
         </ul>
@@ -155,8 +161,9 @@
 
     </li>
 
-    <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
 
-    <li class="nav-item"><a class="nav-link apply_btn" href="https://nsucms.in/prospectus/public/">Apply Online</a>
+    <li class="nav-item"><a class="nav-link apply_btn" href="https://nsucms.in/prospectus/public/">Apply
+            Online</a>
     </li>
 </ul>

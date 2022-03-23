@@ -6,6 +6,24 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
     $home_url = 'http://127.0.0.1:8001/upload/';
 } else {
     $home_url = 'https://www.nsuniv.ac.in/nsuadmin/public/upload/';
+}
+
+function url_check($url)
+{
+    stream_context_set_default([
+        'ssl' => [
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+        ],
+    ]);
+
+    $array = get_headers($url);
+    $string = $array[0];
+    if (strpos($string, '200')) {
+        return true;
+    } else {
+        return false;
+    }
 } ?>
 
 <!-- Top Level Navigation -->
@@ -207,10 +225,13 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
                                                     <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
                                                     @foreach ($studentpdfs as $studentpdf)
+                                                    @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+
                                                         <li><a class="text-uppercase" target="_blank"
                                                                 href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
                                                                 {{ $studentpdf->title }}</a>
                                                         </li>
+                                                        @endif
                                                     @endforeach
                                                 </ul>
                                             </div>

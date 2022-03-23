@@ -26,6 +26,8 @@
             ?>
 
             @foreach ($studentpdfs as $studentpdf)
+            @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+
             <div class="col-md-3 section ">
                 <div class="border1">
                     <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}"> <img  src="{{ asset('images/nsu/icon/download.jpg') }}" class="img-fluid">
@@ -37,6 +39,8 @@
                 </div>
 
             </div>
+            @endif
+
             @endforeach
 
         </div>
