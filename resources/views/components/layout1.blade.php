@@ -64,7 +64,8 @@
         $(document).ready(function() {
             // getting the slider data
         
-            
+            alert("Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio);
+    
 
             // getting the menu for infrastructure menu
             var xmlhttp = new XMLHttpRequest();
@@ -108,7 +109,7 @@
             xmlhttp.send();
 
 
-        });
+        });``   
     </script>
 
     <!--LeadSquared Tracking Code End-->
