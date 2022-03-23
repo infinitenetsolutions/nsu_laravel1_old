@@ -2,7 +2,9 @@
     <div class="custom-notification">
         <div class="custom-notification-container">
             <div class="custom-notification-content-wrapper">
-                <a href="{{ route('index') }}" target="_blank"><img src="images/mdt-logo.jpg" /></a>
+                <a href="{{ route('index') }}" target="_blank">
+                    {{-- <img src="images/mdt-logo.jpg" /> --}}
+                </a>
             </div>
         </div>
         <div onclick="myFunction()" class="custom-close"></div>

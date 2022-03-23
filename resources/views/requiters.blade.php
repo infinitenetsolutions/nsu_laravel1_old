@@ -43,6 +43,13 @@
     <!-- About Section -->
 
 
+    <style>
+        .mega_menu .menu_boxx1 {
+       
+        margin-top: 0px;
+      
+    }
+    </style>
     <section class="inner-page">
       <div class="inner-hadding ">
           <div class="container">
@@ -58,7 +65,7 @@
                       <h4>Placement </h4>
                       <li><a href="{{ route('index') }}">Home</a>
                       </li>
-                      <li><a href="{{ route('placement-contact') }}"> Recruiters</a>
+                      <li><a href="{{ route('requiters') }}"> Recruiters</a>
                       </li>
                   </ul>
               </div>
