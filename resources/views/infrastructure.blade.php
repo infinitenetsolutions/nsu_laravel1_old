@@ -70,25 +70,21 @@
 
                     </div>
                 </div>
-                <div class=" container row mt-3 mb-5">
-                    <div class=" col-md-6 pr-2">
-                        <span class="d-block bg_brown2"></span>
-                    </div>
+                <div class=" container mt-3 ">
+             
 
-                    <div class=" col-md-12 mt-2">
+                    <div class=" mt-5 pt-3">
                         <p class="text-justify"><?php echo substr($data->description, 500); ?>.</p>
 
                     </div>
-                    <div class=" col-md-12 ">
+                    <div class=" mt-2 ">
                         @if ( $data->header_image!='')
                         <img src="{{ $url . 'infrastructure/' . $data->header_image }}" alt="" class="img-fluid">
- 
-                        @endif
 
+                        @endif
                     </div>
                 </div>
             </section>
-
         </section>
 
 
