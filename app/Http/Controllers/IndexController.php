@@ -36,12 +36,8 @@ class IndexController extends Controller
         // getting all events
         $noticeboard = DB::table('noticeboard')->orderBy('id', 'desc')->limit(4)->get();
 
-        // total number of courses
-        $total_teacher = DB::table('faculty_tbl')->count();
-        // total number of teachers getting
-        $total_courses = DB::table('course_tbl')->count();
 
-        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'infrastructure' => $infrastructure, 'noticeboard' => $noticeboard,'total_course'=>$total_courses,'total_teacher'=>$total_teacher]);
+        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'infrastructure' => $infrastructure, 'noticeboard' => $noticeboard]);
     }
 
     function main_index()

@@ -39,7 +39,7 @@
                                        </div>
                                    </div>
                                </div>
-                               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                               {{-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                    <div class="form_box">
                                        <div class="form-group">
                                            <select name="ctl00$sliderenquiry1$ddlCampus" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$sliderenquiry1$ddlCampus\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_sliderenquiry1_ddlCampus" class="form-control">
@@ -101,7 +101,7 @@
                                            <input type="submit" name="ctl00$sliderenquiry1$btnsub" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$sliderenquiry1$btnsub&quot;, &quot;&quot;, true, &quot;slidesubmit&quot;, &quot;&quot;, false, false))" id="ctl00_sliderenquiry1_btnsub" />
                                        </div>
                                    </div>
-                               </div>
+                               </div> --}}
                            </div>
 
 

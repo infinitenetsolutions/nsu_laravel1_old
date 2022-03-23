@@ -117,43 +117,7 @@
             {{-- @include('include.requiters') --}}
         </section> <!-- end main-content -->
 
-        <section class=" p-5 bg-black mydiv">
-            <div class="container">
-                <div class="top-home-sec1 row">
-
-                    <div class="col-12 col-md-12">
-                        <h2>
-                            Study at NSU</h2>
-                    </div>
-
-                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                        <p class="wow fadeInUp text-justify">
-                            Netaji Subhas University is the first premier and one of the best University in Jharkhand,
-                            with a venerable legacy, highest academic standards, diverse educational programmes,
-                            distinguished faculty, illustrious alumni, varied co-curricular activities and modern
-                        </p>
-
-                    </div>
-                    <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                        <ul>
-                            <li>
-                                <h3 class="wow fadeInDown">38+</h3>
-                                <span class="wow fadeInUp">Courses</span>
-                            </li>
-                            <li>
-                                <h3 class="wow fadeInDown">15000+</h3>
-                                <span class="wow fadeInUp"> Student </span>
-                            </li>
-                            <li>
-                                <h3 class="wow fadeInDown">100+</h3>
-                                <span class="wow fadeInUp">Quilified Teachers</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        @include('include.studyat')
         <br>
      
     @endslot

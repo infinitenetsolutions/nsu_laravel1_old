@@ -28,25 +28,20 @@
                             <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                             <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
                         </a>
-
-
                     </div>
-
                 </div>
             </div>
             <section class="inner_section pt-3 infra_play sangathan">
                 <div class="container">
                     <p><?php echo substr($data->description, 0, 290); ?>.</p>
                 </div>
-                    @if (strlen($data->permalink) > 30)
-                        <div class="row mt-2 mb-4 pb-2">
-                            <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
-                                    src="{{ str_replace($data->permalink, 'watch?v=', 'embed/') }}"
-                                    allowfullscreen=""></iframe></div>
-                        </div>
-                    @endif
-
-
+                @if (strlen($data->permalink) > 30)
+                    <div class="row mt-2 mb-4 pb-2">
+                        <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"
+                                src="{{ str_replace($data->permalink, 'watch?v=', 'embed/') }}"
+                                allowfullscreen=""></iframe></div>
+                    </div>
+                @endif
                 </div>
                 <br>
                 <style>
@@ -58,9 +53,9 @@
 
                 </style>
                 <div class="" style="background: url({{ $url . 'infrastructure/' . $data->header_image }}),#6DB3F2;
-                                               background-attachment: fixed;
-                                               padding:10px
-                                                        ">
+                                                   background-attachment: fixed;
+                                                   padding:10px
+                                                            ">
                     <div class=" 
                      row mt-0 mb-4 mt-5">
                         <div class="col-12 col-md-8 pr-2 text-white">
