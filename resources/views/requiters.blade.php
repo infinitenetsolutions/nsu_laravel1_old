@@ -12,7 +12,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') }}">
     <link
         href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800"
         rel="stylesheet">
@@ -45,7 +44,7 @@
 
 
     <section class="inner-page">
-      <div class="inner-hadding">
+      <div class="inner-hadding ">
           <div class="container">
               <div class="breadcrumb">
                   <a href="{{ route('index') }}">Home</a>
@@ -53,7 +52,7 @@
                   <a href=""> Recruiters</a>
               </div>
           </div>
-          <div class="container">
+          <div class="container ">
               <div class="top-menu-sec">
                   <ul>
                       <h4>Placement </h4>
@@ -66,14 +65,13 @@
               <div class="p-3 ">
                   <h2> Recruiters</h2>
                   <a class="row p-2" href="{{ route('index') }}">
-
                       <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
                       <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
                   </a>
               </div>
           </div>
       </div>
-        <section class="inner_section media_coverage">
+        <section class="inner_section media_coverage ">
             <div class="container event_detail">
                 <div class="col-12">
                 </div>

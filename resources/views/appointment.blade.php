@@ -14,7 +14,7 @@
                     <div class="breadcrumb">
                         <a href="{{ route('index') }}">Home</a>
                         <a href="">Placement</a>
-                        <a href=""> Recruiters</a>
+                        <a href=""> Appointment Letter</a>
                     </div>
                 </div>
                 <div class="container">
@@ -23,12 +23,12 @@
                             <h4>Placement </h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
-                            <li><a href="{{ route('placement-contact') }}"> Recruiters</a>
+                            <li><a href="{{ route('appointment') }}"> Appointment Letter</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="p-3 ">
-                        <h2> Recruiters</h2>
+                    <div class="p-3 mb-4 ">
+                        <h2> Appointment Letter</h2>
                         <a class="row p-2" href="{{ route('index') }}">
 
                             <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
