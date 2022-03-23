@@ -102,6 +102,11 @@
                 <li><a href="{{ route('placement', $infrastructure->title) }}">
                         {{ $infrastructure->sub_title }}</a></li>
             @endforeach
+
+
+            <li> <a href="{{ route('appointment') }}">  Appointment Letter</a></li>
+            <li><a href="{{ route('requiters') }}">  Our Requiters </a></li>
+            <li><a href="{{ route('placement-contact') }}">   Placement Contact </a></li>
         </ul>
     </li>
 
