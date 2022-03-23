@@ -17,7 +17,6 @@
                             <h4>Placement </h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
-                            <li><a href="{{ route('index') }}">Home</a>
                             </li>
                             <li class="{{ Request::path() == 'placements/placement' ? 'active' : '' }}"><a
                                     href="/placements/placement"> Placement </a>
