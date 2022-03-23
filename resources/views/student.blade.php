@@ -17,7 +17,7 @@
                                 @foreach ($quicks as $quick)
                                 <li><a href="{{ route('index') }}">{{ 'Home' }}</a>
                                 </li>
-                                    <li><a href="{{ route('student', $quick->title) }}">{{ $quick->sub_title }}</a>
+                                    <li class="{{ Request::path() == 'student/'.$quick->title ? 'active' : '' }}"> <a href="{{ route('student', $quick->title) }}">{{ $quick->sub_title }}</a>
                                     </li>
                                 @endforeach
                             </ul>

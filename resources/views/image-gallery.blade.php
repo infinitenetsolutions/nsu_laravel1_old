@@ -17,9 +17,11 @@
                             <h4>Gallery</h4>
 
                             <ul>
-                                <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
-                                <li><a href="{{ route('media-gallery') }}">Media Gallery</a>
-                                </li>
+                                <li class="{{ Request::path() == 'image-gallery' ? 'active' : '' }}"><a
+                                    href="{{ route('image-gallery') }}">University Gallery</a></li>
+                            <li class="{{ Request::path() == 'media-gallery' ? 'active' : '' }}"><a
+                                    href="{{ route('media-gallery') }}">Media Gallery</a>
+                            </li>
                             </ul>
                         </div>
                     

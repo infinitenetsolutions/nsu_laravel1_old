@@ -38,10 +38,10 @@
                                 ?>
                                 @foreach ($facultyes as $faculty)
                                     @if ($faculty->type == 'hou')
-                                        <li><a href="{{ route('faculty', $faculty->type) }}">Meet
+                                        <li class="{{ Request::path() == 'about/faculty/'.$faculty->type ? 'active' : '' }}"  ><a href="{{ route('faculty', $faculty->type) }}">Meet
                                                 our Head of University</a></li>
                                     @else
-                                        <li><a href="{{ route('faculty', $faculty->type) }}">Meet
+                                        <li class="{{ Request::path() == 'about/faculty/'.$faculty->type ? 'active' : '' }}" ><a href="{{ route('faculty', $faculty->type) }}">Meet
                                                 our {{ $faculty->type }}</a></li>
                                     @endif
                                 @endforeach
@@ -75,7 +75,7 @@
                     <div class="row mtli-row-clearfix">
                         @foreach ($data as $faculty)
                             <div class="col-xs-12 col-sm-6 col-md-3">
-                                <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-30">
+                                <div class="team-members border-bottom-theme-colored2px text-center maxwidth400 mb-2">
                                     <div class="team-thumb">
                                         <a href="{{ route('faculty-details', $faculty->id) }}">
                                             <img height="300px" class="img-fullwidth" alt=""

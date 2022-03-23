@@ -8,7 +8,7 @@
                     <div class="breadcrumb">
                         <a href="{{route('index')}}">Home</a>
                       <a href="">Events</a>
-                      <a href="">Events</a>
+                      <a href="">{{ $get_event->name }}</a>
                     </div>
                 </div>
                 <div class="container">
@@ -19,6 +19,10 @@
                         <ul>
                             <li><a href="{{ route('index') }}">Home</a></li>
                             </li>
+                            <li><a href="{{ route('event') }}">{{ 'Event' }}</a></li>
+                            <li class="active"><a href="{{ route('event') }}">{{ $get_event->name }}</a></li>
+
+                        </li>
                         </ul>
                     </div>
 

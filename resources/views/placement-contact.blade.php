@@ -17,8 +17,19 @@
                             <h4>Placement </h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
-                            <li><a href="{{ route('placement-contact') }}">Placement Contact</a>
+                            <li><a href="{{ route('index') }}">Home</a>
                             </li>
+                            <li class="{{ Request::path() == 'placements/placement' ? 'active' : '' }}"><a
+                                    href="/placements/placement"> Placement </a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/appointment' ? 'active' : '' }}"><a
+                                    href="{{ route('appointment') }}"> Appointment Letter</a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/requiters' ? 'active' : '' }}"><a
+                                    href="{{ route('requiters') }}"> Recruiters</a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/contact' ? 'active' : '' }}"><a
+                                    href="{{ route('placement-contact') }}">Placement Contact</a></li>
                         </ul>
                     </div>
                     <div class="p-3 ">

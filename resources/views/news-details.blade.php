@@ -18,9 +18,10 @@
                         <h4>Home</h4>
 
                         <ul>
-                            <li><a href="{{ route('news1') }}">News</a></li>
-                          
-                            </li>
+                            <li class="" ><a  href="{{ route('index') }}">Home</a></li>
+
+                            <li class="" ><a  href="{{ route('news1') }}"> Latest News</a></li>
+                            <li class="active" ><a  href="{{ route('news',$get_news->title) }}"> {{$get_news->title}}</a></li>
                         </ul>
                     </div>
                     <div class="p-3 ">

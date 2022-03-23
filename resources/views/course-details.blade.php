@@ -1,7 +1,7 @@
 <x-layout1>
     <?php
     
-    function url_check($url)
+    function url_check1($url)
     {
         stream_context_set_default([
             'ssl' => [
@@ -132,8 +132,10 @@
                             <div class=" ">
                                 <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
                                 <ul>
-                                    <li><a href="{{ route('course_list') }}"> Courses </a></li>
+                                    <li  ><a href="{{ route('course_list') }}"> Courses </a></li>
                                     <li class="active"><a href="#">{{ $name[0]->course }}</a></li>
+                                  
+
                                 </ul>
                             </div>
                         </div>
@@ -204,11 +206,11 @@
                                             </li>
                                         @endif
 
-                                        @if (url_check($url . 'CourseDetails/' . $data->syllabus))
+                                        @if (url_check1($url . 'CourseDetails/' . $data->syllabus))
                                             <li> <a href="#tab3" data-toggle="tab"> <span> Syllabus(Hons)</span></a>
                                             </li>
                                         @endif
-                                        @if (url_check($url . 'CourseDetails/' . $data->syllabus1) == true)
+                                        @if (url_check1($url . 'CourseDetails/' . $data->syllabus1) == true)
                                             <li><a href="#tab7" data-toggle="tab"> <span>Syllabus(Genral) </span></a>
                                             </li>
                                         @endif
@@ -216,10 +218,10 @@
                                         @if (strlen($data->apply) > 20)
                                             <li><a href="#tab4" data-toggle="tab"><span>apply-online </span></a></li>
                                         @endif
-                                        @if (url_check($url . 'CourseDetails/' . $data->fee_schedule))
+                                        @if (url_check1($url . 'CourseDetails/' . $data->fee_schedule))
                                             <li><a href="#tab5" data-toggle="tab"><span>Fee Schedule </span></a></li>
                                         @endif
-                                        @if (url_check($url . 'CourseDetails/' . $data->guidelines))
+                                        @if (url_check1($url . 'CourseDetails/' . $data->guidelines))
                                             <li><a href="#tab6" data-toggle="tab"><span>Guideline </span></a></li>
                                         @endif
 

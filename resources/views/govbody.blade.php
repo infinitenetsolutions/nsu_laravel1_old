@@ -16,6 +16,9 @@
                 <div class="top-menu-sec">
                     <ul>
                         <h4>About</h4>
+                        <li><a href="{{ route('index') }}">Home</a></li>
+                        <li class="active" ><a href="#">Government body</a></li>
+
                         @foreach ($quicks as $quick)
                             <li><a href="{{ route('about', $quick->title) }}">{{ $quick->sub_title }}</a>
                             </li>

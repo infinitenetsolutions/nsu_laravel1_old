@@ -14,9 +14,9 @@
                         <ul>
                             <h4>About</h4>
                             @foreach ($quicks as $quick)
-                                <li><a href="{{ route('about', $quick->title) }}">{{ $quick->sub_title }}</a>
-                                </li>
-                            @endforeach
+                            <li class="{{ Request::path() == 'about/'.$quick->title ? 'active' : '' }}"><a
+                                    href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a></li>
+                        @endforeach
                         </ul>
                     </div>
                     <div class="p-3 ">

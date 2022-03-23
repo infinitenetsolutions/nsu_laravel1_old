@@ -2,7 +2,7 @@
     @slot('title', 'About us')
     @slot('body')
 
-        <div id="ctl00_ContentPlaceHolder1_UpdatePanel2">
+        <div >
             <section class="inner-page">
                 <div class="inner-hadding mb-lg-4">
                     <div class="container">
@@ -11,7 +11,8 @@
                           <a href="#">Noticeboard</a>
                           <a href="#">Noticeboard</a>
                         </div>
-                    <div class="container">
+                    </div>
+                    <div class="container ">
 
                         <div class="top-menu-sec">
                             <h4>Noticeboard</h4>
@@ -19,15 +20,24 @@
                             <ul>
                                 <li><a href="{{ route('index') }}">Home</a></li>
                                 </li>
+                                <li class="active" ><a href="">Noticeboard</a></li>
+                            </li>
+                                
                             </ul>
                         </div>
-                        <h2><i class="fas fa-chess-board    "></i>
-                            Noticeboard </h2>
-
+                  
+                            <div class="p-2 ">
+                                <h2><i class="fas fa-chess-board    "></i>
+                                    Noticeboard </h2>
+                                <a class="row p-2" href="{{ route('index') }}">
+                                    <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                                    <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                                </a>
+                            </div>
                     </div>
                 </div>
 
-                <section class="bg-theme-colored">
+                <section class="bg-theme-colored mt-3">
                     <div class="container pt-40 pb-40">
                         <div class="row text-center">
                             <div class="col-md-12">
@@ -46,7 +56,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section class="mt-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">

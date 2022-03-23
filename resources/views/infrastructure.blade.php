@@ -17,7 +17,7 @@
                             <h4>Infrastructure</h4>
 
                             @foreach ($quicks as $quick)
-                                <li class="{{ Request::path() == $quick->title ? 'active' : '' }}"><a
+                                <li class="{{ Request::path() == 'infrastructure/'.$quick->title ? 'active' : '' }}"><a
                                         href="{{ route('infrastructure', $quick->title) }}">{{ $quick->title }}</a></li>
                             @endforeach
                         </ul>

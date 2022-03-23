@@ -18,7 +18,7 @@
                             <h4>Contact</h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
-                            <li><a href="{{ route('contact') }}">Contact us</a>
+                            <li class="{{ Request::path() == 'contact/contact-us' ? 'active' : '' }}"><a href="{{ route('contact') }}">Contact us</a>
                             </li>
                         </ul>
                     </div>

@@ -17,9 +17,10 @@
                             <h4>Home</h4>
 
                             <ul>
-                                <li><a href="{{ route('news1') }}">News</a></li>
-                                <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
-                                <li><a href="{{ route('media-gallery') }}">Media Gallery</a>
+                                <li class="" ><a  href="{{ route('index') }}">Home</a></li>
+
+                                <li class="active" ><a  href="{{ route('news1') }}"> Latest News</a></li>
+                            
                                 </li>
                             </ul>
                         </div>

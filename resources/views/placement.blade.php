@@ -14,13 +14,23 @@
                     <div class="top-menu-sec">
                         <ul>
                             <h4>Placement</h4>
+                            <li><a href="{{ route('index') }}">Home</a>
+                            </li>
+                           
                             @foreach ($quicks as $quick)
-                                <li><a href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
+                                <li class="{{ Request::path() == 'placements/'.$quick->title ? 'active' : '' }}"><a href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
                                 </li>
                             @endforeach
-                            <li> <a href="{{ route('appointment') }}"> Appointment Letter</a></li>
-                            <li><a href="{{ route('requiters') }}"> Our Requiters </a></li>
-                            <li><a href="{{ route('placement-contact') }}"> Placement Contact </a></li>
+                       
+                            <li class="{{ Request::path() == 'placement/appointment' ? 'active' : '' }}"><a
+                                    href="{{ route('appointment') }}"> Appointment Letter</a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/requiters' ? 'active' : '' }}"><a
+                                    href="{{ route('requiters') }}"> Recruiters</a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/contact' ? 'active' : '' }}"><a
+                                    href="{{ route('placement-contact') }}">Placement Contact</a></li>
+
                         </ul>
                     </div>
                     <div class="p-2 ">

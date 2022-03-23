@@ -19,7 +19,7 @@
                             <ul>
                                 <li class=""><a href="{{ route('index') }}">Home</a></li>
 
-                                <li class=""><a href="{{ route('career') }}">Career</a></li>
+                                <li class="active"><a href="{{ route('career') }}">Career</a></li>
                                 </li>
                             </ul>
 

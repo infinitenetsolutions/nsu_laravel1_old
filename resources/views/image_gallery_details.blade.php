@@ -3,11 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-   
-   
+
+
     <title>NETAJI SUBHAS UNIVERSITY - Photo Gallery</title>
-  
-   
+
+
 
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
@@ -28,20 +28,23 @@
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive2.css') }}" rel="stylesheet">
     <link href="{{ asset('css/dynamic_home.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
     <!-- Google Tag Manager -->
 
 
 
     <!-- End Google Tag Manager -->
-<style>
-    .mega_menu .menu_boxx1 {
-   
-    margin-top: 0px;
-  
-}
-</style>
+    <style>
+        .mega_menu .menu_boxx1 {
+
+            margin-top: 0px;
+
+        }
+
+    </style>
+
 <body id="page-top" cz-shortcut-listen="true">
 
 
@@ -56,10 +59,10 @@
         <div class="inner-hadding">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="{{route('index')}}">Home</a>
-                  <a href="{{ route('image-gallery') }}">Gallery</a>
-                  <a href="{{ route('image-gallery') }}"> University Gallery</a>
-                  <a href="#"> {{$gallery_title[0]->title}}</a>
+                    <a href="{{ route('index') }}">Home</a>
+                    <a href="{{ route('image-gallery') }}">Gallery</a>
+                    <a href="{{ route('image-gallery') }}"> University Gallery</a>
+                    <a href="#"> {{ $gallery_title[0]->title }}</a>
                 </div>
             </div>
             <div class="container">
@@ -68,8 +71,14 @@
                     <ul>
 
                         <ul>
-                            <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
-                            <li><a href="{{ route('media-gallery') }}">Media Gallery</a>
+                            <li class="{{ Request::path() == 'image-gallery' ? 'active' : '' }}"><a
+                                    href="{{ route('image-gallery') }}">University Gallery</a></li>
+                            <li class="{{ Request::path() == 'media-gallery' ? 'active' : '' }}"><a
+                                    href="{{ route('media-gallery') }}">Media Gallery</a>
+                            </li>
+                            <li
+                                class="{{ Request::path() == 'gallery/image-gallery-details/' . $gallery_title[0]->title ? 'active' : '' }}">
+                                <a href="{{ route('media-gallery') }}"> {{ $gallery_title[0]->title }} </a>
                             </li>
                         </ul>
 
@@ -78,7 +87,7 @@
                 </div>
 
                 <div class="p-3 ">
-                    <h2 class="text-university" > <i class="fa fa-university" aria-hidden="true"></i>
+                    <h2 class="text-university"> <i class="fa fa-university" aria-hidden="true"></i>
                         Photo Gallery </h2>
                     <a class="row p-2" href="{{ route('index') }}">
 
@@ -93,18 +102,15 @@
             <div class="container event_detail">
                 <div class="col-12">
                 </div>
-                <section class="card-columns1 waterfall photo_gallery" >
+                <section class="card-columns1 waterfall photo_gallery">
                     <div class="row">
 
-                        @foreach($gallery_title as $image)
-
+                        @foreach ($gallery_title as $image)
                             <div class=" col-sm-3 ">
-                                <a class="group1 cboxElement"
-                                    href="{{ $url . 'gallery/' . $image->image_name }}">
+                                <a class="group1 cboxElement" href="{{ $url . 'gallery/' . $image->image_name }}">
                                     <div class="card-head">
                                         <img class="card-img-top img-fluid"
-                                            src="{{ $url . 'gallery/' . $image->image_name }}"
-                                            alt="Cafeteria">
+                                            src="{{ $url . 'gallery/' . $image->image_name }}" alt="Cafeteria">
                                     </div>
                                     <div class="card-block">
                                         <h4 class="card-title">{{ $image->title }}</h4>
@@ -123,7 +129,7 @@
 
 
     </section>
-<br>
+    <br>
 
 
     <!--end About Section -->
@@ -150,11 +156,10 @@
     <script src="{{ asset('js/index.js') }}"></script>
     <script src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $("#colorbox").addClass("test-popup");
 
         });
-
     </script>
 
     <script src="{{ asset('js/pinterest_grid.js') }}"></script>

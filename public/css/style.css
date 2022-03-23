@@ -8028,7 +8028,7 @@ color: #808000;
 
 .team-members .team-details {
     background: #fff none repeat scroll 0 0;
-    bottom: -248px;
+    bottom: -280px;
     padding: 10px 15px;
     position: absolute;
     transition: all 400ms ease-in-out 0s;
@@ -8108,8 +8108,8 @@ color: #808000;
 }
 .img-fullwidth{
     width: 100%;
-    max-height: 352px;
-    min-height: 180;
+    height: 300px;
+
 }
 .line-bottom-centered{
     border-top:#808000 solid 3px;

@@ -51,7 +51,7 @@
                             <h4>Upgrade </h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
-                            <li><a href="{{ route('upgrade') }}">Upgrade</a>
+                            <li class="active" ><a href="{{ route('upgrade') }}">Upgrade</a>
                             </li>
                         </ul>
                     </div>

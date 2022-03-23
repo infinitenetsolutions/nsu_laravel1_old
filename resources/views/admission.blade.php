@@ -15,7 +15,7 @@
                             <ul>
                                 <h4>Admission</h4>
                                 @foreach ($quicks as $quick)
-                                    <li><a href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
+                                    <li  {{ Request::path() == 'admission/'.$quick->title ? 'active' : '' }}><a href="{{ route('about', $quick->title) }}">{{ $quick->title }}</a>
                                     </li>
                                 @endforeach
                             </ul>

@@ -47,10 +47,11 @@
 
     <style>
         .mega_menu .menu_boxx1 {
-       
-        margin-top: 0px;
-      
-    }
+
+            margin-top: 0px;
+
+        }
+
     </style>
     <section class="inner-page">
 
@@ -62,69 +63,70 @@
                     <a href="#">Media Gallery</a>
                 </div>
             </div>
-                <div class="container">
-                    <div class="top-menu-sec">
-                        <h4>Gallery</h4>
+            <div class="container">
+                <div class="top-menu-sec">
+                    <h4>Gallery</h4>
+                    <ul>
+
                         <ul>
-
-                            <ul>
-                                <li><a href="{{ route('image-gallery') }}">University Gallery</a></li>
-                                <li><a href="{{ route('media-gallery') }}">Media Gallery</a>
-                                </li>
-                            </ul>
-
-
+                            <li class="{{ Request::path() == 'image-gallery' ? 'active' : '' }}"><a
+                                    href="{{ route('image-gallery') }}">University Gallery</a></li>
+                            <li class="{{ Request::path() == 'media-gallery' ? 'active' : '' }}"><a
+                                    href="{{ route('media-gallery') }}">Media Gallery</a>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="p-2 ">
-                        <h2 class="text-university "> <i class="fas fa-newspaper    "></i>
-                            Media Gallery </h2>
-                        <a class="row p-2" href="{{ route('index') }}">
-                            <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
-                            <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
-                        </a>
-                    </div>
-                   
 
+
+                    </ul>
                 </div>
+                <div class="p-2 ">
+                    <h2 class="text-university "> <i class="fas fa-newspaper    "></i>
+                        Media Gallery </h2>
+                    <a class="row p-2" href="{{ route('index') }}">
+                        <img class="logo-sm" src="{{ asset('/images/logo.png') }}" alt="">
+                        <p class="tag_line_bold mt-1 ">Netaji Subhas University</p>
+                    </a>
+                </div>
+
+
             </div>
-            <section class="inner_section media_coverage">
-                <div class="container event_detail">
-                    <div class="col-12">
-                    </div>
-                    <section class="card-columns1 waterfall photo_gallery" >
-                        <div class="row">
-                            @foreach ($gallery_title as $image)
-                                <div class="col-sm-4 ">
-                                    <a class="group1 cboxElement"
-                                        href="{{ $url . 'mediagallery/' . $image->image_name }}">
-                                        <div class="card-head">
-                                            <img class="card-img-top img-fluid"
-                                                src="{{ $url . 'mediagallery/' . $image->image_name }}"
-                                                alt="Cafeteria">
-                                        </div>
-                                        <div class="card-block">
-                                            {{-- <h5 class="card-title"> <a href="{{ $image->link }}">more</a></h5> --}}
-                                        </div>
-                                    </a>
-                                </div>
-                            @endforeach
-                        </div>
-                        <div class="text-center">
-                            {{ $gallery_title->links() }}
-                        </div>
-                    </section>
-
-
-
+        </div>
+        <section class="inner_section media_coverage">
+            <div class="container event_detail">
+                <div class="col-12">
                 </div>
-            </section>
+                <section class="card-columns1 waterfall photo_gallery">
+                    <div class="row">
+                        @foreach ($gallery_title as $image)
+                            <div class="col-sm-4 ">
+                                <a class="group1 cboxElement"
+                                    href="{{ $url . 'mediagallery/' . $image->image_name }}">
+                                    <div class="card-head">
+                                        <img class="card-img-top img-fluid"
+                                            src="{{ $url . 'mediagallery/' . $image->image_name }}" alt="Cafeteria">
+                                    </div>
+                                    <div class="card-block">
+                                        {{-- <h5 class="card-title"> <a href="{{ $image->link }}">more</a></h5> --}}
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="text-center">
+                        {{ $gallery_title->links() }}
+                    </div>
+                </section>
+
+
+
+            </div>
+        </section>
 
 
 
     </section>
 
-<br>
+    <br>
 
     <!--end About Section -->
     <!-- Footer -->

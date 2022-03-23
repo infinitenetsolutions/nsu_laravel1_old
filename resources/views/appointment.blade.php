@@ -8,7 +8,7 @@
             }
 
         </style>
-        <?php 
+        <?php
         function url_check1($url)
         {
             stream_context_set_default([
@@ -42,8 +42,18 @@
                             <h4>Placement </h4>
                             <li><a href="{{ route('index') }}">Home</a>
                             </li>
-                            <li><a href="{{ route('appointment') }}"> Appointment Letter</a>
+                            <li class="{{ Request::path() == 'placements/placement' ? 'active' : '' }}"><a
+                                    href="/placements/placement"> Placement </a>
                             </li>
+                            <li class="{{ Request::path() == 'placement/appointment' ? 'active' : '' }}"><a
+                                    href="{{ route('appointment') }}"> Appointment Letter</a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/requiters' ? 'active' : '' }}"><a
+                                    href="{{ route('requiters') }}"> Recruiters</a>
+                            </li>
+                            <li class="{{ Request::path() == 'placement/contact' ? 'active' : '' }}"><a
+                                    href="{{ route('placement-contact') }}">Placement Contact</a></li>
+
                         </ul>
                     </div>
                     <div class="p-3 mb-4 ">
@@ -94,11 +104,12 @@
                                             {{ $appointment->sub_title }}
                                         </h6>
                                         @if (url_check1($url . 'appointment/' . $appointment->image_name2))
-
-                                        <a target="_blank" href="{{ $url . 'appointment/' . $appointment->image_name2 }}"
-                                            class="hidden-md text-danger"><i class="fa fa-download" aria-hidden="true"></i>
-                                            Appointment-Letter</a>
-                                            @endif
+                                            <a target="_blank"
+                                                href="{{ $url . 'appointment/' . $appointment->image_name2 }}"
+                                                class="hidden-md text-danger"><i class="fa fa-download"
+                                                    aria-hidden="true"></i>
+                                                Appointment-Letter</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +130,7 @@
 
         @include('include.studyat')
         <br>
-     
+
     @endslot
 
 </x-layout1>

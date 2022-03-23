@@ -16,7 +16,7 @@
                                 <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
                                 <ul>
                                     <li><a href="{{ route('index') }}"> Home </a></li>
-                                    <li><a href="{{ route('course_list') }}"> Programs </a></li>
+                                    <li class="active" ><a href="{{ route('course_list') }}"> Programs </a></li>
                                   
                                 </ul>
                             </div>

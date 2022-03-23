@@ -20,7 +20,8 @@
                             <ul>
                                 <li><a href="{{ route('index') }}"> Home </a></li>
                                 <li><a href="{{ route('course_list') }}"> Programs </a></li>
-
+                                <li class="active" ><a href="{{ route('course_list') }}"> {{$courses[0]->program}} </a></li>
+                               
                             </ul>
                         </div>
                     </div>
