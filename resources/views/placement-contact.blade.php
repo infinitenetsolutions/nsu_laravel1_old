@@ -44,7 +44,7 @@
                                         <div class="media-body">
                                             <div class="row">
                                                 <div class="col-sm-2">
-                                                    <i class="fas fa-map-marker" aria-hidden="true"></i>
+                                                    <i class="far fa-map-marker-alt"></i>
                                                 </div>
                                                 <div class="col-sm-10">
                                                     <h5 class="mt-0">Our Office Location</h5>
@@ -62,7 +62,7 @@
                                         <div class="media-body">
                                             <div class="row">
                                                 <div class="col-sm-2">
-                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                    <i class="fal fa-phone" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="col-sm-10">
                                                     <h5 class="mt-0">Contact Number</h5>
@@ -78,7 +78,7 @@
                                         <div class="media-body">
                                             <div class="row">
                                                 <div class="col-sm-2">
-                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                    <i class="fal fa-envelope" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="col-sm-10">
                                                     <h5 class="mt-0">Email Address</h5>
