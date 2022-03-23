@@ -2886,8 +2886,8 @@
     }
 
     .carousel-item {
-        height: auto;
-        min-height: auto;
+        height: 250px;
+        /* min-height: auto; */
     }
 
     .home-sec2 .why_box2 {

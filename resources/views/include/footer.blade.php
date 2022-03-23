@@ -73,7 +73,6 @@
 <footer>
     <div class="container">
 
-        <h4 class="footer_collapsible_heading">Quick Links <span class="lnr lnr-chevron-down"></span></h4>
         <div class="row">
             <span class="footer_collapse col-12 col-md-12">
                 <div class="row">

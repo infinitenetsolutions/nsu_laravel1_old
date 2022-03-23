@@ -6,20 +6,22 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
- 
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
+
     <title>
-    Best University In Jharkhand With All Courses And Placements
+        Best University In Jharkhand With All Courses And Placements
     </title>
 
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:200,300,400,500,600,700|Open+Sans:300,400,600,700,800"
+        rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/full-slider.css') }}" rel="stylesheet" />
     <!-- Custom styling CSS -->
@@ -38,9 +40,10 @@
     <link href="{{ asset('css/dynamic_home.css') }}" type="text/css" rel="stylesheet" />
     <link href="http://cdn.linearicons.com/free/1.0.0/icon-font.min.css" type="text/css" rel="stylesheet" />
     <link href="{{ asset('css/Print.css') }}" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('css/footer.css')}}">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
 
 </head>
 
@@ -65,8 +68,18 @@
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/jquery.slimscroll.min.js"></script>
     <script src="js/home-index.js"></script>
-    
 
+    <script>
+        $(document).ready(function() {
+            function stopsliding(){
+                alert("working")
+                $('.carousel').carousel({
+                interval: false,
+            });
+            }
+        
+        });
+    </script>
 
 
     <!--LeadSquared Tracking Code End-->

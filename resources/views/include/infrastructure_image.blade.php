@@ -1,25 +1,25 @@
-<section class="home-sec2 mydiv">
+<section class="home-sec2 mydiv"   >
     <div class="container-fluid">
 
         <div class="row slider-wrapper">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000"
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="50000"
                 data-pause="false">
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner" role="listbox" onclick="stopsliding()">
 
-                    <div id="figurebanner1_repfigurebanner_ctl00_divfigure" class="carousel-item active">
+                    <div  class="carousel-item active">
                         <iframe width="100%" height="100%" src="https://youtube.com/embed/AMFNBg6GGqk"
                             ></iframe>
-                        <div class="banner_text"></div>
+                        
                     </div>
-                    <div id="figurebanner1_repfigurebanner_ctl01_divfigure" class="carousel-item">
+                    <div  class="carousel-item">
                         <iframe width="100%" height="100%" src="https://youtube.com/embed/eLikqvUXDqM"
                         ></iframe>
-                        <div class="banner_text"></div>
+                       
                     </div>
-                    <div id="figurebanner1_repfigurebanner_ctl01_divfigure" class="carousel-item">
+                    <div class="carousel-item">
                         <iframe width="100%" height="100%" src="https://youtube.com/embed/VuF5ZUywODU"
                         ></iframe>
-                        <div class="banner_text"></div>
+                    
                     </div>
                     <?php //$sliders = DB::table('slider_tbl')->get(); ?>
                     {{-- @foreach ($sliders as $slider)
