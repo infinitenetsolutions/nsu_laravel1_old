@@ -1,3 +1,29 @@
+<?php
+$home_url = '';
+
+if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
+    $home_url = 'http://127.0.0.1:8001/upload/';
+} else {
+    $home_url = 'https://www.nsuniv.ac.in/nsuadmin/public/upload/';
+}
+function url_check($url)
+{
+    stream_context_set_default([
+        'ssl' => [
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+        ],
+    ]);
+
+    $array = get_headers($url);
+    $string = $array[0];
+    if (strpos($string, '200')) {
+        return true;
+    } else {
+        return false;
+    }
+}
+ ?>
 <div class="mega_menu pt-5 hidden-xs">
 
 <div class="row no-gutters scroll-pan ">

@@ -1,8 +1,7 @@
 <x-layout>
 
     @slot('body')
-        @include('include.slider')
-
+  @include('include.slider')
         <!-- Study Section -->
      @include('include.studyat')
         @include('include.infrastructure_image')
@@ -342,7 +341,7 @@
         <!-- Testimonials Section -->
 
         <!-- Footer -->
-        @include('include.testimonial')
+       <span id="testimonial"></span>
 
         <div class="mt-1 mb-1 p-0 m-0  wow fadeInDown">
             <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"

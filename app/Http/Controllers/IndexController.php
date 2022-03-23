@@ -20,9 +20,6 @@ class IndexController extends Controller
         // university head  after video tour and upcoming events 
         $head_of_university = DB::table('faculty_tbl')->where('type', 'hou')->orderBy('designation', 'ASC')->limit(4)->get();
 
-        // testimonial section
-        $testimonial = DB::table('testimonial_tbl')->get();
-
         // gallery 
         $gallery = DB::table('gallery_tbl')->select('title')->where('title', '!=', 'media')->distinct()->limit(6)->get();
 
@@ -37,7 +34,7 @@ class IndexController extends Controller
         $noticeboard = DB::table('noticeboard')->orderBy('id', 'desc')->limit(4)->get();
 
 
-        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university, 'testimonials' => $testimonial, 'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'infrastructure' => $infrastructure, 'noticeboard' => $noticeboard]);
+        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university,  'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'infrastructure' => $infrastructure, 'noticeboard' => $noticeboard]);
     }
 
     function main_index()

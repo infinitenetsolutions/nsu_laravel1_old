@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\ApplyOnlineController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactUsController;
@@ -52,3 +53,9 @@ Route::get('upgrade/upgrade', [GetStartController::class, 'index'])->name('upgra
 
 Route::get('gallery/image-gallery-details/{title}', [GalleryController::class, 'image_gallery_details'])->name('image_gallery_details');
 
+Route::get('ajax/infrastructure',[AjaxController::class,'infrastructure'])->name('ajax.infrastructure');
+Route::get('ajax/placement',[AjaxController::class,'placement'])->name('ajax.placement');
+Route::get('ajax/student',[AjaxController::class,'student'])->name('ajax.student');
+Route::get('ajax/gallery',[AjaxController::class,'gallery'])->name('ajax.gallery');
+Route::get('ajax/slider',[AjaxController::class,'slider'])->name('ajax.slider');
+Route::get('ajax/testimonial',[AjaxController::class,'testimonial'])->name('ajax.testimonial');

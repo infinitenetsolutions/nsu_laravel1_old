@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from www.amity.edu/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Feb 2022 10:57:53 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

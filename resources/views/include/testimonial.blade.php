@@ -1,3 +1,15 @@
+<?php     $url = '';
+
+if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
+    $url = 'http://127.0.0.1:8001/upload/';
+} else {
+    $url = 'https://www.nsuniv.ac.in/nsuadmin/public/upload/';
+}
+
+        // testimonial section
+        $testimonials = DB::table('testimonial_tbl')->where('is_deleted','1')->get();
+
+?>
 <section class="layer-overlay testimonial text-center pt-5">
     <div class="container">
 

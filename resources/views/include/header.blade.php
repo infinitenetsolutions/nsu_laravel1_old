@@ -1,4 +1,3 @@
-
 <?php
 $home_url = '';
 
@@ -29,7 +28,6 @@ function url_check($url)
 <!-- Top Level Navigation -->
 <div class="top_menubar">
     <ul class="container">
-        @include('include.offline_online_admission')
         @include('include.getstart')
 
         <li class="admission_links"><a href="javascript:void(0);">Admissions <span
@@ -121,7 +119,7 @@ function url_check($url)
 
 
         <?php $lastnotice = DB::table('noticeboard')
-        ->where('is_deleted','1')
+            ->where('is_deleted', '1')
             ->orderBy('id', 'desc')
             ->first(); ?>
         <li><a href="{{ route('news1', $lastnotice->id) }}">News</a></li>
@@ -174,7 +172,7 @@ function url_check($url)
                                             <div class="right_mega_menu">
                                                 <?php $abouts = DB::table('pages')
                                                     ->where('page_type', 'about')
-                                                    ->where('is_deleted','1')
+                                                    ->where('is_deleted', '1')
                                                     ->limit(9)
                                                     ->get();
                                                 ?>
@@ -196,7 +194,7 @@ function url_check($url)
                                                 <ul>
                                                     <?php $facultyes = DB::table('faculty_tbl')
                                                         ->distinct()
-                                                        ->where('is_deleted','1')
+                                                        ->where('is_deleted', '1')
                                                         ->get(['type']);
                                                     ?>
                                                     @foreach ($facultyes as $faculty)
@@ -206,13 +204,13 @@ function url_check($url)
 
                                                     <?php $studentpdfs = DB::table('pdf')
                                                         ->where('type', 'aboutpdf')
-                                                        ->where('is_deleted','1')
+                                                        ->where('is_deleted', '1')
                                                         ->limit(4)
                                                         ->get();
                                                     ?>
                                                     <?php $abouts = DB::table('pages')
                                                         ->where('page_type', 'about')
-                                                        ->where('is_deleted','1')
+                                                        ->where('is_deleted', '1')
                                                         ->skip(9)
                                                         ->take(100)
                                                         ->get();
@@ -225,12 +223,11 @@ function url_check($url)
 
                                                     <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
                                                     @foreach ($studentpdfs as $studentpdf)
-                                                    @if (url_check($home_url . 'pdf/' . $studentpdf->images))
-
-                                                        <li><a class="text-uppercase" target="_blank"
-                                                                href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
-                                                                {{ $studentpdf->title }}</a>
-                                                        </li>
+                                                        @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+                                                            <li><a class="text-uppercase" target="_blank"
+                                                                    href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
+                                                                    {{ $studentpdf->title }}</a>
+                                                            </li>
                                                         @endif
                                                     @endforeach
                                                 </ul>
@@ -323,7 +320,8 @@ function url_check($url)
 
                                             <div role="tabpanel" class="tab-pane fade" id="certificate">
                                                 <p class="pt-4">
-                                                    <strong> <i class="fa fa-certificate" aria-hidden="true"></i> certificate Courses</strong>
+                                                    <strong> <i class="fa fa-certificate" aria-hidden="true"></i>
+                                                        certificate Courses</strong>
                                                 </p>
                                                 <div class="menu_nav nsu-courses p-2">
                                                     <ul>
@@ -378,8 +376,7 @@ function url_check($url)
 
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Infrastructure <span
                             class="span_icon"></span></a>
-                    @include('include.infrastructure_menu')
-
+                    <span id="infrastructure_menu"></span>
 
                 </li>
 
@@ -387,21 +384,18 @@ function url_check($url)
 
                 <li class="nav-item"><a class="nav-link" href="#">Placement <span
                             class="span_icon"></span></a>
-                    @include('include.placement_menu')
-
+                    <span id="placement_menu"></span>
                 </li>
 
 
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Student <span
                             class="span_icon"></span></a>
-                    @include('include.student_menu')
-
+                    <span id="student_menu"></span>
 
                 </li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Gallery <span
                             class="span_icon"></span></a>
-                    @include('include.gallery_menu')
-
+                    <span id="gallery_menu"></span>
 
                 </li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us </a>
