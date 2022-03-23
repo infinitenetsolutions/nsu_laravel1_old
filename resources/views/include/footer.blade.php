@@ -87,6 +87,7 @@
                         <?php $abouts = DB::table('pages')
                             ->where('title', 'not like', '%Message%')
                             ->where('title', 'not like', '%learning%')
+                            ->where('is_deleted','1')
                             ->where('page_type', 'about')
                             ->limit(9)
                             ->get();
@@ -114,6 +115,7 @@
                         <h3> Infrastructure </h3>
                         <?php $infrastructures = DB::table('pages')
                             ->where('page_type', 'infrastructure')
+                            ->where('is_deleted','1')
                             ->limit(9)
                             ->get();
                         ?>

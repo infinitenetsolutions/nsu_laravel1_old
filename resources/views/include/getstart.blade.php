@@ -28,7 +28,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group mb-4">
                                             <!-- <input name="name" class="form-control" type="text" required="" placeholder="Enter Name" aria-required="true"> -->
-                                            <?php $courses1 = DB::table('course_tbl')->get(); ?>
+                                            <?php $courses1 = DB::table('course_tbl')->where('is_deleted','1')->get(); ?>
                                             <select required name="course" id="course" class="form-control">
                                                 <option value="">Select Course</option>
                                                 @foreach ($courses1 as $course)
