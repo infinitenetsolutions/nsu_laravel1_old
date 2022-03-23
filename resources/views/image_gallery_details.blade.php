@@ -78,7 +78,7 @@
                             </li>
                             <li
                                 class="{{ Request::path() == 'gallery/image-gallery-details/' . $gallery_title[0]->title ? 'active' : '' }}">
-                                <a href="{{ route('media-gallery') }}"> {{ $gallery_title[0]->title }} </a>
+                                <a href="#"> {{ $gallery_title[0]->title }} </a>
                             </li>
                         </ul>
 
@@ -106,7 +106,7 @@
                     <div class="row">
 
                         @foreach ($gallery_title as $image)
-                            <div class=" col-sm-3 border p-3 ">
+                            <div class=" col-sm-3 border p-3 mt-2 ">
                                 <a class="group1 cboxElement" href="{{ $url . 'gallery/' . $image->image_name }}">
                                     <div class="card-head">
                                         <img class="card-img-top img-fluid"

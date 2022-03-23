@@ -46,7 +46,7 @@
                             ?>
 
                                 @if(strlen($image->link) < 30)
-                                    <li class="col-12 col-sm-6 col-md-3 mb-3 border p-3"><a
+                                    <li class="col-12 col-sm-6 col-md-3 mb-3 border p-3 mt-2"><a
                                             href="{{ route('image_gallery_details',$title->title) }}"
                                             title="{{ $image->title }}"><img
                                                 src="{{ $url . 'gallery/' . $image->image_name }}"
