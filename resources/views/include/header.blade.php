@@ -103,6 +103,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
 
         <?php $lastnotice = DB::table('noticeboard')
+        ->where('is_deleted','1')
             ->orderBy('id', 'desc')
             ->first(); ?>
         <li><a href="{{ route('news1', $lastnotice->id) }}">News</a></li>
@@ -155,6 +156,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                             <div class="right_mega_menu">
                                                 <?php $abouts = DB::table('pages')
                                                     ->where('page_type', 'about')
+                                                    ->where('is_deleted','1')
                                                     ->limit(9)
                                                     ->get();
                                                 ?>
@@ -176,6 +178,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
                                                 <ul>
                                                     <?php $facultyes = DB::table('faculty_tbl')
                                                         ->distinct()
+                                                        ->where('is_deleted','1')
                                                         ->get(['type']);
                                                     ?>
                                                     @foreach ($facultyes as $faculty)
@@ -185,11 +188,13 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
 
                                                     <?php $studentpdfs = DB::table('pdf')
                                                         ->where('type', 'aboutpdf')
+                                                        ->where('is_deleted','1')
                                                         ->limit(4)
                                                         ->get();
                                                     ?>
                                                     <?php $abouts = DB::table('pages')
                                                         ->where('page_type', 'about')
+                                                        ->where('is_deleted','1')
                                                         ->skip(9)
                                                         ->take(100)
                                                         ->get();

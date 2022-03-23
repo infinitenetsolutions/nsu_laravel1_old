@@ -20,6 +20,7 @@
     <li class="nav-item"><a class="nav-link" href="#">About Netaji
             <span class="span_icon"></span></a>
         <?php $abouts = DB::table('pages')
+        ->where('is_deleted','1')
             ->where('page_type', 'about')
             ->limit(9)
             ->get();
@@ -31,6 +32,7 @@
             @endforeach
 
             <?php $facultyes = DB::table('faculty_tbl')
+            ->where('is_deleted','1')
             ->distinct()
             ->get(['type']);
         ?>
@@ -40,7 +42,7 @@
         @endforeach
         <?php $studentpdfs = DB::table('pdf')
         ->where('type', 'aboutpdf')
-        ->limit(4)
+        ->where('is_deleted','1')
         ->get();
     ?>
        <li><a href="{{ route('govbody') }}"> The Governing Body</a></li>
@@ -78,7 +80,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'infrastructure')
-           
+            ->where('is_deleted','1')
             ->get();
         ?>
         <ul class="dropdown-menu">
@@ -94,6 +96,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'placement')
+            ->where('is_deleted','1')
             ->limit(9)
             ->get();
         ?>
@@ -116,7 +119,7 @@
             <span class="span_icon"></span></a>
         <?php $infrastructures = DB::table('pages')
             ->where('page_type', 'student')
-            ->limit(9)
+            ->where('is_deleted','1')
             ->get();
         ?>
         <ul class="dropdown-menu">
@@ -126,6 +129,7 @@
             @endforeach
             <?php $studentpdfs = DB::table('pdf')
                 ->where('type', 'studentpdf')
+                ->where('is_deleted','1')
                 ->get();
             ?>
 
