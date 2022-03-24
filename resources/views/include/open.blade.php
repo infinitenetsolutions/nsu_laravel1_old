@@ -3,7 +3,7 @@
         <div class="custom-notification-container">
             <div class="custom-notification-content-wrapper">
                 <a href="{{ route('index') }}" target="_blank">
-                    {{-- <img src="images/mdt-logo.jpg" /> --}}
+                    <img src="images/mdt-logo.jpg" />
                 </a>
             </div>
         </div>
