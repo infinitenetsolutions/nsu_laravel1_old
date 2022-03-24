@@ -11,7 +11,13 @@
         </style>
         <section class="inner-page">
             <div class="inner-hadding">
-
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="{{ route('index') }}">Home</a>
+                        <a href="">Contact</a>
+                        <a href="">Contact us</a>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="top-menu-sec">
                         <ul>
