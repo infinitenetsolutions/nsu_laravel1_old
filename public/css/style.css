@@ -8105,6 +8105,14 @@ color: #808000;
     .team-members .team-details {
         bottom: -98px;
     }
+    .programe_tabbing {
+        width: 100% !important;
+        color: olive;
+    }
+    .fade {
+        opacity: 1 !important;
+        transition: opacity .15s linear;
+    }
 }
 .img-fullwidth{
     width: 100%;

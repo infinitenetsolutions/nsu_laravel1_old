@@ -7,7 +7,7 @@
                 <div class="breadcrumb">
                     <a href="{{ route('index') }}">Home</a>
                     <a href="{{ route('course_list') }}"> Programs </a>
-                    <a href="#">All programs</a>
+                    <a href="#"> {{$courses[0]->program}} </a>
                 </div>
             </div>
             <div class="container">
@@ -33,10 +33,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="breadcrumb">
-                <a href="{{ route('index') }}">Home</a>
-                Programmes
-            </div>
+          
             <h1><i class="fal fa-diploma"></i> Programmes</h1>
         </div>
 

@@ -132,6 +132,7 @@
                             <div class=" ">
                                 <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
                                 <ul>
+                                    <li><a href="{{ route('index') }}"> Home </a></li>
                                     <li  ><a href="{{ route('course_list') }}"> Courses </a></li>
                                     <li class="active"><a href="#">{{ $name[0]->course }}</a></li>
                                   
@@ -190,11 +191,11 @@
                 <section class="container mt-1">
                     <section class="row">
 
-                        <section class=" col-sm-8 programe_tabbing">
+                        <section class="  col-sm-12 col-md-8 col-lg-8 programe_tabbing">
                             <div class="container-fluid">
 
                                 <div class="responsive-tabs-container accordion-xs accordion-sm">
-                                    <ul class="nav nav-tabs responsive-tabs">
+                                    <ul class="nav nav-tabs responsive-tabs text-center">
 
 
 

@@ -25,10 +25,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="breadcrumb">
-                    <a href="{{ route('index') }}">Home</a>
-                    Programmes
-                </div>
+              
                 <h1><i class="fal fa-diploma"></i> Programmes</h1>
             </div>
             <section class="inner_section programmes_list new_big_line">
