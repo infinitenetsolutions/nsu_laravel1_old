@@ -229,9 +229,8 @@
                                     </ul>
                                     <div class="tab-content">
                                         <h4 id="ctl00_ContentPlaceHolder1_headyear1" class="collapsible_heading open">
-                                            1st
-                                            Year <span class="lnr lnr-chevron-down"></span></h4>
-                                        <a href="#recognitions1" class="accordion-link first"><span>1st Year</span></a>
+                                            {{ $name[0]->course }} <span class="lnr fab fas fa-discourse    "></span></h4>
+                                        <a href="#recognitions1" class="accordion-link first"><span>{{ $name[0]->course }}</span></a>
 
 
                                         <ul class="tab-pane fade in active" id="tab1">
@@ -299,7 +298,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <iframe src="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"
-                                                        width="700" height="500"></iframe>
+                                                        width="700" height="500"  ></iframe>
 
                                                 </div>
 
