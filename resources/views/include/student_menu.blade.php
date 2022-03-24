@@ -23,57 +23,70 @@ function url_check($url)
         return false;
     }
 }
- ?>
+?>
 <div class="mega_menu pt-5 hidden-xs">
 
-<div class="row no-gutters scroll-pan ">
-    <div class="col-md-12 pr-2">
-        <div class="row no-gutters menu_col4 infr-menu ">
+    <div class="row no-gutters scroll-pan ">
+        <div class="col-md-12 pr-2">
+            <div class="row no-gutters menu_col4 infr-menu ">
 
-            <?php $infrastructures = DB::table('pages')
-                ->where('page_type', 'student')
-                ->get();
-            ?>
-            @foreach ($infrastructures as $infrastructure)
-            <div class="col-md-3 section ">
+                <?php $infrastructures = DB::table('pages')
+                    ->where('page_type', 'student')
+                    ->get();
+                ?>
+                @foreach ($infrastructures as $infrastructure)
+                    <div class="col-md-3 section ">
                         <div class="border1">
-                            <a href="{{ route('student', $infrastructure->title) }}"> <img  src="{{ $home_url . 'student/' . $infrastructure->image_name }}" class="img-fluid">
+                            <a href="{{ route('student', $infrastructure->title) }}"> <img
+                                    src="{{ $home_url . 'student/' . $infrastructure->image_name }}"
+                                    class="img-fluid">
                                 <div class="menu_boxx1">
                                     {{ $infrastructure->sub_title }}
                                 </div>
                             </a>
                         </div>
-                    </div> 
-            @endforeach
+                    </div>
+                @endforeach
 
-            <?php $studentpdfs = DB::table('pdf')
-                ->where('type', 'studentpdf')
-                ->get();
-            ?>
+                <?php $studentpdfs = DB::table('pdf')
+                    ->where('type', 'studentpdf')
+                    ->get();
+                ?>
 
-            @foreach ($studentpdfs as $studentpdf)
-            @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+                @foreach ($studentpdfs as $studentpdf)
+                    @if (url_check($home_url . 'pdf/' . $studentpdf->images))
+                        <div class="col-md-3 section ">
+                            <div class="border1">
+                                <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}">
 
-            <div class="col-md-3 section ">
-                <div class="border1">
-                    <a target="_blank" href="{{ $home_url . 'pdf/' . $studentpdf->images }}"> <img  src="{{ asset('images/nsu/icon/download.jpg') }}" class="img-fluid">
-                        <div class="menu_boxx1 text-capitalize
-                        ">
-                            {{ $studentpdf->title }}
+                                    @if (strripos($studentpdf->title, 'result') > 0)
+                                        <img src="{{ asset('images/nsu/icon/download.jpg') }}" class="img-fluid"
+                                            alt="{{ $studentpdf->title }}">
+                                    @elseif (strripos($studentpdf->title, 'Calendar') > 0)
+                                        <img src="{{ asset('images/nsu/icon/academic calendar.jpg') }}"
+                                            class="img-fluid" alt="{{ $studentpdf->title }}">
+                                    @elseif (strripos($studentpdf->title, 'Discriminatory Cell') > 0)
+                                        <img src="{{ asset('images/nsu/icon/anti discrimination.jpg') }}"
+                                            class="img-fluid" alt="{{ $studentpdf->title }}">
+                                    @else
+                                        <img src="{{ asset('images/nsu/icon/download.jpg') }}" class="img-fluid"
+                                            alt="{{ $studentpdf->title }}">
+                                    @endif
+                                    <div class="menu_boxx1 text-capitalize ">
+                                        {{ $studentpdf->title }}
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
-                    </a>
-                </div>
+                    @endif
+                @endforeach
 
             </div>
-            @endif
-
-            @endforeach
 
         </div>
 
+
+
     </div>
-
-
-
-</div>
 </div>

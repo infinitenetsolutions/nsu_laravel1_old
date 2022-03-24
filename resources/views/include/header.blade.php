@@ -410,7 +410,7 @@ function url_check($url)
         </div>
         <!-- mobile menu -->
         <div class="mobile_nav">
-            <a href="javascript:void(0);" class="mobile_nav_icon"></a>
+            <a href="javascript:void(0);"  class="mobile_nav_icon"></a>
             <div class="collapse navbar-collapse main-menu" id="navbarResponsive2">
                 @include('include.mobile_menu')
             </div>

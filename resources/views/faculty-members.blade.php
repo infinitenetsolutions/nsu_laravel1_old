@@ -70,7 +70,7 @@
             </div>
 
             <!-- Section: Team -->
-            <section id="team" class="bg-silver-deep mt-4">
+            <section id="team" class="bg-silver-deep mt-5">
                 <div class="container">
                     <div class="row mtli-row-clearfix">
                         @foreach ($data as $faculty)
