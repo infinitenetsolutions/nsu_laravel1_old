@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <section class="inner_section pt-3 infra_play sangathan">
+            <section class="inner_section pt-3 infra_play sangathan mt-3">
                 <div class="container">
 
                     @if (strlen($data->permalink) > 30)
