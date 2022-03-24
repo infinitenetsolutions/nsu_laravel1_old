@@ -1,69 +1,18 @@
 <x-layout>
 
     @slot('body')
-  @include('include.slider')
+        @include('include.slider')
         <!-- Study Section -->
-     @include('include.studyat')
-        @include('include.infrastructure_image')
+        @include('include.studyat')
+       <span id="infrastructure_image"></span>
         <!-- Student life Section -->
         <section class="home-sec3 mydiv">
             <div class="container mb-5">
                 <div class="row    ">
                     <div class="col-12  ">
                         <h2 class="wow fadeInDown ">Student <span>Life</span></h2>
-                        <div class="student-home">
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-4 pro">
-                                    <span><img
-                                            src="{{ $url . 'infrastructure/' . $infrastructure[0]->image_name }}"></span>
-                                    <div class="stu-btn"><a
-                                            href="{{ route('infrastructure', $infrastructure[0]->title) }}">{{ $infrastructure[0]->sub_title }}</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-5 pro1">
-                                    <div class="stu-span1 ">
-                                        <span><img
-                                                src="{{ $url . 'infrastructure/' . $infrastructure[13]->image_name1 }}"></span>
-                                        <div class="stu-btn"><a
-                                                href="{{ route('infrastructure', $infrastructure[13]->title) }}">{{ $infrastructure[13]->sub_title }}</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="stu-span">
-                                        <span><img
-                                                src="{{ $url . 'infrastructure/' . $infrastructure[6]->image_name1 }}"></span>
-                                        <div class="stu-btn"><a
-                                                href="{{ route('infrastructure', $infrastructure[6]->title) }}">{{ $infrastructure[6]->sub_title }}</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="stu-span2">
-                                        <span><img
-                                                src="{{ $url . 'infrastructure/' . $infrastructure[12]->image_name1 }}"></span>
-                                        <div class="stu-btn"><a
-                                                href="{{ route('infrastructure', $infrastructure[12]->title) }}">{{ $infrastructure[12]->sub_title }}</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-md-3 ">
-                                    <div class="stu-span1 mb-1">
-                                        <span><img
-                                                src="{{ $url . 'infrastructure/' . $infrastructure[5]->image_name1 }}"></span>
-                                        <div class="stu-btn"><a
-                                                href="{{ route('infrastructure', $infrastructure[5]->title) }}">{{ $infrastructure[5]->sub_title }}</a>
-                                        </div>
-                                    </div>
-                                    <div class="stu-span1">
-                                        <span><img
-                                                src="{{ $url . 'infrastructure/' . $infrastructure[10]->image_name }}"></span>
-                                        <div class="stu-btn"><a
-                                                href="{{ route('infrastructure', $infrastructure[10]->title) }}">{{ $infrastructure[10]->sub_title }}</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                        <div class="student-home" id="student_life">
+                          
                         </div>
                     </div>
                 </div>
@@ -71,7 +20,7 @@
 
 
         </section>
-   
+
         <section class="p-3 mydiv">
             <div class="container">
                 <div class="row ">
@@ -263,7 +212,8 @@
                                                     href="{{ route('event', $event->id) }}">
                                                     <span class="carousel-inner">Events</span>
 
-                                                    <span class="ml-2 font-weight-bold carousel-inner"><i class="far fa-calendar-alt"></i>
+                                                    <span class="ml-2 font-weight-bold carousel-inner"><i
+                                                            class="far fa-calendar-alt"></i>
                                                         {{ explode('-', $event->timing)[2] }}
                                                         {{ date_format(date_create($event->timing), 'M - Y') }} </span>
                                                 </a>
@@ -341,7 +291,7 @@
         <!-- Testimonials Section -->
 
         <!-- Footer -->
-       <span id="testimonial"></span>
+        <span id="testimonial"></span>
 
         <div class="mt-1 mb-1 p-0 m-0  wow fadeInDown">
             <div class="col-md-12"> <iframe width="100%" style="max-height:400px; min-height:400px"

@@ -59,3 +59,6 @@ Route::get('ajax/student',[AjaxController::class,'student'])->name('ajax.student
 Route::get('ajax/gallery',[AjaxController::class,'gallery'])->name('ajax.gallery');
 Route::get('ajax/slider',[AjaxController::class,'slider'])->name('ajax.slider');
 Route::get('ajax/testimonial',[AjaxController::class,'testimonial'])->name('ajax.testimonial');
+Route::get('ajax/infrastructure_image',[AjaxController::class,'infrastructure_image'])->name('ajax.infrastructure_image');
+Route::get('ajax/student_life',[AjaxController::class,'student_life'])->name('ajax.student_life');
+

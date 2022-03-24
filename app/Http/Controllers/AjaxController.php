@@ -32,4 +32,10 @@ class AjaxController extends Controller
     {
         return view('include.testimonial');
     }
+    public function infrastructure_image(){
+        return view('include.infrastructure_image');
+    }
+    public function student_life(){
+        return view('include.student_life');
+    }
 }

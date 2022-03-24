@@ -108,6 +108,25 @@
                 xmlhttp.send();
 
             }
+
+            // getting data fo infrastructure image and youtube video
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById("infrastructure_image").innerHTML = this.responseText;
+            }
+            xmlhttp.open("GET", "{{ route('ajax.infrastructure_image') }}", true);
+            xmlhttp.send();
+
+
+            // getting data fo infrastructure image and youtube video
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById("student_life").innerHTML = this.responseText;
+            }
+            xmlhttp.open("GET", "{{ route('ajax.student_life') }}", true);
+            xmlhttp.send();
+
+
             // getting data fo testimonial
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {

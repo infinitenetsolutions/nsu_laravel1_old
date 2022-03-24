@@ -15,7 +15,7 @@ class IndexController extends Controller
 
         // first of the home page after the slider video
         $about = DB::table('pages')->where('page_type', 'about')->get();
-        $infrastructure = DB::table('pages')->where('page_type', 'infrastructure')->get();
+    
 
         // university head  after video tour and upcoming events 
         $head_of_university = DB::table('faculty_tbl')->where('type', 'hou')->orderBy('designation', 'ASC')->limit(4)->get();
@@ -34,7 +34,7 @@ class IndexController extends Controller
         $noticeboard = DB::table('noticeboard')->orderBy('id', 'desc')->limit(4)->get();
 
 
-        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university,  'gallery' => $gallery, 'news' => $latest_news, 'events' => $event, 'infrastructure' => $infrastructure, 'noticeboard' => $noticeboard]);
+        return view('index', ['sliders' => $slider, 'url' => $this->url(), 'about' => $about, 'hou' => $head_of_university,  'gallery' => $gallery, 'news' => $latest_news, 'events' => $event,  'noticeboard' => $noticeboard]);
     }
 
     function main_index()

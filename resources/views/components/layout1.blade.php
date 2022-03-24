@@ -99,14 +99,7 @@
                 xmlhttp.send();
 
             }
-            // getting data fo testimonial
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                document.getElementById("testimonial").innerHTML = this.responseText;
-            }
-            xmlhttp.open("GET", "{{ route('ajax.testimonial') }}", true);
-            xmlhttp.send();
-
+           
 
         });
     </script>
