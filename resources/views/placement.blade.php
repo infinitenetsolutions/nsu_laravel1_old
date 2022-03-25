@@ -135,7 +135,7 @@
                     @include('include.admission')
                 </div>
             </div>
-            <div class="block">
+            <div class="">
                 <section class="academia-sec4"
                     style="background-image: url('{{ $url . 'placement/' . $data->header_image }}')">
                     <div class="container">

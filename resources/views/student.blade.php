@@ -103,7 +103,7 @@
 
 
 
-            <div class="block">
+            <div class="">
                 <section class="academia-sec4"
                     style="background-image: url('{{ $url . 'student/' . $data->header_image }}')">
                     <div class="container">

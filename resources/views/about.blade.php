@@ -126,7 +126,7 @@
             </div>
             </div>
             <div class="">
-                <section class="academia-sec4 block"
+                <section class="academia-sec4 "
                     style="background-image: url('{{ $url . 'about/' . $data->header_image }}') ; left:0; top:0;">
                     <div class="container">
                         <?php $affiliations = DB::table('affiliated_tbl')->get(); ?>
