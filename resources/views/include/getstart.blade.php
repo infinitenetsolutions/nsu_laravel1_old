@@ -10,7 +10,7 @@
                 <h4 class="modal-title text-center text-white" id="myModalLabel2"> Don’t Miss Out Our
                     All Course Brochure! </h4>
             </div>
-            <div class="container-fluid ">
+            <div class="modal-body ">
                 <div class="row">
                     <div class="col-md-7 nsu_getstarted">
                         <img src="{{ asset('images/nsu/nsu_getstarted.jpeg') }}" alt="netaji subhas university admission enquiry"

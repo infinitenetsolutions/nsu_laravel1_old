@@ -1,4 +1,4 @@
-<?php     $url = '';
+<?php $url = '';
 
 if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
     $url = 'http://127.0.0.1:8001/upload/';
@@ -6,14 +6,17 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
     $url = 'https://www.nsuniv.ac.in/nsuadmin/public/upload/';
 }
 
-        // testimonial section
-        $testimonials = DB::table('testimonial_tbl')->where('is_deleted','1')->get();
+// testimonial section
+$testimonials = DB::table('testimonial_tbl')
+    ->where('is_deleted', '1')
+    ->get();
 
 ?>
 <section class="layer-overlay testimonial text-center pt-5">
     <div class="container">
 
-        <h2 class="text-uppercase text-white carousel-inner title wow fadeInUp  ">What <span class="text-warning">People </span>Say
+        <h2 class="text-uppercase text-white carousel-inner title wow fadeInUp  ">What <span class="text-warning">People
+            </span>Say
         </h2>
         <span class="line-bottom1 carousel-inner "> &nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -346,9 +349,10 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
     }
 
     @media(max-width:675px) {
-        .title{
+        .title {
             padding-top: 50px;
         }
+
         .testimonial-item {
             height: 100vh !important;
         }
@@ -366,7 +370,7 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1:8000') {
         }
     }
 
- 
+
 
     .title::after {
         background-color: #ffffff !important;

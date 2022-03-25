@@ -5452,7 +5452,7 @@ p.lead,
 
 .modal.fade.show {
     opacity: 1;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .program_list ul li.item:nth-child(odd) .slide_content {
@@ -8249,4 +8249,9 @@ border-left: #c39e38 3px solid;
 .list-border li {
     border-bottom: 1px dashed #d3d3d3;
     padding: 10px 0;
+}
+.form-group label{
+    text-align: left !important;
+    margin-left: 5px;
+    margin-bottom: 3px;
 }

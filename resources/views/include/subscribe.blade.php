@@ -5,57 +5,59 @@
 
     <div class="modal fade" id="subscribe" role="dialog">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content bg-warning">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span></button>
-                    <h3>TESTIMONIAL MESSAGE
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"
+                        style="color:#fff;border:3px solid #fff;padding: 1px 6px;border-radius: 50%;line-height: 25px;">&times;</span></button>
+                    <h3 class="text-center" >TESTIMONIAL MESSAGE
                     </h3>
                 </div>
                 <div class="modal-body text">
                     <form id="testimonial_form" method="post" enctype="multipart/form-data">
-                      <div class="row">
-                        <div class="form-group col-sm-4">
-                            <label>Name</label>
-                            <input class="form-control" id="testimonial_name" name="testimonial_name"
-                                placeholder="Enter Name" type="text">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label>Course</label>
-                            <input class="form-control" id="testimonial_course" name="testimonial_course"
-                                placeholder="Enter Course" type="text">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label>Batch Year</label>
-                            <input class="form-control" id="testimonial_batch" name="testimonial_batch"
-                                placeholder="Enter Batch Year" type="text">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label>Current Designation</label>
-                            <input class="form-control" id="testimonial_des
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                               <span>Name</span>
+                                <input class="form-control" id="testimonial_name" name="testimonial_name"
+                                    placeholder="Enter Name" type="text">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Course</label>
+                                <input class="form-control" id="testimonial_course" name="testimonial_course"
+                                    placeholder="Enter Course" type="text">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Batch Year</label>
+                                <input class="form-control" id="testimonial_batch" name="testimonial_batch"
+                                    placeholder="Enter Batch Year" type="text">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Current Designation</label>
+                                <input class="form-control" id="testimonial_des
                             
                             ig" name="testimonial_desig" placeholder="Enter Current Designation" type="text">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Company Currently Working</label>
+                                <input class="form-control" id="testimonial_company" name="testimonial_company"
+                                    placeholder="Enter Current Company" type="text">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label>Upload Image</label>
+                                <input class="form-control" id="testimonial_image" name="testimonial_image"
+                                    type="file" accept="image/*">
+                                <small class="form-text text-muted" id="image_err">Please upload your image. </small>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="exampleInputMessage">Message</label>
+                                <textarea class="form-control" rows="5"  id="testimonial_message" name="testimonial_message" placeholder="Message"></textarea>
+                            </div>
                         </div>
-                        <div class="form-group col-sm-4">
-                            <label>Company Currently Working</label>
-                            <input class="form-control" id="testimonial_company" name="testimonial_company"
-                                placeholder="Enter Current Company" type="text">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label>Upload Image</label>
-                            <input class="form-control" id="testimonial_image" name="testimonial_image" type="file"
-                                accept="image/*">
-                            <small class="form-text text-muted" id="image_err">Please upload your image. </small>
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label for="exampleInputMessage">Message</label>
-                            <textarea class="form-control" id="testimonial_message" name="testimonial_message" placeholder="Message"></textarea>
-                        </div>
-                      </div>
                         <br>
 
-                        <div class="form-group col-sm-4">
-                            <button id="testimonial_button" class="btn theme-orange border-0 mt-4" type="submit">Send Message </button>
+                        <div class="form-group text-center">
+                            <button id="testimonial_button" class="btn theme-orange border-0 mt-4" type="submit">Send
+                                Message </button>
                         </div>
                     </form>
                 </div>
