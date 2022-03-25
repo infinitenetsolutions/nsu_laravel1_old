@@ -8246,3 +8246,7 @@ border-left: #c39e38 3px solid;
 .divider{
     margin-top: 25px;
 }
+.list-border li {
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 10px 0;
+}
