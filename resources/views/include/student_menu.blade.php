@@ -63,7 +63,7 @@ function url_check($url)
                                         <img src="{{ asset('images/nsu/icon/download.jpg') }}" class="img-fluid"
                                             alt="{{ $studentpdf->title }}">
                                     @elseif (strripos($studentpdf->title, 'Calendar') > 0)
-                                        <img src="{{ asset('images/nsu/icon/academic calendar.jpg') }}"
+                                        <img src="{{ asset('images/nsu/icon/academic_calendar.jpg') }}"
                                             class="img-fluid" alt="{{ $studentpdf->title }}">
                                     @elseif (strripos($studentpdf->title, 'Discriminatory Cell') > 0)
                                         <img src="{{ asset('images/nsu/icon/anti discrimination.jpg') }}"
