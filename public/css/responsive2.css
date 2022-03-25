@@ -4015,7 +4015,7 @@
     }
 
     .subscribe span a:before {
-        content: 'FEEDBACK';
+        content: 'REVIEWS';
     }
 
     .subscribe img {
