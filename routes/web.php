@@ -23,7 +23,7 @@ Route::get('infrastructure/{name}', [StructureController::class, 'index'])->name
 Route::get('about/{name}', [AboutController::class, 'index'])->name('about');
 Route::get('about/faculty/{name}', [AboutController::class, 'faculty'])->name('faculty');
 Route::get('about/faculty/faculty-details/{id}', [AboutController::class, 'faculty_details'])->name('faculty-details');
-Route::get('about/government_body', [AboutController::class, 'govbody'])->name('govbody');
+Route::get('about/government-body', [AboutController::class, 'govbody'])->name('govbody');
 Route::get('course/schools-and-institutes/{course}/{id}', [CourseController::class, 'index'])->name('course');
 Route::get('course/', [CourseController::class, 'course_list'])->name('course_list');
 

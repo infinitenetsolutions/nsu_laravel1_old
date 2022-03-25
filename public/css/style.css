@@ -7792,7 +7792,7 @@ input#gsc-i-id1 {
     margin-right: 20px;
 }
 
-.bg-warning1 {
+.bg-warning1  ,.bg-warning {
     background-color: #e3ae21 !important;
 }
 

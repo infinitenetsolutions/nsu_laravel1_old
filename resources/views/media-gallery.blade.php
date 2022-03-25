@@ -157,7 +157,49 @@
 
         });
     </script>
+<script>
+    $(document).ready(function() {
+        // getting the slider data
 
+        if (window.screen.width > 1200) {
+
+            // getting the menu for infrastructure menu
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById("infrastructure_menu").innerHTML = this.responseText;
+            }
+            xmlhttp.open("GET", "{{ route('ajax.infrastructure') }}", true);
+            xmlhttp.send();
+
+            // getting the menu for placement menu
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById("placement_menu").innerHTML = this.responseText;
+            }
+            xmlhttp.open("GET", "{{ route('ajax.placement') }}", true);
+            xmlhttp.send();
+
+            // getting the menu for student menu
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById("student_menu").innerHTML = this.responseText;
+            }
+            xmlhttp.open("GET", "{{ route('ajax.student') }}", true);
+            xmlhttp.send();
+
+            // getting the menu for gallery menu
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                document.getElementById("gallery_menu").innerHTML = this.responseText;
+            }
+            xmlhttp.open("GET", "{{ route('ajax.gallery') }}", true);
+            xmlhttp.send();
+
+        }
+       
+
+    });
+</script>
 
 
 
