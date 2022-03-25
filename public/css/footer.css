@@ -1,6 +1,6 @@
 .custom-social-proof {
     position: fixed;
-    left: 30px;
+    left: 15px;
     z-index: 9999999999999 !important;
     font-family: "Open Sans", sans-serif;
     animation: achievementTextAnimationFrames 2.5s;
