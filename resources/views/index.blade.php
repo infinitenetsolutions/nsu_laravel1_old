@@ -25,8 +25,8 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-md-4">
-                        <h2 class="wow fadeInDown text-uppercase">
-                            <span class="border-bottom mb-1 text-dark">Notice</span> <span
+                        <h2 class="wow fadeInDown mb-1 text-uppercase">
+                            <span class="border-bottom mb-2 text-dark">Notice</span> <span
                                 class="text-white ">Board</span>
                         </h2>
                         <div class="double-line-bottom-theme-colored-2"></div>
@@ -68,8 +68,8 @@
                     </div>
 
                     <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                        <h2 class="wow fadeInDown text-uppercase">
-                            <span class="border-bottom mb-1 text-dark">University</span> <span
+                        <h2 class="wow mb-1 fadeInDown text-uppercase">
+                            <span class="border-bottom mb-2 text-dark">University</span> <span
                                 class="text-white ">Tour</span>
                         </h2>
                         <div class="double-line-bottom-theme-colored-2"></div>
