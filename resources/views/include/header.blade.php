@@ -122,9 +122,9 @@ function url_check($url)
             ->where('is_deleted', '1')
             ->orderBy('id', 'desc')
             ->first(); ?>
-        <li><a href="{{ route('news1', $lastnotice->id) }}">News</a></li>
+        <li><a href="{{ route('news1') }}">News</a></li>
 
-        <li><a href="{{ route('noticeboard', '') }}" target="_blank">Important Notice</a></li>
+        <li><a href="{{ route('noticeboard', $lastnotice->id) }}" target="_blank">Important Notice</a></li>
         <li><a href="https://nsucms.in/nsucms/student/student_login" target="_blank">Student Login</a></li>
         <li></li>
         <!-- <li><a class="right_bar_search" href="javascript:void(0);"><i class="fa fa-search"></i></a> -->
