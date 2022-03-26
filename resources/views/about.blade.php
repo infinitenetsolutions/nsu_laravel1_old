@@ -106,9 +106,7 @@
                         <div class="mt-3 mb-3">
                             <div class="row">
                                 <div class="col-sm-6 wow fadeInUp">
-                                    @if ($data->image_name != '')
                                         <img  src="{{ $url . 'about/' . $data->image_name }}" class="img-fluid border-2">
-                                    @endif
                                 </div>
                                 <div class="col-sm-6 wow fadeInDown">
                                     <p class="text-justify"><?php echo substr($data->description, 0, 880); ?> </p>
