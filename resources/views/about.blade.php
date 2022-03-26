@@ -56,6 +56,9 @@
                         {{-- modal end --}}
                         <div class=" mb-5 ">
                             <p class="text-justify"><?php echo substr($data->description, 0, 1000); ?> </p>
+                            
+                            @if ($data->title!="mission"  && $data->sub_title!="Vision" )
+            
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="effect-wrapper">
@@ -71,6 +74,7 @@
                                     <img src="{{ $url . 'about/' . $data->image_name1 }}" class="img-fluid">
                                 </div>
                             </div>
+                            @endif
                             <p class="text-justify"><?php echo substr($data->description, 1000); ?> </p>
                         </div>
                     </div>
