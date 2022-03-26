@@ -2902,7 +2902,8 @@ footer p a {
 }
 
 .academia-sec4 ul li .colm-ac-sec4 {
-    background-color: #fff;
+    background: #00000061;
+    color: white;
     display: block;
     width: 100%;
     padding: 30px;
@@ -8266,7 +8267,11 @@ border-left: #c39e38 3px solid;
 }
 
 .academia-sec4 h2{
-    background-color: #e3ae21;
+    background-color: #e3ae2175;
+    padding: 0px 10px 0px 10px ;
+}
+.academia-sec4 .border{
+    background-color: #e3ae2175;
     padding: 0px 10px 0px 10px ;
 }
 .img-fluid{

@@ -48,13 +48,23 @@
                     <div class="program_list">
                             <ul class="mt-4 mb-0 course_list" id="myList">
                                 <div class="staff-container">
+                                    <?php $courses = DB::table('course_tbl')
+                                    ->where('program', $courses[0]->program)
+                                    ->get(); ?>
                                     <li class="item text-bold "><em class="text-capitalize">
-                                            {{ $courses[0]->program }}
+                                        
+                                        @if ($courses[0]->type=="ug")
+                                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                        @elseif($courses[0]->type=="pg")
+                                          <i class="fas fa-user-graduate    "></i>
+                                          @else
+                                          <i class="fal fa-certificate    "></i>
+                                    @endif
+                                        
+                                        {{ $courses[0]->program }}
                                         </em>
                                         <br>
-                                        <?php $courses = DB::table('course_tbl')
-                                            ->where('program', $courses[0]->program)
-                                            ->get(); ?>
+                                    
                                         <ul>
                                             <table class="table table-one table-bordered table-responsive-lg">
                                                 <thead class="thead-light text-uppercase">

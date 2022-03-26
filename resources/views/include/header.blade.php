@@ -26,9 +26,10 @@ function url_check($url)
 } ?>
 
 <!-- Top Level Navigation -->
+        @include('include.getstart')
+
 <div class="top_menubar">
     <ul class="container">
-        @include('include.getstart')
 
         <li class="admission_links"><a href="javascript:void(0);">Admissions <span
                     class="lnr lnr-chevron-down"></span></a>

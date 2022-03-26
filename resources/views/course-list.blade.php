@@ -38,14 +38,25 @@
                     <div class="program_list">
                         @foreach ($all_programs as $program)
                             <ul class="mt-4 mb-0 course_list" id="myList">
+                                <?php $courses = DB::table('course_tbl')
+                                ->where('program', $program->program)
+                                ->get(); ?>
                                 <div class="staff-container">
                                     <li class="item "><em class="text-capitalize">
-                                            {{ $program->program }}
+                                        
+                                        @if ($courses[0]->type=="ug")
+                                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                        @elseif($courses[0]->type=="pg")
+                                          <i class="fas fa-user-graduate    "></i>
+                                          @else
+                                          <i class="fas fa-certificate    "></i>
+                                    @endif
+                                        
+                                        
+                                        {{ $program->program }}
                                         </em>
                                         <br>
-                                        <?php $courses = DB::table('course_tbl')
-                                            ->where('program', $program->program)
-                                            ->get(); ?>
+                                       
                                         <ul>
                                             <table class="table table-one table-bordered table-responsive-lg">
                                                 <thead class="thead-light text-uppercase">

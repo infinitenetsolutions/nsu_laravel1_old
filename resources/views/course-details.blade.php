@@ -114,7 +114,43 @@
                 background: #e3b121;
             }
 
+       
+            .divider {
+                margin-left: 48px;
+                margin-top: 0px
+            }
+
+            .divider .fa-dot-circle {
+                color: #e3b121;
+            }
+
+            .below-design {
+                position: relative;
+            }
+
+            .inner-page .inner-hadding .container .divider:before {
+                position: absolute;
+                left: 107px;
+                top: 11px;
+                height: 2px;
+                width: 52px;
+                background-color: #1b4169;
+                content: "";
+            }
+
+            .inner-page .inner-hadding .container .divider:after {
+                position: absolute;
+                left: -6px;
+                top: 11px;
+                height: 2px;
+                width: 52px;
+                background-color: #1b4169;
+                content: "";
+            }
+
         </style>
+
+
         <section class="inner-page bg-white ">
             <div class="inner-hadding  float-right">
                 <div class="container">
@@ -133,16 +169,36 @@
                                 <h4> <a class="text-warning" href="{{ route('index') }}">Home</a> </h4>
                                 <ul>
                                     <li><a href="{{ route('index') }}"> Home </a></li>
-                                    <li  ><a href="{{ route('course_list') }}"> Courses </a></li>
+                                    <li><a href="{{ route('course_list') }}"> Courses </a></li>
                                     <li class="active"><a href="#">{{ $name[0]->course }}</a></li>
-                                  
+
 
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <h2 class="pb-1 mt-3">{{ $name[0]->course }} {{ $name[0]->fullform }}</h2>
+                    <h2 class="pb-1 mt-3"> @if ($name[0]->type=="ug")
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        @elseif($name[0]->type=="pg")
+                          <i class="fas fa-user-graduate    "></i>
+                          @else
+                          <i class="fas fa-certificate    "></i>
+                    @endif {{ $name[0]->course }} {{ $name[0]->fullform }}</h2>
+
+
+                    <div class="below-design" style="
+                                        position: relative;
+                                    ">
+                        <div class="divider">
+                            <i class="far fa-dot-circle"></i>
+                            <i class="far fa-dot-circle"></i>
+                            <i class="far fa-dot-circle"></i>
+                        </div>
+                    </div>
+
+
+
 
 
                 </div>
@@ -175,9 +231,9 @@
                                         Apply Online</strong>
 
 
-                                    For the time being Selection Process is ...<span
-                                        ><a data-toggle="modal" data-target="#sel"
-                                            href="javascript:void(0);"><i class="text-white font-18 fal fa-plus-circle"
+                                    For the time being Selection Process is ...<span><a data-toggle="modal"
+                                            data-target="#sel" href="javascript:void(0);"><i
+                                                class="text-white font-18 fal fa-plus-circle"
                                                 aria-hidden="true"></i></a></span>
                                 </p>
                             </div>
@@ -229,8 +285,10 @@
                                     </ul>
                                     <div class="tab-content">
                                         <h4 id="ctl00_ContentPlaceHolder1_headyear1" class="collapsible_heading open">
-                                            {{ $name[0]->course }} <span class="lnr fab fas fa-discourse    "></span></h4>
-                                        <a href="#recognitions1" class="accordion-link first"><span>{{ $name[0]->course }}</span></a>
+                                            {{ $name[0]->course }} <span class="lnr fab fas fa-discourse    "></span>
+                                        </h4>
+                                        <a href="#recognitions1"
+                                            class="accordion-link first"><span>{{ $name[0]->course }}</span></a>
 
 
                                         <ul class="tab-pane fade in active" id="tab1">
@@ -284,8 +342,9 @@
 
                                             </ul>
                                             <div class="ml-4 mt-5">
-                                                <a href="https://nsucms.in/prospectus/public/" class="btn btn-warning  ">APPLY NOW</a>
-                
+                                                <a href="https://nsucms.in/prospectus/public/"
+                                                    class="btn btn-warning  ">APPLY NOW</a>
+
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab5">
@@ -298,7 +357,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <iframe src="{{ $url . 'CourseDetails/' . $data->fee_schedule }}"
-                                                        width="700" height="500"  ></iframe>
+                                                        width="700" height="500"></iframe>
 
                                                 </div>
 
@@ -336,7 +395,7 @@
 
                                     </div>
                                 </div>
-                             
+
 
                             </div>
                             <div class="ml-4 mt-5">
@@ -347,12 +406,12 @@
 
                         <section class=" col-sm-4 aside-section">
                             <div class="bg-xs-dark_gray m-3 p-3">
-                                <h3 class="text-center text-white">ALL COURSES</h3>
+                                <h3 class="text-center text-white"><i class="far fa-diploma"></i> ALL COURSES</h3>
                                 <!-- <div class="aside-section-headings"></div> -->
 
-                                <ul class=" aside-bullet" type="none"  >
+                                <ul class=" aside-bullet" type="none">
                                     @foreach ($all_courses as $course)
-                                        <li ><i class="fal fa-angle-double-right"></i> <a class="text-white"
+                                        <li><i class="fal fa-angle-double-right"></i> <a class="text-white"
                                                 href="{{ route('course', ['course' => strtolower(str_replace(' ', '-', $course->course)), 'id' => $course->id]) }}">{{ $course->course }}</a>
                                         </li>
                                     @endforeach
@@ -389,7 +448,7 @@
                                         <span class="text-university"> <?php echo $data->apply; ?></span>
 
                                     </div>
-                                   
+
                                 </div>
                                 <div class="text-center">
                                     <a href="https://nsucms.in/prospectus/public/" class="btn btn-warning  ">APPLY NOW</a>
