@@ -2730,3 +2730,19 @@ h3 .text_link {
     background: #e3ae21;
     z-index: 100
 }
+.happ-content p , .happ-content p a , .happ-content h3 a{
+    color: #fff !important;;
+  }
+  .text-dark{
+    color:#000!important;
+  }
+  
+  .team-members .title-border{
+    font-size: 17px;
+  color: #000;
+      font-weight: 800;
+  }
+  .team-members p{
+  color: #000;
+      font-weight: 600;
+  }

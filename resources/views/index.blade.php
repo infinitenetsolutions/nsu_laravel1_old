@@ -1,18 +1,65 @@
+<style>
+    .mega_menu .menu_boxx1 {
+        margin-top: -4px !important;
+    }
+
+    @media (max-width: 576px) {
+        .head-of-university {
+            margin-top: 1025px !important;
+        }
+
+        .owl-carousel .owl-item .item {
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .owl-carousel .owl-item #homebanner1_RepBannerImg_ctl03_anch {
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+        }
+
+        #carouselBanner .item {
+            max-height: 365px !important;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .owl-carousel .owl-item .item {
+            background-size: contain !important;
+            background-repeat: no-repeat;
+        }
+
+        .owl-carousel .owl-stage-outer {
+            height: 220px !important;
+        }
+    }
+
+    @media (max-width: 639px) and (min-width: 320px) {
+        .carousel-content {
+            min-height: 230px !important;
+            padding: 135px 30px 0 0 !important;
+        }
+    }
+
+</style>
+
 <x-layout>
+
+
 
     @slot('body')
         @include('include.slider')
         <!-- Study Section -->
         @include('include.studyat')
-       <span id="infrastructure_image"></span>
+        <span id="infrastructure_image"></span>
         <!-- Student life Section -->
-        <section class="home-sec3 mydiv">
+        <section class="home-sec3 mydiv blues">
             <div class="container mb-5">
                 <div class="row    ">
                     <div class="col-12  ">
                         <h2 class="wow fadeInDown ">Student <span>Life</span></h2>
                         <div class="student-home" id="student_life">
-                          
+
                         </div>
                     </div>
                 </div>
@@ -21,7 +68,7 @@
 
         </section>
 
-        <section class="p-3 mydiv">
+        <section class="p-3 mydiv" style="background: #e3ae21;">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-4">
@@ -131,7 +178,7 @@
         </section>
 
         <!-- head of department -->
-        <section class="scholarship-scheme-sec5 ">
+        <section class="scholarship-scheme-sec5 home-sec3 head-of-university">
             <div class="container">
                 <h2 class="text-uppercase text-dark carousel-inner title wow fadeInDown ">Head of <span
                         class="text-warning">University </span>
@@ -247,10 +294,9 @@
                         <ul class="row">
 
                             @foreach ($news as $latest)
-                                <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a
-                                        href="media-coverage42b9.html?Media=Media">
+                                <li class="col-12 col-md-4 col-lg-4 col-xl-4"><a href="media-coverage42b9.html?Media=Media">
                                         <div id="homeevent1_repmedia_ctl00_divtop" class="happening-colm-color"
-                                            style="background-color: #df{{ $latest->id }}429;">
+                                            style="background-color: #ff{{ $latest->id }}d00;">
                                             <div class="happ-content">
                                                 <ol>
                                                     <li>
@@ -261,8 +307,8 @@
                                                         {{ $latest->title }}</li>
                                                 </ol>
                                                 <h3>
-                                                    <p class="text-white text-justify hover "><?php echo substr($latest->massage, 0, 160); ?>..<a
-                                                            class="btn btn-sm text-dark "
+                                                    <p class="text-justify hover "><?php echo substr($latest->massage, 0, 160); ?>..<a
+                                                            class="btn btn-sm "
                                                             href="{{ route('news', ['id' => $latest->id]) }}"> View
                                                             Details</a></p>
                                                 </h3>
